@@ -20,6 +20,14 @@ Data/ItemAttachments.xml
 Data/Weapons.xml
 ```
 
+### Please feel free to contribute!
+
+Please feel free to add your improvements to this projects.
+Even small changes like additional images for items are welcome.
+To do so, fork this project and send us an merge request.
+
+If you have ideas for new features or found an bug, please create an issue to let us know.
+
 ### Oh, Thanks!
 
 Thank you OggDude for creating and offering your data and awesome [OggDude Character Generator](https://www.legendsofthegalaxy.com/Oggdude/) to us!
