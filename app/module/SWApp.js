@@ -2,7 +2,8 @@ var App = angular.module('SWApp', [
     'ngMaterial',
     'material.svgAssetsCache',
     'ngSanitize',
-    'md.data.table'
+    'md.data.table',
+    'fixed.table.header'
 ]);
 
 App.config(function ($mdThemingProvider) {
