@@ -1,0 +1,556 @@
+<div layout="row" flex>
+    <md-sidenav
+            md-component-id="{{sideNavComponentId}}"
+            md-whiteframe="3"
+            class="md-sidenav-left"
+            md-is-locked-open="$mdMedia('gt-md')">
+        <md-content layout="column">
+            <md-button class="md-warn md-raised" ng-click="toggleSideNav()" hide-gt-md>
+                Close
+            </md-button>
+            <md-button ng-if="filters.searchText ||
+                                            filters.minDamage ||
+                                            filters.maxDamage ||
+                                            filters.minSoak ||
+                                            filters.maxSoak ||
+                                            filters.minDefensive ||
+                                            filters.maxDefensive ||
+                                            filters.minDeflection ||
+                                            filters.maxDeflection ||
+                                            filters.minCrit ||
+                                            filters.maxCrit ||
+                                            filters.minRarity ||
+                                            filters.maxRarity ||
+                                            filters.minEncumbrance ||
+                                            filters.maxEncumbrance ||
+                                            filters.minHP ||
+                                            filters.maxHP ||
+                                            filters.minPrice ||
+                                            filters.maxPrice ||
+                                            filters.type ||
+                                            filters.skill ||
+                                            filters.range ||
+                                            filters.quality ||
+                                            filters.baseMod"
+                       class="md-warn md-raised" ng-click="resetFilters()">
+                Clear filters
+            </md-button>
+            <md-list class="filter-list">
+                <md-list-item layout-margin style="margin-left: 0; margin-bottom: 0;">
+                    <md-input-container flex style="margin-left: 0; margin-bottom: 0;">
+                        <md-icon md-font-set="material-icons">search</md-icon>
+                        <input ng-model="filters.searchText"
+                               ng-change="filterItems()"
+                               type="text" placeholder="Search">
+                    </md-input-container>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Damage || max.Damage">
+                    <h4 layout="row">Dmg.</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minDamage"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Damage}}"
+                                   max="{{max.Damage}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxDamage"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Damage}}"
+                                   max="{{max.Damage}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Soak || max.Soak">
+                    <h4 layout="row">Soak</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minSoak"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Soak}}"
+                                   max="{{max.Soak}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxSoak"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Soak}}"
+                                   max="{{max.Soak}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Defensive || max.Defensive">
+                    <h4 layout="row">Defense</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minDefensive"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Defensive}}"
+                                   max="{{max.Defensive}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxDefensive"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Defensive}}"
+                                   max="{{max.Defensive}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Deflection || max.Deflection">
+                    <h4 layout="row">Deflec.</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minDeflection"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Deflection}}"
+                                   max="{{max.Deflection}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxDeflection"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Deflection}}"
+                                   max="{{max.Deflection}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Crit || max.Crit">
+                    <h4 layout="row">Crit</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minCrit"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Crit}}"
+                                   max="{{max.Crit}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxCrit"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Crit}}"
+                                   max="{{max.Crit}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Rarity || max.Rarity">
+                    <h4 layout="row">Rarity</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minRarity"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Rarity}}"
+                                   max="{{max.Rarity}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxRarity"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Rarity}}"
+                                   max="{{max.Rarity}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Encumbrance || max.Encumbrance">
+                    <h4 layout="row">Encum.</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minEncumbrance"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Encumbrance}}"
+                                   max="{{max.Encumbrance}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxEncumbrance"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Encumbrance}}"
+                                   max="{{max.Encumbrance}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.HP || max.HP">
+                    <h4 layout="row">HP</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minHP"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.HP}}"
+                                   max="{{max.HP}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxHP"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.HP}}"
+                                   max="{{max.HP}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Price || max.Price">
+                    <h4 layout="row">Price</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minPrice"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Price}}"
+                                   max="{{max.Price}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxPrice"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Price}}"
+                                   max="{{max.Price}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item ng-if="qualities.length">
+                    <h4 layout="row">Qualities</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.quality"
+                                   ng-change="filterItems()"
+                                   multiple=""
+                                   aria-label="Qualities">
+                            <md-option ng-repeat="quality in qualities"
+                                       ng-value="quality">
+                                {{quality}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
+                <md-list-item ng-if="baseMods.length">
+                    <h4 layout="row">Base mod</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.baseMod"
+                                   ng-change="filterItems()"
+                                   multiple=""
+                                   aria-label="Base mod">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="baseMod in baseMods"
+                                       ng-value="baseMod">
+                                {{baseMod | trustAsHtmlFilter}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
+                <md-list-item ng-if="types.length">
+                    <h4 layout="row">Type</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.type"
+                                   ng-change="filterItems()"
+                                   aria-label="Type">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="type in types"
+                                       ng-value="type">
+                                {{type}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
+                <md-list-item ng-if="skills.length">
+                    <h4 layout="row">Skill</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.skill"
+                                   ng-change="filterItems()"
+                                   aria-label="Skill">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="skill in skills"
+                                       ng-value="skill">
+                                {{skill}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
+                <md-list-item ng-if="ranges.length">
+                    <h4 layout="row">Range</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.range"
+                                   ng-change="filterItems()"
+                                   aria-label="Range">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="range in ranges"
+                                       ng-value="range">
+                                {{range}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+    <div flex layout="column">
+        <md-button class="md-fab md-primary md-fab-bottom-right"
+                   ng-click="toggleSideNav()" hide-gt-md
+                   aria-label="Show filters">
+            <md-icon md-font-set="material-icons">search</md-icon>
+        </md-button>
+        <md-content flex>
+            <div ng-hide="filteredItems.length == 0">
+                <md-table-container>
+                    <table md-table md-row-select multiple ng-model="favourites" md-progress="promise">
+                        <thead md-head md-order="order" md-on-reorder="filterItems">
+                        <tr md-row>
+                            <th md-column
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'"></th>
+                            <th md-column
+                                md-order-by="Name">Name / Description
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Price">Price
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Damage"
+                                ng-if="name == 'Weapon'">Dmg.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Soak"
+                                ng-if="name == 'Armor'">Soak
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Defensive"
+                                ng-if="name == 'Weapon' || name == 'Armor'">Defensive
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Deflection"
+                                ng-if="name == 'Weapon'">Deflection
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Crit"
+                                ng-if="name == 'Weapon'">Crit.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Rarity">Rarity
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Encumbrance">Encum.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="HP"
+                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                HP
+                            </th>
+                            <th md-column
+                                md-order-by="Type"
+                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                Type
+                            </th>
+                            <th md-column
+                                md-order-by="SkillKey"
+                                ng-if="name == 'Weapon'">Skill
+                            </th>
+                            <th md-column
+                                md-order-by="RangeValue"
+                                ng-if="name == 'Weapon'">Range
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Weapon'">Qualities
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody md-body>
+                        <tr md-row ng-repeat="item in outputItems" md-select="item" md-select-id="Key">
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                <img style="width: 100px;" ng-src="{{item.imageUrl}}"
+                                     err-src="img/no_image.png"
+                                     alt="{{item.Name}}"
+                                     layout="column"
+                                     layout-margin/>
+                            </td>
+                            <td md-cell>
+                                <div class="sw-description" style="min-width: 200px"
+                                     ng-bind-html="item.Description"></div>
+                            </td>
+                            <td md-cell>{{item.Price}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                <span class="no-break">
+                                    <span ng-if="item.SkillKey == 'Melee' || item.SkillKey == 'Lightsaber' || item.SkillKey == 'Brawl' || item.Type == 'Thrown'">
+                                        <span ng-show="item.DamageAdd && item.DamageAdd > 0">BR (+{{item.DamageAdd}})</span>
+                                        <span ng-show="item.DamageAdd && item.DamageAdd < 0">BR ({{item.DamageAdd}})</span>
+                                        <span ng-show="!item.Damage && !item.DamageAdd">BR</span>
+                                        <span ng-show="item.Damage && !item.DamageAdd">{{item.Damage}}</span>
+                                    </span>
+                                    <span ng-if="item.SkillKey != 'Melee' && item.SkillKey != 'Lightsaber' && item.SkillKey != 'Brawl' && item.Type != 'Thrown'">
+                                        <span ng-show="item.Damage">{{item.Damage}}</span>
+                                        <span ng-show="item.DamageAdd">(+{{item.DamageAdd}})</span>
+                                        <span ng-hide="item.Damage || item.DamageAdd">-</span>
+                                    </span>
+                                </span>
+                            </td>
+                            <td md-cell ng-if="name == 'Armor'">{{item.Soak}}</td>
+                            <td md-cell ng-if="name == 'Weapon' || name == 'Armor'">{{item.Defensive}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">{{item.Deflection}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                <span ng-show="item.Crit > 0">{{item.Crit}}</span>
+                                <span ng-hide="item.Crit > 0">-</span>
+                            </td>
+                            <td md-cell>
+                                <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
+                                <span ng-hide="item.Rarity > 0">-</span>
+                            </td>
+                            <td md-cell>
+                                <span ng-show="item.Encumbrance > 0">{{item.Encumbrance}}</span>
+                                <span ng-hide="item.Encumbrance > 0">-</span>
+                            </td>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                <span ng-show="item.HP > 0">{{item.HP}}</span>
+                                <span ng-hide="item.HP > 0">-</span>
+                            </td>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                {{item.Type}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                {{item.RangeValue}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Qualities.length"
+                                         ng-repeat="quality in item.Qualities">
+                                        <md-tooltip md-direction="left">{{quality.Tooltip}}</md-tooltip>
+                                        {{quality.Key}} <span ng-show="quality.Count > 0">{{quality.Count}}</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </md-table-container>
+            </div>
+            <div layout="row" layout-align="space-around" layout-margin
+                 ng-if="outputItems.length < filteredItems.length">
+                <md-progress-circular
+                        ng-show="loading"
+                        md-mode="indeterminate"></md-progress-circular>
+                <md-button class="md-warn md-raised" ng-click="increaseLimit()"
+                           ng-hide="loading">
+                    Show more
+                </md-button>
+            </div>
+            <md-card layout-padding
+                     ng-if="filteredItems.length == 0">
+                            <span layout="column" layout-align="center center" ng-if="filters.searchText ||
+                                            filters.minDamage ||
+                                            filters.maxDamage ||
+                                            filters.minSoak ||
+                                            filters.maxSoak ||
+                                            filters.minDefensive ||
+                                            filters.maxDefensive ||
+                                            filters.minDeflection ||
+                                            filters.maxDeflection ||
+                                            filters.minCrit ||
+                                            filters.maxCrit ||
+                                            filters.minRarity ||
+                                            filters.maxRarity ||
+                                            filters.minEncumbrance ||
+                                            filters.maxEncumbrance ||
+                                            filters.minHP ||
+                                            filters.maxHP ||
+                                            filters.minPrice ||
+                                            filters.maxPrice ||
+                                            filters.type ||
+                                            filters.skill ||
+                                            filters.range ||
+                                            filters.quality ||
+                                            filters.baseMod">
+                                <md-icon md-font-set="material-icons">not_interested</md-icon>
+                                <strong>No items found</strong>
+                                <md-button class="md-warn md-raised"
+                                           ng-click="resetFilters()">
+                                    Clear filters
+                                </md-button>
+                            </span>
+                            <span layout="column" layout-align="center center" ng-if="!(filters.searchText ||
+                                            filters.minDamage ||
+                                            filters.maxDamage ||
+                                            filters.minSoak ||
+                                            filters.maxSoak ||
+                                            filters.minDefensive ||
+                                            filters.maxDefensive ||
+                                            filters.minDeflection ||
+                                            filters.maxDeflection ||
+                                            filters.minCrit ||
+                                            filters.maxCrit ||
+                                            filters.minRarity ||
+                                            filters.maxRarity ||
+                                            filters.minEncumbrance ||
+                                            filters.maxEncumbrance ||
+                                            filters.minHP ||
+                                            filters.maxHP ||
+                                            filters.minPrice ||
+                                            filters.maxPrice ||
+                                            filters.type ||
+                                            filters.skill ||
+                                            filters.range ||
+                                            filters.quality ||
+                                            filters.baseMod)">
+                                <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+                            </span>
+            </md-card>
+        </md-content>
+    </div>
+</div>
