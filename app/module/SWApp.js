@@ -136,6 +136,7 @@ App.filter('descriptionFilter', function ($sce, $filter) {
             html = html.replace(/\[B\]/g, "<strong>");
             html = html.replace(/\[b\]/g, "</strong>");
             html = html.replace(/\[P\]/g, "</p><p>");
+            html = html.replace(/\[BR\]/g, "<br/>");
             html = $filter('symbolFilter')(html);
             return $sce.trustAsHtml(html);
         } else {
