@@ -336,11 +336,17 @@
                    aria-label="Show filters">
             <md-icon md-font-set="material-icons">search</md-icon>
         </md-button>
+        <md-button
+                ng-if="outputItems.length < filteredItems.length"
+                class="md-fab md-fab-text md-primary md-raised md-fab-bottom-right-2" ng-click="increaseLimit()">
+            <span ng-hide="loading">Load more</span>
+            <span ng-show="loading">Please wait...</span>
+        </md-button>
         <md-content flex>
-            <div ng-hide="filteredItems.length == 0">
+            <div ng-hide="filteredItems.length == 0" style="height: 100%; overflow: hidden;">
                 <md-table-container>
-                    <div style="overflow: auto; max-height: 85%;">
-                        <table md-table md-row-select multiple ng-model="favourites" md-progress="promise">
+                    <div style="overflow: auto; height: 100%;">
+                        <table md-table md-progress="promise">
                             <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
                             <tr md-row>
                                 <th md-column
@@ -410,7 +416,7 @@
                             </tr>
                             </thead>
                             <tbody md-body>
-                            <tr md-row ng-repeat="item in outputItems" md-select="item" md-select-id="Key">
+                            <tr md-row ng-repeat="item in outputItems">
                                 <td md-cell
                                     ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                     <img style="width: 100px;" ng-src="{{item.imageUrl}}"
@@ -478,20 +484,13 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr md-row style="height: 56px">
+                                <td md-cell>&nbsp;</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
                 </md-table-container>
-            </div>
-            <div layout="row" layout-align="space-around" layout-margin
-                 ng-if="outputItems.length < filteredItems.length">
-                <md-progress-circular
-                        ng-show="loading"
-                        md-mode="indeterminate"></md-progress-circular>
-                <md-button class="md-warn md-raised" ng-click="increaseLimit()"
-                           ng-hide="loading">
-                    Show more
-                </md-button>
             </div>
             <md-card layout-padding
                      ng-if="filteredItems.length == 0">

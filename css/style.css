@@ -159,10 +159,23 @@ md-tab-content {
     white-space: nowrap;
 }
 
-.md-fab-bottom-right {
+.md-button.md-fab.md-fab-bottom-right {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    left: auto;
+}
+
+.md-button.md-fab.md-fab-bottom-right-2 {
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+}
+
+.md-button.md-fab.md-fab-text {
+    border-radius: 28px;
+    width: auto;
+    padding: 0 15px;
 }
 
 table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2), table.md-table:not(.md-row-select) th.md-column:nth-child(n+2):nth-last-child(n+2) {
@@ -171,6 +184,14 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 table.md-table.md-row-select td.md-cell:nth-child(n+3):nth-last-child(n+2), table.md-table.md-row-select th.md-column:nth-child(n+3):nth-last-child(n+2) {
     padding: 0 5px;
+}
+
+table.md-table thead.md-head tr.md-row > th {
+    border-bottom: 1px solid #ccc;
+}
+
+table.md-table tr.md-row:first-child td.md-cell {
+    border-top: none;
 }
 
 md-tooltip .md-content,
