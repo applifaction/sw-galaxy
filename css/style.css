@@ -159,10 +159,11 @@ md-tab-content {
     white-space: nowrap;
 }
 
-.md-fab-bottom-right {
+.md-button.md-fab.md-fab-bottom-right {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    left: auto;
 }
 
 table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2), table.md-table:not(.md-row-select) th.md-column:nth-child(n+2):nth-last-child(n+2) {
@@ -171,6 +172,23 @@ table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2)
 
 table.md-table.md-row-select td.md-cell:nth-child(n+3):nth-last-child(n+2), table.md-table.md-row-select th.md-column:nth-child(n+3):nth-last-child(n+2) {
     padding: 0 5px;
+}
+
+table.md-table thead.md-head tr.md-row > th {
+    border-bottom: 1px solid #ccc;
+}
+
+table.md-table tr.md-row:first-child td.md-cell {
+    border-top: none;
+}
+
+table.md-table.clone {
+    position: fixed;
+    z-index: 1;
+}
+
+table.md-table.clone + md-table-container > table.md-table {
+    margin-top: 0 !important;
 }
 
 md-tooltip .md-content,
