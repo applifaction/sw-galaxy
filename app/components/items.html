@@ -336,101 +336,94 @@
                    aria-label="Show filters">
             <md-icon md-font-set="material-icons">search</md-icon>
         </md-button>
-        <md-button
-                ng-if="outputItems.length < filteredItems.length"
-                class="md-fab md-fab-text md-primary md-raised md-fab-bottom-right-2" ng-click="increaseLimit()">
-            <span ng-hide="loading">Load more</span>
-            <span ng-show="loading">Please wait...</span>
-        </md-button>
         <md-content flex>
-            <div ng-hide="filteredItems.length == 0" style="height: 100%; overflow: hidden;">
+            <div ng-hide="filteredItems.length == 0" style="height: 100%; overflow: auto;">
                 <md-table-container>
-                    <div style="overflow: auto; height: 100%;">
-                        <table md-table md-progress="promise">
-                            <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
-                            <tr md-row>
-                                <th md-column
-                                    ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'"></th>
-                                <th md-column
-                                    md-order-by="Name">Name / Description
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Price">Price
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Damage"
-                                    ng-if="name == 'Weapon'">Dmg.
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Soak"
-                                    ng-if="name == 'Armor'">Soak
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Defensive"
-                                    ng-if="name == 'Weapon' || name == 'Armor'">Defensive
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Deflection"
-                                    ng-if="name == 'Weapon'">Deflection
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Crit"
-                                    ng-if="name == 'Weapon'">Crit.
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Rarity">Rarity
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="Encumbrance">Encum.
-                                </th>
-                                <th md-column
-                                    md-numeric
-                                    md-order-by="HP"
-                                    ng-if="name == 'Weapon' || name == 'Armor'">
-                                    HP
-                                </th>
-                                <th md-column
-                                    md-order-by="Type"
-                                    ng-if="name == 'Weapon' || name == 'Gear'">
-                                    Type
-                                </th>
-                                <th md-column
-                                    md-order-by="SkillKey"
-                                    ng-if="name == 'Weapon'">Skill
-                                </th>
-                                <th md-column
-                                    md-order-by="RangeValue"
-                                    ng-if="name == 'Weapon'">Range
-                                </th>
-                                <th md-column
-                                    ng-if="name == 'Weapon'">Qualities
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody md-body>
-                            <tr md-row ng-repeat="item in outputItems">
-                                <td md-cell
-                                    ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
-                                    <img style="width: 100px;" ng-src="{{item.imageUrl}}"
-                                         err-src="img/no_image.png"
-                                         alt="{{item.Name}}"
-                                         layout="column"
-                                         layout-margin/>
-                                </td>
-                                <td md-cell>
-                                    <div class="sw-description" style="min-width: 200px"
-                                         ng-bind-html="item.Description"></div>
-                                </td>
-                                <td md-cell>{{item.Price}}</td>
-                                <td md-cell ng-if="name == 'Weapon'">
+                    <table md-table md-progress="promise">
+                        <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
+                        <tr md-row>
+                            <th md-column
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'"></th>
+                            <th md-column
+                                md-order-by="Name">Name / Description
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Price">Price
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Damage"
+                                ng-if="name == 'Weapon'">Dmg.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Soak"
+                                ng-if="name == 'Armor'">Soak
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Defensive"
+                                ng-if="name == 'Weapon' || name == 'Armor'">Defensive
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Deflection"
+                                ng-if="name == 'Weapon'">Deflection
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Crit"
+                                ng-if="name == 'Weapon'">Crit.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Rarity">Rarity
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="Encumbrance">Encum.
+                            </th>
+                            <th md-column
+                                md-numeric
+                                md-order-by="HP"
+                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                HP
+                            </th>
+                            <th md-column
+                                md-order-by="Type"
+                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                Type
+                            </th>
+                            <th md-column
+                                md-order-by="SkillKey"
+                                ng-if="name == 'Weapon'">Skill
+                            </th>
+                            <th md-column
+                                md-order-by="RangeValue"
+                                ng-if="name == 'Weapon'">Range
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Weapon'">Qualities
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody md-body>
+                        <tr md-row ng-repeat="item in outputItems">
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                <img style="width: 100px;" ng-src="{{item.imageUrl}}"
+                                     err-src="img/no_image.png"
+                                     alt="{{item.Name}}"
+                                     layout="column"
+                                     layout-margin/>
+                            </td>
+                            <td md-cell>
+                                <div class="sw-description" style="min-width: 200px"
+                                     ng-bind-html="item.Description"></div>
+                            </td>
+                            <td md-cell>{{item.Price}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">
                                     <span class="no-break">
                                         <span ng-if="item.SkillKey == 'Melee' || item.SkillKey == 'Lightsaber' || item.SkillKey == 'Brawl' || item.Type == 'Thrown'">
                                             <span ng-show="item.DamageAdd && item.DamageAdd > 0">BR (+{{item.DamageAdd}})</span>
@@ -444,51 +437,55 @@
                                             <span ng-hide="item.Damage || item.DamageAdd">-</span>
                                         </span>
                                     </span>
-                                </td>
-                                <td md-cell ng-if="name == 'Armor'">{{item.Soak}}</td>
-                                <td md-cell ng-if="name == 'Weapon' || name == 'Armor'">{{item.Defensive}}</td>
-                                <td md-cell ng-if="name == 'Weapon'">{{item.Deflection}}</td>
-                                <td md-cell ng-if="name == 'Weapon'">
-                                    <span ng-show="item.Crit > 0">{{item.Crit}}</span>
-                                    <span ng-hide="item.Crit > 0">-</span>
-                                </td>
-                                <td md-cell>
-                                    <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
-                                    <span ng-hide="item.Rarity > 0">-</span>
-                                </td>
-                                <td md-cell>
-                                    <span ng-show="item.Encumbrance > 0">{{item.Encumbrance}}</span>
-                                    <span ng-hide="item.Encumbrance > 0">-</span>
-                                </td>
-                                <td md-cell
-                                    ng-if="name == 'Weapon' || name == 'Armor'">
-                                    <span ng-show="item.HP > 0">{{item.HP}}</span>
-                                    <span ng-hide="item.HP > 0">-</span>
-                                </td>
-                                <td md-cell
-                                    ng-if="name == 'Weapon' || name == 'Gear'">
-                                    {{item.Type}}
-                                </td>
-                                <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
-                                </td>
-                                <td md-cell ng-if="name == 'Weapon'">
-                                    {{item.RangeValue}}
-                                </td>
-                                <td md-cell ng-if="name == 'Weapon'">
-                                    <div class="sw-qualities">
-                                        <div class="no-break" ng-if="item.Qualities.length"
-                                             ng-repeat="quality in item.Qualities">
-                                            <md-tooltip md-direction="left">{{quality.Tooltip}}</md-tooltip>
-                                            {{quality.Key}} <span ng-show="quality.Count > 0">{{quality.Count}}</span>
-                                        </div>
+                            </td>
+                            <td md-cell ng-if="name == 'Armor'">{{item.Soak}}</td>
+                            <td md-cell ng-if="name == 'Weapon' || name == 'Armor'">{{item.Defensive}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">{{item.Deflection}}</td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                <span ng-show="item.Crit > 0">{{item.Crit}}</span>
+                                <span ng-hide="item.Crit > 0">-</span>
+                            </td>
+                            <td md-cell>
+                                <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
+                                <span ng-hide="item.Rarity > 0">-</span>
+                            </td>
+                            <td md-cell>
+                                <span ng-show="item.Encumbrance > 0">{{item.Encumbrance}}</span>
+                                <span ng-hide="item.Encumbrance > 0">-</span>
+                            </td>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                <span ng-show="item.HP > 0">{{item.HP}}</span>
+                                <span ng-hide="item.HP > 0">-</span>
+                            </td>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                {{item.Type}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                {{item.RangeValue}}
+                            </td>
+                            <td md-cell ng-if="name == 'Weapon'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Qualities.length"
+                                         ng-repeat="quality in item.Qualities">
+                                        <md-tooltip md-direction="left">{{quality.Tooltip}}</md-tooltip>
+                                        {{quality.Key}} <span ng-show="quality.Count > 0">{{quality.Count}}</span>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr md-row style="height: 56px">
-                                <td md-cell>&nbsp;</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div style="text-align: center">
+                        <md-button
+                                ng-if="outputItems.length < filteredItems.length"
+                                class="md-primary md-raised" ng-click="increaseLimit()">
+                            <span ng-hide="loading">Show more</span>
+                            <span ng-show="loading">Please wait...</span>
+                        </md-button>
                     </div>
                 </md-table-container>
             </div>
