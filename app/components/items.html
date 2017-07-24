@@ -3,9 +3,9 @@
             md-component-id="{{sideNavComponentId}}"
             md-whiteframe="3"
             class="md-sidenav-left"
-            md-is-locked-open="$mdMedia('gt-md')">
+            md-is-locked-open="$mdMedia('gt-lg')">
         <md-content layout="column">
-            <md-button class="md-warn md-raised" ng-click="toggleSideNav()" hide-gt-md>
+            <md-button class="md-warn md-raised" ng-click="toggleSideNav()" hide-gt-lg>
                 Close
             </md-button>
             <md-button ng-if="filters.searchText ||
@@ -332,7 +332,7 @@
     </md-sidenav>
     <div flex layout="column">
         <md-button class="md-fab md-primary md-fab-bottom-right"
-                   ng-click="toggleSideNav()" hide-gt-md
+                   ng-click="toggleSideNav()" hide-gt-lg
                    aria-label="Show filters">
             <md-icon md-font-set="material-icons">search</md-icon>
         </md-button>
