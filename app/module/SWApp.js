@@ -411,11 +411,11 @@ App.directive('itemList', function () {
             templateUrl: 'app/components/items.html',
             scope: {
                 sourceUrl: '@',
+                isActive: '@',
                 name: '@sourceName'
             },
             link: function (scope, elem, attrs) {
                 scope.sideNavComponentId = 'sideNav-' + scope.name;
-                scope.fetchSource();
             },
             controller: function ($scope, $timeout, $mdSidenav, $http, $filter, $sce) {
                 $scope.items = [];
@@ -536,10 +536,10 @@ App.directive('itemList', function () {
                                     if (typeof items[i].Qualities.Quality.Key == 'string') {
                                         items[i].Qualities.Quality.Tooltip = $filter('tooltipFilter')(items[i].Qualities.Quality.Key);
                                         items[i].Qualities.Quality.Key = $filter('qualityFilter')(items[i].Qualities.Quality.Key);
-                                        if(items[i].Qualities.Quality.Key == 'Defensive') {
+                                        if (items[i].Qualities.Quality.Key == 'Defensive') {
                                             items[i].Defensive = items[i].Qualities.Quality.Count;
                                         }
-                                        if(items[i].Qualities.Quality.Key == 'Deflection') {
+                                        if (items[i].Qualities.Quality.Key == 'Deflection') {
                                             items[i].Deflection = items[i].Qualities.Quality.Count;
                                         }
                                         qualities.push(items[i].Qualities.Quality);
@@ -549,10 +549,10 @@ App.directive('itemList', function () {
                                             for (i2 = 0; i2 < l2; i2++) {
                                                 items[i].Qualities.Quality[i2].Tooltip = $filter('tooltipFilter')(items[i].Qualities.Quality[i2].Key);
                                                 items[i].Qualities.Quality[i2].Key = $filter('qualityFilter')(items[i].Qualities.Quality[i2].Key);
-                                                if(items[i].Qualities.Quality[i2].Key == 'Defensive') {
+                                                if (items[i].Qualities.Quality[i2].Key == 'Defensive') {
                                                     items[i].Defensive = items[i].Qualities.Quality[i2].Count;
                                                 }
-                                                if(items[i].Qualities.Quality[i2].Key == 'Deflection') {
+                                                if (items[i].Qualities.Quality[i2].Key == 'Deflection') {
                                                     items[i].Deflection = items[i].Qualities.Quality[i2].Count;
                                                 }
                                                 qualities.push(items[i].Qualities.Quality[i2]);
@@ -564,10 +564,10 @@ App.directive('itemList', function () {
                             if (typeof items[i].Quality == 'string') {
                                 if (typeof items[i].Quality.Key == 'string') {
                                     items[i].Quality.Key = $filter('qualityFilter')(items[i].Quality.Key);
-                                    if(items[i].Quality.Key == 'Defensive') {
+                                    if (items[i].Quality.Key == 'Defensive') {
                                         items[i].Defensive = items[i].Quality.Count;
                                     }
-                                    if(items[i].Quality.Key == 'Deflection') {
+                                    if (items[i].Quality.Key == 'Deflection') {
                                         items[i].Deflection = items[i].Quality.Count;
                                     }
                                     qualities.push(items[i].Quality);
@@ -672,6 +672,11 @@ App.directive('itemList', function () {
                 $scope.toggleSideNav = function () {
                     $mdSidenav($scope.sideNavComponentId).toggle();
                 };
+                $scope.$watch('isActive', function () {
+                    if ($scope.isActive == "true" && $scope.items.length == 0) {
+                        $scope.fetchSource();
+                    }
+                })
             }
         }
     }
