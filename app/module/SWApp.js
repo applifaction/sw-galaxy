@@ -430,7 +430,7 @@ App.directive('itemList', function () {
                 $scope.min = {};
                 $scope.max = {};
                 $scope.filters = {};
-                $scope.order = '';
+                $scope.order = 'Name';
                 $scope.filterItems = function () {
                     $scope.promise = $timeout(function () {
                         if (typeof $scope.items != 'undefined') {
