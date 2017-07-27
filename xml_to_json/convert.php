@@ -8,6 +8,9 @@ $validFileNames = array(
     'ItemAttachments' => 'ItemAttachments.xml',
     'Gear' => 'Gear.xml'
 );
+if (function_exists('apache_request_headers')) {
+    print "<pre>";
+}
 foreach ($validFileNames as $typeKey => $fileName) {
     $xmlFilePattern = dirname(__FILE__) . '/xml_sources/*/' . $fileName;
     $xmlFiles = glob($xmlFilePattern, GLOB_BRACE);
@@ -48,14 +51,15 @@ foreach ($validFileNames as $typeKey => $fileName) {
                 $fileData[$typeKey][$row->Key] = $row;
             }
         }
-        print "Read {$xmlFile}\n<br />";
+        print "Read {$xmlFile}\n";
     }
     foreach ($fileData as $typeKey => $rows) {
         $fileData[$typeKey] = array_values($rows);
     }
     file_put_contents($jsonFile, json_encode($fileData));
-    print "=> Wrote {$jsonFile}\n<br />";
+    print "=> Wrote {$jsonFile}\n";
 }
-
-
+if (function_exists('apache_request_headers')) {
+    print "</pre>";
+}
 print "XML to JSON File conversion finished!\n";

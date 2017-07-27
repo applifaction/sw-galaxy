@@ -11,7 +11,7 @@ from their smartphones even when they are currently in a pen and paper session.
 ### Convert the XML data from OggDude Character Generator to JSON files for the STAR WARS GALAXY web application.
 
 Just move following files from the `SWEotECharGen` folder into the folder `xml_to_json/xml_sources/oggdude` and execute
-the php script `xml_to_json/convert.php` from a unix like shell like this: `php xml_to_json/convert.php`
+the php script `xml_to_json/convert.php` from a unix like shell like this: `php xml_to_json/convert.php`.
 
 ```
 Data/Armor.xml
@@ -19,6 +19,8 @@ Data/Gear.xml
 Data/ItemAttachments.xml
 Data/Weapons.xml
 ```
+
+If you are running a web server like apache or nginx, you can run the `convert.php` script with a http request too.
 
 ### Use multiple data sources
 
