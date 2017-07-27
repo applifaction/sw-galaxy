@@ -332,7 +332,7 @@
     </md-sidenav>
     <div flex layout="column">
         <md-button class="md-fab md-primary md-fab-bottom-right"
-                   ng-click="toggleSideNav()" hide-gt-lg
+                   ng-click="toggleSideNav()" hide-gt-md
                    aria-label="Show filters">
             <md-icon md-font-set="material-icons">search</md-icon>
         </md-button>
@@ -343,7 +343,16 @@
                         <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
                         <tr md-row>
                             <th md-column
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'"></th>
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                <md-button class="md-primary md-raised"
+                                           ng-click="toggleSideNav()" hide-md hide-sm hide-xs
+                                           style="padding: 0 12px"
+                                           aria-label="Show filters">
+                                    <md-icon md-font-set="material-icons">search</md-icon>
+                                    Filter
+                                    <div class="md-ripple-container"></div>
+                                </md-button>
+                            </th>
                             <th md-column
                                 md-order-by="Name">Name / Description
                             </th>
