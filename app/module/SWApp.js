@@ -692,17 +692,19 @@ App.directive('itemList', function () {
                                 }
                             }
                             items[i].Abilities = abilities;
-                            if (typeof items[i].Attributes.Soak == 'number') {
-                                items[i].Soak = items[i].Attributes.Soak;
-                            }
-                            if (typeof items[i].Attributes.WoundThreshold == 'number') {
-                                items[i].WoundThreshold = items[i].Attributes.WoundThreshold;
-                            }
-                            if (typeof items[i].Attributes.WoundThreshold == 'number') {
-                                items[i].StrainThreshold = items[i].Attributes.StrainThreshold;
-                            }
-                            if (typeof items[i].Attributes.ForceRating == 'number') {
-                                items[i].ForceRating = items[i].Attributes.ForceRating;
+                            if (typeof items[i].Attributes != 'undefined') {
+                                if (typeof items[i].Attributes.Soak == 'number') {
+                                    items[i].Soak = items[i].Attributes.Soak;
+                                }
+                                if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                    items[i].WoundThreshold = items[i].Attributes.WoundThreshold;
+                                }
+                                if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                    items[i].StrainThreshold = items[i].Attributes.StrainThreshold;
+                                }
+                                if (typeof items[i].Attributes.ForceRating == 'number') {
+                                    items[i].ForceRating = items[i].Attributes.ForceRating;
+                                }
                             }
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
