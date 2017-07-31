@@ -6,7 +6,8 @@ $validFileNames = array(
     'Armor' => 'Armor.xml',
     'Weapon' => 'Weapons.xml',
     'ItemAttachments' => 'ItemAttachments.xml',
-    'Gear' => 'Gear.xml'
+    'Gear' => 'Gear.xml',
+    'Adversary' => 'Adversaries.xml',
 );
 if (function_exists('apache_request_headers')) {
     print "<pre>";

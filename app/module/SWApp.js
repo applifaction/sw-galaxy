@@ -488,7 +488,7 @@ App.directive('itemList', function () {
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
-                        var i, l, i2, l2, items, qualities, baseMods, outputItems = [];
+                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, outputItems = [];
                         items = res.data[$scope.name];
                         l = items.length;
                         $scope.min.Damage = $scope.getMinValue(items, 'Damage');
@@ -510,6 +510,9 @@ App.directive('itemList', function () {
                                 continue;
                             }
                             qualities = [];
+                            talents = [];
+                            skills = [];
+                            abilities = [];
                             baseMods = [];
                             items[i].Deflection = 0;
                             if (typeof items[i].Defense == 'number') {
@@ -604,6 +607,102 @@ App.directive('itemList', function () {
                             }
                             if (typeof items[i].RangeValue == 'string') {
                                 items[i].RangeValue = $filter('rangeFilter')(items[i].RangeValue);
+                            }
+                            if (typeof items[i].Characteristics == 'object') {
+                                if (typeof items[i].Characteristics.Characteristic == 'object') {
+                                    if (typeof items[i].Characteristics.Characteristic.length == 'number') {
+                                        l2 = items[i].Characteristics.Characteristic.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'BR') {
+                                                items[i].Brawn = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'AG') {
+                                                items[i].Agility = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'INT') {
+                                                items[i].Intelligence = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'CUN') {
+                                                items[i].Cunning = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'WIL') {
+                                                items[i].Willpower = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'PR') {
+                                                items[i].Presence = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            if (typeof items[i].Talents == 'object') {
+                                if (typeof items[i].Talents.Talent == 'object') {
+                                    if (typeof items[i].Talents.Talent.Name == 'string') {
+                                        if (typeof items[i].Talents.Talent.Rank == 'undefined') {
+                                            items[i].Talents.Talent.Rank = 1;
+                                        }
+                                        talents.push(items[i].Talents.Talent);
+                                    } else {
+                                        if (typeof items[i].Talents.Talent.length == 'number') {
+                                            l2 = items[i].Talents.Talent.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                if (typeof items[i].Talents.Talent[i2].Rank == 'undefined') {
+                                                    items[i].Talents.Talent[i2].Rank = 1;
+                                                }
+                                                talents.push(items[i].Talents.Talent[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Talents = talents;
+                            if (typeof items[i].Skills == 'object') {
+                                if (typeof items[i].Skills.Skill == 'object') {
+                                    if (typeof items[i].Skills.Skill.Name == 'string') {
+                                        if (typeof items[i].Skills.Skill.Rank == 'undefined') {
+                                            items[i].Skills.Skill.Rank = 1;
+                                        }
+                                        skills.push(items[i].Skills.Skill);
+                                    } else {
+                                        if (typeof items[i].Skills.Skill.length == 'number') {
+                                            l2 = items[i].Skills.Skill.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                if (typeof items[i].Skills.Skill[i2].Rank == 'undefined') {
+                                                    items[i].Skills.Skill[i2].Rank = 1;
+                                                }
+                                                skills.push(items[i].Skills.Skill[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Skills = skills;
+                            if (typeof items[i].Abilities == 'object') {
+                                if (typeof items[i].Abilities.Ability == 'object') {
+                                    if (typeof items[i].Abilities.Ability.Name == 'string') {
+                                        abilities.push(items[i].Abilities.Ability);
+                                    } else {
+                                        if (typeof items[i].Abilities.Ability.length == 'number') {
+                                            l2 = items[i].Abilities.Ability.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                abilities.push(items[i].Abilities.Ability[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Abilities = abilities;
+                            if (typeof items[i].Attributes.Soak == 'number') {
+                                items[i].Soak = items[i].Attributes.Soak;
+                            }
+                            if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                items[i].WoundThreshold = items[i].Attributes.WoundThreshold;
+                            }
+                            if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                items[i].StrainThreshold = items[i].Attributes.StrainThreshold;
+                            }
+                            if (typeof items[i].Attributes.ForceRating == 'number') {
+                                items[i].ForceRating = items[i].Attributes.ForceRating;
                             }
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);

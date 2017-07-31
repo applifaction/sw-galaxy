@@ -343,7 +343,7 @@
                         <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
                         <tr md-row>
                             <th md-column
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary'">
                                 <md-button class="md-primary md-raised"
                                            ng-click="toggleSideNav()" hide-md hide-sm hide-xs hide-gt-lg
                                            style="padding: 0 12px"
@@ -358,7 +358,8 @@
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Price">Price
+                                md-order-by="Price"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Price
                             </th>
                             <th md-column
                                 md-numeric
@@ -387,11 +388,13 @@
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Rarity">Rarity
+                                md-order-by="Rarity"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Rarity
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Encumbrance">Encum.
+                                md-order-by="Encumbrance"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Encum.
                             </th>
                             <th md-column
                                 md-numeric
@@ -401,7 +404,7 @@
                             </th>
                             <th md-column
                                 md-order-by="Type"
-                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
                                 Type
                             </th>
                             <th md-column
@@ -413,6 +416,52 @@
                                 ng-if="name == 'Weapon'">Range
                             </th>
                             <th md-column
+                                md-order-by="Soak"
+                                ng-if="name == 'Adversary'">Soak
+                            </th>
+                            <th md-column
+                                md-order-by="WoundThreshold"
+                                ng-if="name == 'Adversary'">Wound Thr.
+                            </th>
+                            <th md-column
+                                md-order-by="StrainThreshold"
+                                ng-if="name == 'Adversary'">Strain Thr.
+                            </th>
+                            <th md-column
+                                md-order-by="Brawn"
+                                ng-if="name == 'Adversary'">BR
+                            </th>
+                            <th md-column
+                                md-order-by="Agility"
+                                ng-if="name == 'Adversary'">AG
+                            </th>
+                            <th md-column
+                                md-order-by="Intelligence"
+                                ng-if="name == 'Adversary'">INT
+                            </th>
+                            <th md-column
+                                md-order-by="Cunning"
+                                ng-if="name == 'Adversary'">CUN
+                            </th>
+                            <th md-column
+                                md-order-by="Willpower"
+                                ng-if="name == 'Adversary'">WIL
+                            </th>
+                            <th md-column
+                                md-order-by="Presence"
+                                ng-if="name == 'Adversary'">PR
+                            </th>
+                            <th md-column
+                                md-order-by="ForceRating"
+                                ng-if="name == 'Adversary'">Force
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Adversary'">Talents
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Adversary'">Skills
+                            </th>
+                            <th md-column
                                 ng-if="name == 'Weapon'">Qualities
                             </th>
                         </tr>
@@ -420,7 +469,7 @@
                         <tbody md-body>
                         <tr md-row ng-repeat="item in outputItems">
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary'">
                                 <img style="width: 100px;" ng-src="{{item.imageUrl}}"
                                      err-src="img/no_image.png"
                                      alt="{{item.Name}}"
@@ -431,7 +480,8 @@
                                 <div class="sw-description" style="min-width: 200px"
                                      ng-bind-html="item.Description"></div>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Price > 0">{{item.Price}}</span>
                                 <span ng-hide="item.Price > 0">-</span>
                             </td>
@@ -457,11 +507,13 @@
                                 <span ng-show="item.Crit > 0">{{item.Crit}}</span>
                                 <span ng-hide="item.Crit > 0">-</span>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
                                 <span ng-hide="item.Rarity > 0">-</span>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Encumbrance > 0">{{item.Encumbrance}}</span>
                                 <span ng-hide="item.Encumbrance > 0">-</span>
                             </td>
@@ -471,13 +523,62 @@
                                 <span ng-hide="item.HP > 0">-</span>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
                                 {{item.Type}}
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">
                                 {{item.RangeValue}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Soak}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.WoundThreshold}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <span ng-show="item.StrainThreshold > 0">{{item.StrainThreshold}}</span>
+                                <span ng-hide="item.StrainThreshold > 0">-</span>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Brawn}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Agility}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Intelligence}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Cunning}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Willpower}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Presence}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <span ng-show="item.ForceRating > 0">{{item.ForceRating}}</span>
+                                <span ng-hide="item.ForceRating > 0">-</span>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Talents.length"
+                                         ng-repeat="talent in item.Talents">
+                                        <md-tooltip md-direction="left">{{talent.Description}}</md-tooltip>
+                                        {{talent.Name}} <span ng-show="talent.Rank > 0">{{talent.Rank}}</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Skills.length"
+                                         ng-repeat="skill in item.Skills">
+                                        {{skill.Name}} {{skill.Rank}}
+                                    </div>
+                                </div>
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">
                                 <div class="sw-qualities">
