@@ -1,0 +1,2760 @@
+<?xml version="1.0" ?>
+<SpeciesList>
+  <Species>
+    <Key>ALEENA</Key>
+    <Name>Aleena</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>95</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Silhouette</Name>
+        <Description>Aleena are smaller than average and count as silhouette 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ANX</Key>
+    <Name>Anx</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>13</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>85</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Mood Indicator</Name>
+        <Description>If an Anx's head-crest is not covered, the character upgrades the difficulty of Deception checks once.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>AQUA</Key>
+    <Name>Aqualish</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Underwater Breathing</Name>
+        <Description>All Aqualish are capable of breathing underwater.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ARCONA</Key>
+    <Name>Arcona</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Environment</Name>
+        <Description>Arcona may remove [SETBACK] imposed due to arid or hot environmental conditions.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mood Readers</Name>
+        <Description>
+            Arcona add [ADVANTAGE] to any Charm or Negotiation checks they make.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ARKANOFF</Key>
+    <Name>Arkanian Offshoot</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Genetically Engineered</Name>
+        <Description>
+            Arkanian Offshoots may choose
+            to suffer one Strain to receive a [BOOST] to a
+            single Brawn or Agility-based check made on
+            their turn.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ARKAN</Key>
+    <Name>Arkanian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Intellectual</Name>
+        <Description>Arkanians receive a [BOOST]
+          when making all knowledge skill checks.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>BARAB</Key>
+    <Name>Barabel</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>14</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>May use claws when brawling</Name>
+        <Description>
+            When a Barabel makes a
+            Brawl check to deal damage to an opponent,
+            their attack deals +1 point of damage and has
+            a Crit Rating of 3.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Resists Radiation</Name>
+        <Description>
+            Barabels may add [BOOST]
+            to Resilience checks made to resist
+            the effects of radiation.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Resists Stun</Name>
+        <Description>
+            Barabels may reduce the Strain
+            damage suffered from Stun attacks by two.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>BARDOTTAN</Key>
+    <Name>Bardottan</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>105</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>BESALISK</Key>
+    <Name>Besalisk</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>7</StrainThreshold>
+      <Experience>85</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Limbs</Name>
+        <Description>Besalisks have four arms and gain an additional free maneuver per turn.  They still may not perform more than two maneuvers per turn, however.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>BITH</Key>
+    <Name>Bith</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>BOTH</Key>
+    <Name>Bothan</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>CAAMASI</Key>
+    <Name>Caamasi</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Charm</Name>
+        <Description>Caamasi may begin the game with one rank in Charm.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Discipline</Name>
+        <Description>Caamasi may begin the game with one rank in Discipline.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Memnii</Name>
+        <Description>
+            Once per game session, a Caamasi may form a new memnis that encompasses one scene or encounter.  At any time, a Caamasi may perfectly recall any memnis that he has formed or witnessed, or share it with another Caamasi or Force-sensitive.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CATHAR</Key>
+    <Name>Cathar</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Athletics</Name>
+        <Description>Cathar may begin the game with one rank in Athletics.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Stealth</Name>
+        <Description>Cathar may begin the game with one rank in Stealth.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>May use claws when brawling</Name>
+        <Description>
+            When a Cathar makes a
+            Brawl check to deal damage to an opponent,
+            their attack deals +1 point of damage and has
+            a Crit Rating of 3.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CEREAN</Key>
+    <Name>Cerean</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>1</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>13</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>CHADRA</Key>
+    <Name>Chadra-Fan</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>3</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Acute Senses</Name>
+        <Description>
+            Chandra-Fan remove up to [REMSETBACK][REMSETBACK] from Perception checks due to superior senses.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silouette</Name>
+        <Description>
+            Chadra-Fan have a Silhouette of 0.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CHAGRIAN</Key>
+    <Name>Chagrian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Chagrians can breathe underwater without penalty and never suffer movement penalties for traveling through water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CHEVIN</Key>
+    <Name>Chevin</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Advanced Olfaction</Name>
+        <Description>
+            Chevin add [BOOST] to Perception checks involving the sense of smell.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CHISS</Key>
+    <Name>Chiss</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Infravision</Name>
+        <Description>Chiss have adapted to be able to see in both the infrared and normal visual spectra.
+          This enables Chiss characters to remove up to [SETBACK] added to checks by lighting conditions.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>CLAWDITE</Key>
+    <Name>Clawdite</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>95</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Changeling</Name>
+        <Description>As an action, may suffer 3 strain and make an [B]Average ([DI][DI]) Resilience check[b] to change appearance to match a previously-observed silhouette 1 character.  Observer must make an opposed [B]Perception vs. Deception check[b] to detect that something is amiss.      </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>HUMANCOR</Key>
+    <Name>Corellian Human</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Piloting - Planetary</Name>
+        <Description>May begin game with one rank in Piloting - Planetary.</Description>
+      </Option>
+      <Option>
+        <Name>Piloting - Space</Name>
+        <Description>May begin game with one rank in Piloting - Space.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>DASHADE</Key>
+    <Name>Dashade</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Coercion</Name>
+        <Description>Dashade may begin the game with one rank in Coercion.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Vigilance</Name>
+        <Description>Dashade may begin the game with one rank in Vigilance.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Force Resistance</Name>
+        <Description>
+            Upgrade the difficulty of
+            Discipline checks to affect a Dashade with a
+            Force power or talent by one.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DEFEL</Key>
+    <Name>Defel</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Light Sensitive</Name>
+        <Description>
+            In bright light, without protective goggles,
+            Defel suffer [SETBACK][SETBACK] on all skill checks.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Shadowed</Name>
+        <Description>
+            In darkness, Defel gain [BOOST][BOOST]
+            to Stealth checks.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silhouette</Name>
+        <Description>
+            Defel have a Silhouette of 0.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DEVAR</Key>
+    <Name>Devaronian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>95</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Deception</Name>
+        <Description>Devaronian may begin the game with one rank in Deception.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Survival</Name>
+        <Description>Devaronian may begin the game with one rank in Survival.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Resillient Metabolism</Name>
+        <Description>
+            Devaronians add automatic [SU] to all Resillience checks.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DRALL</Key>
+    <Name>Drall</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>4</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Skilled Assistance</Name>
+        <Description>Drall add [BOOST] when providing skilled assistance.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DRESSELLIAN</Key>
+    <Name>Dressellian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Primitive</Name>
+        <Description>Dressellians must upgrade the difficulty of any checks involving non-Dressellian technology.</Description>
+      </Option>
+      <Option>
+        <Name>Non-Primitive</Name>
+        <Description>Tech-saavy Dressellians do not need to upgrade the difficulty of checks involving non-Dressellian technology.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>DROID</Key>
+    <Name>Droid</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DUG</Key>
+    <Name>Dug</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>DUROS</Key>
+    <Name>Duros</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Intuitive Navigation</Name>
+        <Description>Add [ADVANTAGE] to all Astrogation checks.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ELOM</Key>
+    <Name>Elom</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Digging Claws</Name>
+        <Description>
+            Elom may use a move maneuver to travel through loose soil or similar terrain.  Can result in low, narrow tunnel that others can use, at GM's discretion.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ELOMIN</Key>
+    <Name>Elomin</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>105</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>EWOK</Key>
+    <Name>Ewok</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Stealth</Name>
+        <Description>Ewoks may begin the game with one rank in Stealth.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Survival</Name>
+        <Description>Ewoks may begin the game with one rank in Survival.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Heightened Smell</Name>
+        <Description>
+            Ewoks may remove all [SETBACK]
+            imposed due to concealment against a target
+            that is within Short Range.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silouette</Name>
+        <Description>
+            Ewoks have a Silhouette of 0.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>FALLEEN</Key>
+    <Name>Falleen</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Beguiling Pheromones</Name>
+        <Description>Once per check as an incidental, may suffer 2 strain to upgrade ability of Charm, Deception, 
+          or Negotiation check against living, sentient being within short range.  No effect if wearing breath mask 
+          or having no respiratory system.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>FARGHUL</Key>
+    <Name>Farghul</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Deception</Name>
+        <Description>Farghul may begin the game with one rank in Deception.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Skulduggery</Name>
+        <Description>Farghul may begin the game with one rank in Skulduggery.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>GAMORREAN</Key>
+    <Name>Gamorrean</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Savage Warrior</Name>
+        <Description>
+            When making a Brawl or Melee check, Gamorreans add
+            the Vicious 1 quality to their weapons.  If the weapon
+            already has the Vicious quality, increase the listed
+            value by one.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GAND</Key>
+    <Name>Gand</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Has Lungs</Name>
+        <Description>Requires ammonia respirator</Description>
+      </Option>
+      <Option>
+        <Name>Lungless</Name>
+        <Description>Immune to suffocation</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>GANK</Key>
+    <Name>Gank</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Coercion</Name>
+        <Description>Ganks may begin the game with one rank in Coercion.</Description>
+      </Option>
+      <Option>
+        <Name>Vigilance</Name>
+        <Description>Ganks may begin the game with one rank in Vigilance.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Cyborg</Name>
+        <Description>Ganks may begin play with up to two cybernetic implants that cost up to 5,000 credits.  Extra credits for obligation may be applied to purchase these cybernetics.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GIVIN</Key>
+    <Name>Givin</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Sealed Exoskeleton</Name>
+        <Description>
+            Given are immune to the effects of vacuum or suffocation.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GOSSAM</Key>
+    <Name>Gossam</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Small</Name>
+        <Description>
+            Gossam are smaller than average and count as silhouette 0.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GOTAL</Key>
+    <Name>Gotal</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Energy Sensitivity</Name>
+        <Description>Once per encounter as a maneuver, may sense the presence and current emotional states of all living things within short range.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GRAN</Key>
+    <Name>Gran</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One rank in Charm</Name>
+        <Description>Gran may take one rank in Charm</Description>
+      </Option>
+      <Option>
+        <Name>One rank in Negotiation</Name>
+        <Description>Gran may take one rank in Negotiation</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Enhanced Vision</Name>
+        <Description>When making ranged combat or Perception checks, Gran remove up to [SETBACK][SETBACK] imposed due to environmental conditions or concealment (but not defense).</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>GUNGAN</Key>
+    <Name>Gungan</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Gungans may breathe underwater without penalty and never suffer movement penalties for traveling through water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>HERGLIC</Key>
+    <Name>Herglic</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>14</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>HUMAN</Key>
+    <Name>Human</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Non-Career Skills</Name>
+        <Description>Humans start the game with one rank in two different non-career
+          skills of their choice.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>HUTT</Key>
+    <Name>Hutt</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>13</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>70</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Coercion</Name>
+        <Description>Hutts may begin the game with one rank in Coercion.</Description>
+      </Option>
+      <Option>
+        <Name>Discipline</Name>
+        <Description>Hutts may begin the game with one rank in Discipline.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Ponderous</Name>
+        <Description>A Hutt can never spend more than one maneuver moving per turn.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>IKTOTCHI</Key>
+    <Name>Iktotchi</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Precognition</Name>
+        <Description>In addition to seeing flashes of the future at the GM's discretion, an Iktotchi may spend [TR] on an Initiative check to perform a free maneuver, or have an ally within short range perform a free maneuver, before the encounter begins.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ISHITIB</Key>
+    <Name>Ishi Tib</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Ishi Tib can breathe underwater without penalty and never suffer movement penalties for traveling through water.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Water Dependence</Name>
+        <Description>If an Ishi Tib has not been doused in salt water in the last twenty-four hours, the character's wound threshold is reduced by 2.  This condition remains in effect until the ishi Tib is doused in salt water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ITHORIAN</Key>
+    <Name>Ithorian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Bellow</Name>
+        <Description>With two mouths and four throats, Ithorians have a unique natural weapon they can call upon when threatened.  Each time the Ithorian uses this ability, he suffers 3 strain..</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>JAWA</Key>
+    <Name>Jawa</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Desert Dweller</Name>
+        <Description>Jawas may remove one [SETBACK] imposed due to arid or hot environmental conditions.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silhouette</Name>
+        <Description>Jawas have a Silhouette of 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>KALLERAN</Key>
+    <Name>Kalleran</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>KELDOR</Key>
+    <Name>Kel Dor</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Dark Vision</Name>
+        <Description>
+            Kel Dors remove up to [SETBACK][SETBACK] imposed due to darkness from any skill checks.
+          </Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Atmospheric Requirement</Name>
+        <Description>
+            Kel Dors must wear a specialized mask to breath and see outside of their native atmosphere.  However, Kel Dor may survive in vacuum for up to five minues before suffering its effects.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>KLATOO</Key>
+    <Name>Klatooinian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Brawl</Name>
+        <Description>Klatooninians may begin the game with one rank in Brawl.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Ranged-Heavy</Name>
+        <Description>Klatooninians may begin the game with one rank in Ranged-Heavy.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Ranged-Light</Name>
+        <Description>Klatooninians may begin the game with one rank in Ranged-Light.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Non-Career Skill</Name>
+        <Description>
+            Klatooninians start the game with one additional rank of one non-career skill of his choice.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>KUBAZ</Key>
+    <Name>Kubaz</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>KYUZO</Key>
+    <Name>Kyuzo</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Dense Musculature</Name>
+        <Description>
+            Once per round as a maneuver, may suffer 3 strain to leap horizontally or vertically to any location within medium range.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>LANNIK</Key>
+    <Name>Lannik</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>1</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Indomitable</Name>
+        <Description>A Lannik removes up to [SE][SE] caused by Critical Injuries, the disoriented condition, and fear from all checks he makes.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>LEPI</Key>
+    <Name>Lepi</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Athletics</Name>
+        <Description>Lepi may begin the game with one free rank in Athletics.</Description>
+      </Option>
+      <Option>
+        <Name>Perception</Name>
+        <Description>Lepi may begin the game with one free rank in Perception.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>MANDOHUMAN</Key>
+    <Name>Mandalorian Human</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>105</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Combat Skill</Name>
+        <Description>Mandalorian Humans start the game with one rank in a combat skill of their choice.</Description>
+      </Option>
+      <Option>
+        <Name>Knowledge Skills</Name>
+        <Description>Mandalorian Humans start the game with one rank in two knowledge skills of their choice.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>MIRIALAN</Key>
+    <Name>Mirialan</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>MONCAL</Key>
+    <Name>Mon Calamari</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Mon Calamari can breathe
+underwater without penalty and never suffer
+movement penalties for traveling through
+water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>MUSTAFARIAN</Key>
+    <Name>Mustafarian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>MUUN</Key>
+    <Name>Muun</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Deep Pockets</Name>
+        <Description>
+            Muun characters start the game with an additional 1,000 credits.  They may not be spend during character creation.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>NAGAI</Key>
+    <Name>Nagai</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Charm</Name>
+        <Description>Nagai may begin the game with one free rank in Charm.</Description>
+      </Option>
+      <Option>
+        <Name>Coordination</Name>
+        <Description>Nagai may begin the game with one free rank in Coordination</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>NAUTOLAN</Key>
+    <Name>Nautolan</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Nautolans may breathe
+underwater without penalty and never suffer
+movement penalties for traveling through
+water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>NEIM</Key>
+    <Name>Neimoidian</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Negotiation</Name>
+        <Description>
+            Neimoidians may begin the game with one free rank in Negotiation.
+          </Description>
+      </Option>
+      <Option>
+        <Name>Deception</Name>
+        <Description>Neimoidians may begin the game with one free rank in Deception.
+          </Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>NIKTO</Key>
+    <Name>Nikto</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>NOGHRI</Key>
+    <Name>Noghri</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Concealment</Name>
+        <Description>Noghri may remove all [SETBACK] imposed due to concealment against a target that is within Short Range.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Claws and Teeth</Name>
+        <Description>
+            When a Noghri makes a
+            Brawl check to deal damage to an opponent,
+            their attack deals +1 point of damage and has
+            a Crit Rating of 3.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ORTOLAN</Key>
+    <Name>Ortolan</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Intestinal Fortitude</Name>
+        <Description>Ortolans downgrade the
+difficulty of Resilience checks made to resist
+the effects of any poison by one.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Keen Senses</Name>
+        <Description>Ortolans receive a [BOOST]
+on Perception checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silhouette</Name>
+        <Description>Ortolans have a Silhouette of 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>PANTORAN</Key>
+    <Name>Pantoran</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>110</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Cool</Name>
+        <Description>Pantorans may begin the game with one rank in Cool.</Description>
+      </Option>
+      <Option>
+        <Name>Negotiation</Name>
+        <Description>Pantorans may begin the game with one rank in Negotiation.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Tundra Dweller</Name>
+        <Description>
+            When making skill checks, Pantorans may remove [SETBACK] imposed due to cold environmental conditions.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>PAUAN</Key>
+    <Name>Pau'an</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Coercion</Name>
+        <Description>Pau'ans may begin the game with one free rank in Coercion.</Description>
+      </Option>
+      <Option>
+        <Name>Negotiation</Name>
+        <Description>Pau'an may begin the game with one free rank in Negotiation.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>POLISMASSAN</Key>
+    <Name>Polis Massan</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>No Vocal Chords</Name>
+        <Description>
+            A vast majority of Polis Massans are born without vocal chords.
+          </Description>
+      </Option>
+      <Option>
+        <Name>Posesses Vocal Chords</Name>
+        <Description>
+            A small minority of Polis Massans do possess vocal chords.  Referred to as &quot;speakers&quot; by their people, these rare individuals can physically speak languages, though their voices are soft and strangely resonant.
+          </Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Telepathy</Name>
+        <Description>Polis Massans can communicate with other beings using a simple form of telepathy.  At short range, this is akin to a broadcast, and any being will &quot;hear&quot; what the Polis Massan says.  They can &quot;whisper&quot; to individuals at engaged range.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>QUARREN</Key>
+    <Name>Quarren</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>95</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious</Name>
+        <Description>Can breathe underwater without penalty and never suffer movement penalties for traveling through water.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Ink Spray</Name>
+        <Description>Can spray ink.  Once per encounter, as an out-of-turn incidental, may suffer 2 strain to add [SE] to enemy check within short range.  Add [SE][SE][SE] underwater.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>QUERMIAN</Key>
+    <Name>Quermian</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>85</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Limbs</Name>
+        <Description>Quermians have four arms and gain an additional free maneuver per turn.  They still may not perform more than two maneuvers per turn, however.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ROD</Key>
+    <Name>Rodian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>RYN</Key>
+    <Name>Ryn</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Deception</Name>
+        <Description>Ryn may begin the game with one
+free rank in Deception.</Description>
+      </Option>
+      <Option>
+        <Name>Streetwise</Name>
+        <Description>Ryn may begin the game with one
+free rank in Streetwise.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Prehensile Tail</Name>
+        <Description>Ryn can use their tails to hold
+and manipulate small items, but cannot use
+that item to make an attack.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SAKIYAN</Key>
+    <Name>Sakiyan</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Perception</Name>
+        <Description>Sakiyans may begin the game with one rank in Perception.</Description>
+      </Option>
+      <Option>
+        <Name>Vigilance</Name>
+        <Description>Sakiyans may begin the game with one rank in Vigilance.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>SATHARI</Key>
+    <Name>Sathari</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>8</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Glider</Name>
+        <Description>A Sathari can fall safely from any height and can glide over small gaps or distances while falling.  While conscious, a Sathari character does not suffer damage from falling (see page 221 of the [B]Force and Destiny[b] Core Rulebook).</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SELKATH</Key>
+    <Name>Selkath</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Medicine</Name>
+        <Description>Selkaths may begin the game with
+one free rank in Medicine.</Description>
+      </Option>
+      <Option>
+        <Name>Negotiation</Name>
+        <Description>Selkaths begin the game with
+one free rank in Negotiation.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Amphibious:</Name>
+        <Description>Selkaths may breathe underwater
+without penalty and never suffer movement
+penalties for traveling through water.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SELONIAN</Key>
+    <Name>Selonian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Sees in Darkness</Name>
+        <Description>Selonians see in almost total darkness.  Remove all [SETBACK] added due to darkness.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SHIST</Key>
+    <Name>Shistavanen</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Brawl</Name>
+        <Description>Shistavanens may begin the game with one rank in Brawl.</Description>
+      </Option>
+      <Option>
+        <Name>Survival</Name>
+        <Description>Shistavanens may begin the game with one rank in Survival.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Hunter's Instincts</Name>
+        <Description>When making an Initiative check, a Shistavanens may use Survival instead of Vigilance or Cool.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SLUISSI</Key>
+    <Name>Sluissi</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Gearhead</Name>
+        <Description>Sluissi may begin play with one rank in Gearhead.</Description>
+      </Option>
+      <Option>
+        <Name>Solid Repairs</Name>
+        <Description>Sluissi may begin play with one rank in Solid Repairs.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Practiced Mechanic</Name>
+        <Description>A Sluissi can choose to spend a maneuver just prior to making a Mechanics roll, upgrading the dice pool by one.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SNIVVIAN</Key>
+    <Name>Snivvian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Charm</Name>
+        <Description>Snivvian may begin the game with one free rank in Charm.</Description>
+      </Option>
+      <Option>
+        <Name>Perception</Name>
+        <Description>Snivvian may begin the game with one free rank in Perception.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Cold Resistance</Name>
+        <Description>When making skill checks,
+Snivvians may remove [SETBACK][SETBACK]
+imposed due to cold environmental conditions.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Silhouette</Name>
+        <Description>Snivvians have a Silhouette of 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SQUIB</Key>
+    <Name>Squib</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Mechanics</Name>
+        <Description>Squibs always treat Mechanics as
+being a career skill, regardless of their starting
+career.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Reduced Silhouette</Name>
+        <Description>Squibs have a Silhouette of 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>SULLUSTAN</Key>
+    <Name>Sullustan</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>TALZ</Key>
+    <Name>Talz</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Insulated fur</Name>
+        <Description>When making skill checks, Talz remove [SETBACK] imposed due to actic or cold environmental conditions.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>THAKWAASH</Key>
+    <Name>Thakwaash</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Multiple Personalities</Name>
+        <Description>At the start of their turn, Thakwaash can choose to suffer 2 strain to upgrade the dice pool once for a specific skill until the start of their next turn.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>TOGORIAN</Key>
+    <Name>Togorian</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>14</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>May use claws when brawling</Name>
+        <Description>When a Togorian makes a Brawl check
+to deal damage to an opponent, their attack
+deals +1 point of damage and has a Crit Rating
+of 3.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>TOGRUTA</Key>
+    <Name>Togruta</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Pack Instincts</Name>
+        <Description>
+            When performing the assist maneuver, Togrutas grant [BOOST][BOOST] instead of [BOOST].
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>TOYDARIAN</Key>
+    <Name>Toydarians</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Silhouette</Name>
+        <Description>Toydarians are smaller than average and count as silhouette 0.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Hoverer</Name>
+        <Description>Toydarians have wings that allow them to hover slightly off the ground.  When hovering, Toydarians do not have
+          to spend additional maneuvers when navigating difficult terrain.  Otherwise, their wings allow them no extra capabilities
+        beyond those of a normal, walking character.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>TRAND</Key>
+    <Name>Trandoshan</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Wound Regeneration</Name>
+        <Description>Whenever a trandoshan would recover one or more wounds from natural rest or recuperation in a Bacta tank, he recovers one additional wound.  Trandoshans can regrow lost limbs as well, though it usully takes at least a month before the limb is usable.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>May use claws when brawling</Name>
+        <Description>When a Trandoshan makes Brawl checks to deal damage to an opponent, he deals +1 damage and has a Critical Rating of 3.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>TWI</Key>
+    <Name>Twi'lek</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>11</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Charm</Name>
+        <Description>Twi'leks may begin the game with one rank in Charm.</Description>
+      </Option>
+      <Option>
+        <Name>Deception</Name>
+        <Description>Twi'leks may begin the game with one rank in Deception.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Arid/Hot Environments</Name>
+        <Description>
+            When making skill checks, Twi'leks may remove [SETBACK] imposed due to arid or hot environmental conditions.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>UBESE</Key>
+    <Name>Ubese</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Perception</Name>
+        <Description>Ubese may begin the game with one free rank in Perception.</Description>
+      </Option>
+      <Option>
+        <Name>Survival</Name>
+        <Description>Ubese may begin the game with one free rank in Survival</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities/>
+  </Species>
+  <Species>
+    <Key>UGNAUGHTS</Key>
+    <Name>Ugnaught</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>1</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>Mechanics</Name>
+        <Description>Ugnaughts may begin the game with one free rank in Mechanics.</Description>
+      </Option>
+      <Option>
+        <Name>Negotiation</Name>
+        <Description>Ugnaughts may begin the game with one free rank in Negotiation.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Exceptionally Hardy</Name>
+        <Description>Ugnaughts add [ADVANTAGE] to Resilience checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Silhouette</Name>
+        <Description>Ugnaughts have a Silhouette of 0.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>VERPINE</Key>
+    <Name>Verpine</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>3</Agility>
+      <Intellect>3</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>12</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Microvision</Name>
+        <Description>When closely examining an object, Verpine add [BO] to their Perception checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Radio-wave Communication</Name>
+        <Description>Verpine can produce and hear radio waves, which allows them to silently communicate with other Verpine and specially-tuned comlinks within a 100-kilometer range.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>WEEQUAY</Key>
+    <Name>Weequay</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>3</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices>
+      <Option>
+        <Name>One Rank in Resilience</Name>
+        <Description>Weequay may begin the game with one rank in Resilience.</Description>
+      </Option>
+      <Option>
+        <Name>One Rank in Athletics</Name>
+        <Description>Weequay may begin the game with one rank in Athletics.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Communicative Pheromones</Name>
+        <Description>Weequay can communicate non-verbally with other Weequays up to Short Range.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>WHIPHID</Key>
+    <Name>Whiphid</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>12</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>80</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Tusks</Name>
+        <Description>When a Whiphid makes a Brawl check
+to deal damage to an opponent, their attack
+deals +2 point of damage, has a Crit Rating
+of 4, and has the Vicious 1 quality.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Hardy Survivalist</Name>
+        <Description>A Whiphid adds automatic [SU] to Survival checks and can survive for several weeks without food thanks to reserve blubber.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>WOOK</Key>
+    <Name>Wookiee</Name>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>14</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Rages when Wounded</Name>
+        <Description>When a Wookiee has suffered any wounds, he deals +1 damage to Brawl and Melee attacks.  When a Wookiee is Critically Injured, he instead deals +2 damage to Brawl and Melee attacks.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>XEXTO</Key>
+    <Name>Xexto</Name>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>3</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>9</WoundThreshold>
+      <StrainThreshold>9</StrainThreshold>
+      <Experience>85</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Limbs</Name>
+        <Description>Xexto have four arms and gain an additional free maneuver per turn.  They still may not perform more than two maneuvers per turn, however.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ZABRAK</Key>
+    <Name>Zabrak</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>3</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Fearsome Countenance</Name>
+        <Description>
+            A Zabrak
+            adds automatic [ADVANTAGE] to all Coercion checks he makes.
+          </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ZELTRON</Key>
+    <Name>Zeltron</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Empathy</Name>
+        <Description>Add [SETBACK] to all incoming Charm or Deception rolls that target the Zeltron.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Pheromones</Name>
+        <Description>Zeltrons add [ADVANTAGE] to all Charm, Deception, and Negotiation skill checks.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>ZYGERRIAN</Key>
+    <Name>Zygerrian</Name>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>3</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <OptionChoices/>
+    <SpecialAbilities/>
+  </Species>
+</SpeciesList>
+
