@@ -29,11 +29,14 @@
         <md-tab label="Weapons">
             <div item-list source-name='Weapon' source-url='data/json/Weapons.json' is-active='{{currentTab==0}}' layout="column" style="height: 100%"></div>
         </md-tab>
-        <md-tab label="Armors" md-on-select="alert('selected armor')">
+        <md-tab label="Armors">
             <div item-list source-name='Armor' source-url='data/json/Armor.json' is-active='{{currentTab==1}}' layout="column" style="height: 100%"></div>
         </md-tab>
-        <md-tab label="Gear" md-on-select="alert('selected gear')">
+        <md-tab label="Gear">
             <div item-list source-name='Gear' source-url='data/json/Gear.json' is-active='{{currentTab==2}}' layout="column" style="height: 100%"></div>
+        </md-tab>
+        <md-tab label="Species">
+            <div item-list source-name='Species' source-url='data/json/Species.json' is-active='{{currentTab==3}}' layout="column" style="height: 100%"></div>
         </md-tab>
     </md-tabs>
 </div>

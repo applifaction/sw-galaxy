@@ -146,7 +146,7 @@ App.filter('descriptionFilter', function ($sce, $filter) {
     };
 });
 
-App.filter('symbolFilter', function () {
+App.filter('symbolFilter', function ($sce) {
     return function (text) {
         if (typeof text === 'string') {
             //[ABILITY] or [AB]
@@ -453,6 +453,24 @@ App.directive('itemList', function () {
                             filteredItems = $filter('max')(filteredItems, $scope.filters.maxHP, 'HP');
                             filteredItems = $filter('min')(filteredItems, $scope.filters.minPrice, 'Price');
                             filteredItems = $filter('max')(filteredItems, $scope.filters.maxPrice, 'Price');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minWoundThreshold, 'WoundThreshold');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxWoundThreshold, 'WoundThreshold');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minStrainThreshold, 'StrainThreshold');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxStrainThreshold, 'StrainThreshold');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minExperience, 'Experience');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxExperience, 'Experience');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minBrawn, 'Brawn');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxBrawn, 'Brawn');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minAgility, 'Agility');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxAgility, 'Agility');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minIntelligence, 'Intelligence');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxIntelligence, 'Intelligence');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minCunning, 'Cunning');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxCunning, 'Cunning');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minWillpower, 'Willpower');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxWillpower, 'Willpower');
+                            filteredItems = $filter('min')(filteredItems, $scope.filters.minPresence, 'Presence');
+                            filteredItems = $filter('max')(filteredItems, $scope.filters.maxPresence, 'Presence');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.type, 'Type');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.skill, 'SkillKey');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.range, 'RangeValue');
@@ -488,7 +506,7 @@ App.directive('itemList', function () {
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
-                        var i, l, i2, l2, items, qualities, baseMods, outputItems = [];
+                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, outputItems = [];
                         items = res.data[$scope.name];
                         l = items.length;
                         $scope.min.Damage = $scope.getMinValue(items, 'Damage');
@@ -510,6 +528,9 @@ App.directive('itemList', function () {
                                 continue;
                             }
                             qualities = [];
+                            talents = [];
+                            skills = [];
+                            abilities = [];
                             baseMods = [];
                             items[i].Deflection = 0;
                             if (typeof items[i].Defense == 'number') {
@@ -605,6 +626,144 @@ App.directive('itemList', function () {
                             if (typeof items[i].RangeValue == 'string') {
                                 items[i].RangeValue = $filter('rangeFilter')(items[i].RangeValue);
                             }
+                            if (typeof items[i].Characteristics == 'object') {
+                                if (typeof items[i].Characteristics.Characteristic == 'object') {
+                                    if (typeof items[i].Characteristics.Characteristic.length == 'number') {
+                                        l2 = items[i].Characteristics.Characteristic.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'BR') {
+                                                items[i].Brawn = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'AG') {
+                                                items[i].Agility = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'INT') {
+                                                items[i].Intelligence = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'CUN') {
+                                                items[i].Cunning = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'WIL') {
+                                                items[i].Willpower = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                            if (items[i].Characteristics.Characteristic[i2].Key == 'PR') {
+                                                items[i].Presence = items[i].Characteristics.Characteristic[i2].Rank;
+                                            }
+                                        }
+                                    }
+                                }
+                                if (items[i].Characteristics.Brawn) {
+                                    items[i].Brawn = items[i].Characteristics.Brawn;
+                                }
+                                if (items[i].Characteristics.Agility) {
+                                    items[i].Agility = items[i].Characteristics.Agility;
+                                }
+                                if (items[i].Characteristics.Intellect) {
+                                    items[i].Intelligence = items[i].Characteristics.Intellect;
+                                }
+                                if (items[i].Characteristics.Cunning) {
+                                    items[i].Cunning = items[i].Characteristics.Cunning;
+                                }
+                                if (items[i].Characteristics.Willpower) {
+                                    items[i].Willpower = items[i].Characteristics.Willpower;
+                                }
+                                if (items[i].Characteristics.Presence) {
+                                    items[i].Presence = items[i].Characteristics.Presence;
+                                }
+                            }
+                            if (typeof items[i].Talents == 'object') {
+                                if (typeof items[i].Talents.Talent == 'object') {
+                                    if (typeof items[i].Talents.Talent.Name == 'string') {
+                                        if (typeof items[i].Talents.Talent.Rank == 'undefined') {
+                                            items[i].Talents.Talent.Rank = 1;
+                                        }
+                                        talents.push(items[i].Talents.Talent);
+                                    } else {
+                                        if (typeof items[i].Talents.Talent.length == 'number') {
+                                            l2 = items[i].Talents.Talent.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                if (typeof items[i].Talents.Talent[i2].Rank == 'undefined') {
+                                                    items[i].Talents.Talent[i2].Rank = 1;
+                                                }
+                                                talents.push(items[i].Talents.Talent[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Talents = talents;
+                            if (typeof items[i].Skills == 'object') {
+                                if (typeof items[i].Skills.Skill == 'object') {
+                                    if (typeof items[i].Skills.Skill.Name == 'string') {
+                                        if (typeof items[i].Skills.Skill.Rank == 'undefined') {
+                                            items[i].Skills.Skill.Rank = 1;
+                                        }
+                                        skills.push(items[i].Skills.Skill);
+                                    } else {
+                                        if (typeof items[i].Skills.Skill.length == 'number') {
+                                            l2 = items[i].Skills.Skill.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                if (typeof items[i].Skills.Skill[i2].Rank == 'undefined') {
+                                                    items[i].Skills.Skill[i2].Rank = 1;
+                                                }
+                                                skills.push(items[i].Skills.Skill[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Skills = skills;
+                            if (typeof items[i].Abilities == 'object') {
+                                if (typeof items[i].Abilities.Ability == 'object') {
+                                    if (typeof items[i].Abilities.Ability.Name == 'string') {
+                                        abilities.push(items[i].Abilities.Ability);
+                                    } else {
+                                        if (typeof items[i].Abilities.Ability.length == 'number') {
+                                            l2 = items[i].Abilities.Ability.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                abilities.push(items[i].Abilities.Ability[i2]);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].Abilities = abilities;
+                            if (typeof items[i].SpecialAbilities == 'object') {
+                                if (typeof items[i].SpecialAbilities.SpecialAbility == 'object') {
+                                    if (typeof items[i].SpecialAbilities.SpecialAbility.Description == 'string') {
+                                        items[i].SpecialAbilities.SpecialAbility = [
+                                            {
+                                                Name: items[i].SpecialAbilities.SpecialAbility.Name,
+                                                Description: $sce.trustAsHtml($filter('symbolFilter')(items[i].SpecialAbilities.SpecialAbility.Description))
+                                            }
+                                        ]
+                                    } else {
+                                        if (typeof items[i].SpecialAbilities.SpecialAbility.length == 'number') {
+                                            l2 = items[i].SpecialAbilities.SpecialAbility.length;
+                                            for (i2 = 0; i2 < l2; i2++) {
+                                                items[i].SpecialAbilities.SpecialAbility[i2].Description = $sce.trustAsHtml($filter('symbolFilter')(items[i].SpecialAbilities.SpecialAbility[i2].Description));
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            if (typeof items[i].Attributes != 'undefined') {
+                                if (typeof items[i].Attributes.Soak == 'number') {
+                                    items[i].Soak = items[i].Attributes.Soak;
+                                }
+                                if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                    items[i].WoundThreshold = items[i].Attributes.WoundThreshold;
+                                }
+                                if (typeof items[i].Attributes.WoundThreshold == 'number') {
+                                    items[i].StrainThreshold = items[i].Attributes.StrainThreshold;
+                                }
+                                if (typeof items[i].Attributes.Experience == 'number') {
+                                    items[i].Experience = items[i].Attributes.Experience;
+                                }
+                                if (typeof items[i].Attributes.ForceRating == 'number') {
+                                    items[i].ForceRating = items[i].Attributes.ForceRating;
+                                }
+                            }
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
                             outputItems.push(items[i]);
@@ -616,6 +775,24 @@ App.directive('itemList', function () {
                         $scope.collectValues(outputItems, 'SkillKey', $scope.skills);
                         $scope.collectValues(outputItems, 'Type', $scope.types);
                         $scope.collectValues(outputItems, 'RangeValue', $scope.ranges);
+                        $scope.min.WoundThreshold = $scope.getMinValue(items, 'WoundThreshold');
+                        $scope.max.WoundThreshold = $scope.getMaxValue(items, 'WoundThreshold');
+                        $scope.min.StrainThreshold = $scope.getMinValue(items, 'StrainThreshold');
+                        $scope.max.StrainThreshold = $scope.getMaxValue(items, 'StrainThreshold');
+                        $scope.min.Experience = $scope.getMinValue(items, 'Experience');
+                        $scope.max.Experience = $scope.getMaxValue(items, 'Experience');
+                        $scope.min.Brawn = $scope.getMinValue(items, 'Brawn');
+                        $scope.max.Brawn = $scope.getMaxValue(items, 'Brawn');
+                        $scope.min.Agility = $scope.getMinValue(items, 'Agility');
+                        $scope.max.Agility = $scope.getMaxValue(items, 'Agility');
+                        $scope.min.Intelligence = $scope.getMinValue(items, 'Intelligence');
+                        $scope.max.Intelligence = $scope.getMaxValue(items, 'Intelligence');
+                        $scope.min.Cunning = $scope.getMinValue(items, 'Cunning');
+                        $scope.max.Cunning = $scope.getMaxValue(items, 'Cunning');
+                        $scope.min.Willpower = $scope.getMinValue(items, 'Willpower');
+                        $scope.max.Willpower = $scope.getMaxValue(items, 'Willpower');
+                        $scope.min.Presence = $scope.getMinValue(items, 'Presence');
+                        $scope.max.Presence = $scope.getMaxValue(items, 'Presence');
                         $scope.items = outputItems;
                         $scope.filterItems();
                         $scope.loading = false;

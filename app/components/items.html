@@ -27,6 +27,24 @@
                                             filters.maxHP ||
                                             filters.minPrice ||
                                             filters.maxPrice ||
+                                            filters.minWoundThreshold ||
+                                            filters.maxWoundThreshold ||
+                                            filters.minStrainThreshold ||
+                                            filters.maxStrainThreshold ||
+                                            filters.minExperience ||
+                                            filters.maxExperience ||
+                                            filters.minBrawn ||
+                                            filters.maxBrawn ||
+                                            filters.minAgility ||
+                                            filters.maxAgility ||
+                                            filters.minIntelligence ||
+                                            filters.maxIntelligence ||
+                                            filters.minCunning ||
+                                            filters.maxCunning ||
+                                            filters.minWillpower ||
+                                            filters.maxWillpower ||
+                                            filters.minPresence ||
+                                            filters.maxPresence ||
                                             filters.type ||
                                             filters.skill ||
                                             filters.range ||
@@ -251,6 +269,213 @@
                         </md-input-container>
                     </div>
                 </md-list-item>
+                <md-list-item
+                        ng-if="min.WoundThreshold || max.WoundThreshold">
+                    <h4 layout="row">Wound</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minWoundThreshold"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.WoundThreshold}}"
+                                   max="{{max.WoundThreshold}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxWoundThreshold"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.WoundThreshold}}"
+                                   max="{{max.WoundThreshold}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.StrainThreshold || max.StrainThreshold">
+                    <h4 layout="row">Strain</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minStrainThreshold"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.StrainThreshold}}"
+                                   max="{{max.StrainThreshold}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxStrainThreshold"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.StrainThreshold}}"
+                                   max="{{max.StrainThreshold}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Experience || max.Experience">
+                    <h4 layout="row">Exp.</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minExperience"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Experience}}"
+                                   max="{{max.Experience}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxExperience"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Experience}}"
+                                   max="{{max.Experience}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Brawn || max.Brawn">
+                    <h4 layout="row">BR</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minBrawn"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Brawn}}"
+                                   max="{{max.Brawn}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxBrawn"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Brawn}}"
+                                   max="{{max.Brawn}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Agility || max.Agility">
+                    <h4 layout="row">AG</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minAgility"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Agility}}"
+                                   max="{{max.Agility}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxAgility"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Agility}}"
+                                   max="{{max.Agility}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Intelligence || max.Intelligence">
+                    <h4 layout="row">INT</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minIntelligence"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Intelligence}}"
+                                   max="{{max.Intelligence}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxIntelligence"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Intelligence}}"
+                                   max="{{max.Intelligence}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Cunning || max.Cunning">
+                    <h4 layout="row">CUN</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minCunning"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Cunning}}"
+                                   max="{{max.Cunning}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxCunning"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Cunning}}"
+                                   max="{{max.Cunning}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Willpower || max.Willpower">
+                    <h4 layout="row">WIL</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minWillpower"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Willpower}}"
+                                   max="{{max.Willpower}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxWillpower"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Willpower}}"
+                                   max="{{max.Willpower}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
+                <md-list-item
+                        ng-if="min.Presence || max.Presence">
+                    <h4 layout="row">PR</h4>
+
+                    <div layout="row" layout-margin>
+                        <md-input-container layout="row">
+                            <label>Min</label>
+                            <input ng-model="filters.minPresence"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Presence}}"
+                                   max="{{max.Presence}}">
+                        </md-input-container>
+                        <md-input-container layout="row">
+                            <label>Max</label>
+                            <input ng-model="filters.maxPresence"
+                                   ng-change="filterItems()"
+                                   type="number"
+                                   min="{{min.Presence}}"
+                                   max="{{max.Presence}}">
+                        </md-input-container>
+                    </div>
+                </md-list-item>
                 <md-list-item ng-if="qualities.length">
                     <h4 layout="row">Qualities</h4>
 
@@ -343,7 +568,7 @@
                         <thead fix-head md-head md-order="order" md-on-reorder="filterItems">
                         <tr md-row>
                             <th md-column
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary' || name == 'Species'">
                                 <md-button class="md-primary md-raised"
                                            ng-click="toggleSideNav()" hide-md hide-sm hide-xs hide-gt-lg
                                            style="padding: 0 12px"
@@ -358,7 +583,8 @@
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Price">Price
+                                md-order-by="Price"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Price
                             </th>
                             <th md-column
                                 md-numeric
@@ -387,11 +613,13 @@
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Rarity">Rarity
+                                md-order-by="Rarity"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Rarity
                             </th>
                             <th md-column
                                 md-numeric
-                                md-order-by="Encumbrance">Encum.
+                                md-order-by="Encumbrance"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Encum.
                             </th>
                             <th md-column
                                 md-numeric
@@ -401,7 +629,7 @@
                             </th>
                             <th md-column
                                 md-order-by="Type"
-                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
                                 Type
                             </th>
                             <th md-column
@@ -413,6 +641,56 @@
                                 ng-if="name == 'Weapon'">Range
                             </th>
                             <th md-column
+                                md-order-by="Soak"
+                                ng-if="name == 'Adversary'">Soak
+                            </th>
+                            <th md-column
+                                md-order-by="WoundThreshold"
+                                ng-if="name == 'Adversary' || name == 'Species'">Wound Thr.
+                            </th>
+                            <th md-column
+                                md-order-by="StrainThreshold"
+                                ng-if="name == 'Adversary' || name == 'Species'">Strain Thr.
+                            </th>
+                            <th md-column
+                                md-order-by="Experience"
+                                ng-if="name == 'Adversary' || name == 'Species'">Experience
+                            </th>
+                            <th md-column
+                                md-order-by="Brawn"
+                                ng-if="name == 'Adversary' || name == 'Species'">BR
+                            </th>
+                            <th md-column
+                                md-order-by="Agility"
+                                ng-if="name == 'Adversary' || name == 'Species'">AG
+                            </th>
+                            <th md-column
+                                md-order-by="Intelligence"
+                                ng-if="name == 'Adversary' || name == 'Species'">INT
+                            </th>
+                            <th md-column
+                                md-order-by="Cunning"
+                                ng-if="name == 'Adversary' || name == 'Species'">CUN
+                            </th>
+                            <th md-column
+                                md-order-by="Willpower"
+                                ng-if="name == 'Adversary' || name == 'Species'">WIL
+                            </th>
+                            <th md-column
+                                md-order-by="Presence"
+                                ng-if="name == 'Adversary' || name == 'Species'">PR
+                            </th>
+                            <th md-column
+                                md-order-by="ForceRating"
+                                ng-if="name == 'Adversary'">Force
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Adversary'">Talents
+                            </th>
+                            <th md-column
+                                ng-if="name == 'Adversary'">Skills
+                            </th>
+                            <th md-column
                                 ng-if="name == 'Weapon'">Qualities
                             </th>
                         </tr>
@@ -420,8 +698,10 @@
                         <tbody md-body>
                         <tr md-row ng-repeat="item in outputItems">
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
-                                <img style="width: 100px;" ng-src="{{item.imageUrl}}"
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary' || name == 'Species'"
+                                style="text-align: center;">
+                                <img style="max-width: 100px; max-height: 100px; display: inline-block;"
+                                     ng-src="{{item.imageUrl}}"
                                      err-src="img/no_image.png"
                                      alt="{{item.Name}}"
                                      layout="column"
@@ -430,8 +710,25 @@
                             <td md-cell>
                                 <div class="sw-description" style="min-width: 200px"
                                      ng-bind-html="item.Description"></div>
+                                <div class="sw-description" ng-if="name == 'Species' && item.OptionChoices.Option">
+                                    <p>Choose <strong>one</strong> option:</p>
+                                    <ul>
+                                        <li ng-repeat="option in item.OptionChoices.Option">
+                                            <strong>{{option.Name}}</strong>: <span ng-bind-html="option.Description"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sw-description" ng-if="name == 'Species' && item.SpecialAbilities.SpecialAbility">
+                                    <p>Special abilities:</p>
+                                    <ul>
+                                        <li ng-repeat="ability in item.SpecialAbilities.SpecialAbility">
+                                            <strong>{{ability.Name}}</strong>: <span ng-bind-html="ability.Description"></span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Price > 0">{{item.Price}}</span>
                                 <span ng-hide="item.Price > 0">-</span>
                             </td>
@@ -457,11 +754,13 @@
                                 <span ng-show="item.Crit > 0">{{item.Crit}}</span>
                                 <span ng-hide="item.Crit > 0">-</span>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
                                 <span ng-hide="item.Rarity > 0">-</span>
                             </td>
-                            <td md-cell>
+                            <td md-cell
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
                                 <span ng-show="item.Encumbrance > 0">{{item.Encumbrance}}</span>
                                 <span ng-hide="item.Encumbrance > 0">-</span>
                             </td>
@@ -471,13 +770,66 @@
                                 <span ng-hide="item.HP > 0">-</span>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
                                 {{item.Type}}
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">
                                 {{item.RangeValue}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                {{item.Soak}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.WoundThreshold}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                <span ng-show="item.StrainThreshold > 0">{{item.StrainThreshold}}</span>
+                                <span ng-hide="item.StrainThreshold > 0">-</span>
+                            </td>
+                            <td md-cell ng-if="name == 'Species'">
+                                <span ng-show="item.Experience > 0">{{item.Experience}}</span>
+                                <span ng-hide="item.Experience > 0">-</span>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Brawn}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Agility}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Intelligence}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Cunning}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Willpower}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary' || name == 'Species'">
+                                {{item.Presence}}
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <span ng-show="item.ForceRating > 0">{{item.ForceRating}}</span>
+                                <span ng-hide="item.ForceRating > 0">-</span>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Talents.length"
+                                         ng-repeat="talent in item.Talents">
+                                        <md-tooltip md-direction="left">{{talent.Description}}</md-tooltip>
+                                        {{talent.Name}} <span ng-show="talent.Rank > 0">{{talent.Rank}}</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td md-cell ng-if="name == 'Adversary'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-if="item.Skills.length"
+                                         ng-repeat="skill in item.Skills">
+                                        {{skill.Name}} {{skill.Rank}}
+                                    </div>
+                                </div>
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">
                                 <div class="sw-qualities">
@@ -522,6 +874,24 @@
                                             filters.maxHP ||
                                             filters.minPrice ||
                                             filters.maxPrice ||
+                                            filters.minWoundThreshold ||
+                                            filters.maxWoundThreshold ||
+                                            filters.minStrainThreshold ||
+                                            filters.maxStrainThreshold ||
+                                            filters.minExperience ||
+                                            filters.maxExperience ||
+                                            filters.minBrawn ||
+                                            filters.maxBrawn ||
+                                            filters.minAgility ||
+                                            filters.maxAgility ||
+                                            filters.minIntelligence ||
+                                            filters.maxIntelligence ||
+                                            filters.minCunning ||
+                                            filters.maxCunning ||
+                                            filters.minWillpower ||
+                                            filters.maxWillpower ||
+                                            filters.minPresence ||
+                                            filters.maxPresence ||
                                             filters.type ||
                                             filters.skill ||
                                             filters.range ||
@@ -553,6 +923,24 @@
                                             filters.maxHP ||
                                             filters.minPrice ||
                                             filters.maxPrice ||
+                                            filters.minWoundThreshold ||
+                                            filters.maxWoundThreshold ||
+                                            filters.minStrainThreshold ||
+                                            filters.maxStrainThreshold ||
+                                            filters.minExperience ||
+                                            filters.maxExperience ||
+                                            filters.minBrawn ||
+                                            filters.maxBrawn ||
+                                            filters.minAgility ||
+                                            filters.maxAgility ||
+                                            filters.minIntelligence ||
+                                            filters.maxIntelligence ||
+                                            filters.minCunning ||
+                                            filters.maxCunning ||
+                                            filters.minWillpower ||
+                                            filters.maxWillpower ||
+                                            filters.minPresence ||
+                                            filters.maxPresence ||
                                             filters.type ||
                                             filters.skill ||
                                             filters.range ||
