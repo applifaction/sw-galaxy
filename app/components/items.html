@@ -747,7 +747,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="sw-description" ng-if="item.Source.Book || item.Sources.Source">
+                                <div class="sw-description" ng-if="name == 'Species' && (item.Source.Book || item.Sources.Source)">
                                     <div ng-if="item.Source.Book">
                                         <i>Source: {{item.Source.Book}}<span ng-if="item.Source.Page"> page {{item.Source.Page}}</span></i>
                                     </div>
