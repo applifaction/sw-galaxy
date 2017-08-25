@@ -710,21 +710,55 @@
                             <td md-cell>
                                 <div class="sw-description" style="min-width: 200px"
                                      ng-bind-html="item.Description"></div>
-                                <div class="sw-description" ng-if="name == 'Species' && item.OptionChoices.Option">
-                                    <p>Choose <strong>one</strong> option:</p>
-                                    <ul>
-                                        <li ng-repeat="option in item.OptionChoices.Option">
-                                            <strong>{{option.Name}}</strong>: <span ng-bind-html="option.Description"></span>
-                                        </li>
-                                    </ul>
+                                <div class="sw-description" ng-if="name == 'Species'">
+                                    <div ng-if="item.OptionChoices.Option">
+                                        <p>Choose <strong>one</strong> option:</p>
+                                        <ul>
+                                            <li ng-repeat="option in item.OptionChoices.Option">
+                                                <strong>{{option.Name}}</strong>: <span
+                                                    ng-bind-html="option.Description"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div ng-if="item.SpecialAbilities.SpecialAbility">
+                                        <p>Special abilities:</p>
+                                        <ul>
+                                            <li ng-repeat="ability in item.SpecialAbilities.SpecialAbility">
+                                                <strong>{{ability.Name}}</strong>: <span
+                                                    ng-bind-html="ability.Description"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div ng-if="item.Talents.length">
+                                        <p>Talents:</p>
+                                        <ul>
+                                            <li ng-repeat="talent in item.Talents">
+                                                <strong>{{talent.Name}}</strong>: {{talent.RankAdd}}
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div ng-if="item.Skills.length">
+                                        <p>Skills:</p>
+                                        <ul>
+                                            <li ng-repeat="skill in item.Skills">
+                                                <span ng-if="skill.Name"><strong>{{skill.Name}}</strong>: {{skill.RankAdd}}</span>
+                                                <span ng-if="skill.Special"><strong>{{skill.Special}}</strong></span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="sw-description" ng-if="name == 'Species' && item.SpecialAbilities.SpecialAbility">
-                                    <p>Special abilities:</p>
-                                    <ul>
-                                        <li ng-repeat="ability in item.SpecialAbilities.SpecialAbility">
-                                            <strong>{{ability.Name}}</strong>: <span ng-bind-html="ability.Description"></span>
-                                        </li>
-                                    </ul>
+                                <div class="sw-description" ng-if="item.Source.Book || item.Sources.Source">
+                                    <div ng-if="item.Source.Book">
+                                        <i>Source: {{item.Source.Book}}<span ng-if="item.Source.Page"> page {{item.Source.Page}}</span></i>
+                                    </div>
+                                    <div ng-if="item.Sources.Source">
+                                        <p><i>Sources:</i></p>
+                                        <ul>
+                                            <li ng-repeat="source in item.Sources.Source">
+                                                <i>{{source.Book}}<span ng-if="source.Page"> page {{source.Page}}</span></i>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </td>
                             <td md-cell

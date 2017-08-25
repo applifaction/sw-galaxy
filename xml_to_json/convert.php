@@ -37,12 +37,12 @@ foreach ($validFileNames as $typeKey => $fileName) {
                 if (!isset($row->Descriptors) || !is_string($row->Descriptors)) {
                     unset($row->Descriptors);
                 }
-                if (isset($row->Source) || empty($row->Source)) {
-                    unset($row->Source);
+                if ($typeKey == 'Species' && isset($row->Source) && isset($row->Source->Page) && !is_numeric($row->Source->Page)) {
+                    unset($row->Source->Page);
                 }
-                if (isset($row->Sources) || empty($row->Sources)) {
-                    unset($row->Sources);
-                }
+//                if (isset($row->Sources) || empty($row->Sources)) {
+//                    unset($row->Sources);
+//                }
                 $thumbnail = 'data/img/' . $typeKey . $row->Key . '.png';
                 if (file_exists(dirname(__FILE__) . '/../' . $thumbnail)) {
                     $row->Thumbnail = $thumbnail;

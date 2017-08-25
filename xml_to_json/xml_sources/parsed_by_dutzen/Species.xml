@@ -3,6 +3,10 @@
   <Species>
     <Key>ALEENA</Key>
     <Name>Aleena</Name>
+    <Source>
+      <Book>Nexus of Power</Book>
+      <Page>98</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>3</Agility>
@@ -16,6 +20,18 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>95</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Durable</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Coordination</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -27,6 +43,10 @@
   <Species>
     <Key>ANX</Key>
     <Name>Anx</Name>
+    <Source>
+      <Book>Savage Spirits</Book>
+      <Page>18</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -40,6 +60,17 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>85</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Kill With Kindness</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+      <Talent>
+        <Name>Lethal Blows</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -49,8 +80,12 @@
     </SpecialAbilities>
   </Species>
   <Species>
-    <Key>AQUA</Key>
-    <Name>Aqualish</Name>
+    <Key>AQUASUB1</Key>
+    <Name>Aqualish - Aquala</Name>
+    <Source>
+      <Book>Dangerous Covenants</Book>
+      <Page>19</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -64,17 +99,135 @@
       <StrainThreshold>8</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
         <Name>Underwater Breathing</Name>
         <Description>All Aqualish are capable of breathing underwater.</Description>
       </SpecialAbility>
+      <SpecialAbility>
+        <Name>Environmental Conditions</Name>
+        <Description>Aquala may remove [SETBACK] imposed due to any cold or wet conditions.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>AQUASUB2</Key>
+    <Name>Aqualish - Ualaq</Name>
+    <Source>
+      <Book>Dangerous Covenants</Book>
+      <Page>19</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices>
+      <Option>
+        <Name>Survival</Name>
+        <Description>Ualaq may begin the game with one rank in Survival.</Description>
+      </Option>
+      <Option>
+        <Name>Perception</Name>
+        <Description>Ualaq may begin the game with one rank in Perception.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Underwater Breathing</Name>
+        <Description>All Aqualish are capable of breathing underwater.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Environmental Conditions</Name>
+        <Description>Ualaq may remove [SETBACK] imposed due to dark conditions, but suffer [SETBACK] to 
+              Perception checks in brightly lit environments</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>AQUASUB3</Key>
+    <Name>Aqualish - Quara</Name>
+    <Source>
+      <Book>Dangerous Covenants</Book>
+      <Page>19</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>2</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>8</StrainThreshold>
+      <Experience>90</Experience>
+    </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices>
+      <Option>
+        <Name>Athletics</Name>
+        <Description>Quara may begin the game with one rank in Athletics.</Description>
+      </Option>
+      <Option>
+        <Name>Coercion</Name>
+        <Description>Quara may begin the game with one rank in Coercion.</Description>
+      </Option>
+    </OptionChoices>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Underwater Breathing</Name>
+        <Description>All Aqualish are capable of breathing underwater.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Environmental Conditions</Name>
+        <Description>
+                Quara may remove [SETBACK] when attempting to track anything through a natural environment.
+              </Description>
+      </SpecialAbility>
     </SpecialAbilities>
   </Species>
   <Species>
     <Key>ARCONA</Key>
     <Name>Arcona</Name>
+    <Source>
+      <Book>Far Horizons</Book>
+      <Page>19</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -88,6 +241,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Vigilance</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -105,6 +265,10 @@
   <Species>
     <Key>ARKANOFF</Key>
     <Name>Arkanian Offshoot</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -118,6 +282,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -138,6 +304,10 @@
   <Species>
     <Key>ARKAN</Key>
     <Name>Arkanian</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -151,6 +321,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coercion</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -163,6 +340,10 @@
   <Species>
     <Key>BARAB</Key>
     <Name>Barabel</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -176,6 +357,13 @@
       <StrainThreshold>8</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coercion</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -207,6 +395,10 @@
   <Species>
     <Key>BARDOTTAN</Key>
     <Name>Bardottan</Name>
+    <Source>
+      <Book>Nexus of Power</Book>
+      <Page>99</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -220,12 +412,23 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>105</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Lore</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>BESALISK</Key>
     <Name>Besalisk</Name>
+    <Source>
+      <Book>Special Modifications</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -239,6 +442,13 @@
       <StrainThreshold>7</StrainThreshold>
       <Experience>85</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -250,6 +460,10 @@
   <Species>
     <Key>BITH</Key>
     <Name>Bith</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -263,12 +477,34 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Researcher</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>BOTH</Key>
     <Name>Bothan</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>43</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>51</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -282,12 +518,28 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Convincing Demeanor</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Streetwise</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>CAAMASI</Key>
     <Name>Caamasi</Name>
+    <Source>
+      <Book>Desperate Allies</Book>
+      <Page>19</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -301,6 +553,8 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Charm</Name>
@@ -323,6 +577,10 @@
   <Species>
     <Key>CATHAR</Key>
     <Name>Cathar</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -336,6 +594,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Athletics</Name>
@@ -361,6 +621,10 @@
   <Species>
     <Key>CEREAN</Key>
     <Name>Cerean</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>54</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>1</Agility>
@@ -374,12 +638,26 @@
       <StrainThreshold>13</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Vigilance</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+      <Skill>
+        <Special>All Knowledge Skills as Career Skills</Special>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>CHADRA</Key>
     <Name>Chadra-Fan</Name>
+    <Source>
+      <Book>Stay on Target</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>3</Agility>
@@ -393,6 +671,13 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Mechanics</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -412,6 +697,10 @@
   <Species>
     <Key>CHAGRIAN</Key>
     <Name>Chagrian</Name>
+    <Source>
+      <Book>Lead by Example</Book>
+      <Page>19</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>1</Agility>
@@ -425,6 +714,18 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Knowledge Specialization</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -436,6 +737,10 @@
   <Species>
     <Key>CHEVIN</Key>
     <Name>Chevin</Name>
+    <Source>
+      <Book>Far Horizons</Book>
+      <Page>21</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -449,6 +754,18 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Durable</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Negotiation</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -462,6 +779,10 @@
   <Species>
     <Key>CHISS</Key>
     <Name>Chiss</Name>
+    <Source>
+      <Book>Enter the Unknown</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -475,6 +796,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Cool</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -487,6 +815,10 @@
   <Species>
     <Key>CLAWDITE</Key>
     <Name>Clawdite</Name>
+    <Source>
+      <Book>No Disintegrations</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -500,6 +832,18 @@
       <StrainThreshold>9</StrainThreshold>
       <Experience>95</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Indistinguishable</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -511,6 +855,10 @@
   <Species>
     <Key>HUMANCOR</Key>
     <Name>Corellian Human</Name>
+    <Source>
+      <Book>Suns of Fortune</Book>
+      <Page>93</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -524,6 +872,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Piloting - Planetary</Name>
@@ -539,6 +889,10 @@
   <Species>
     <Key>DASHADE</Key>
     <Name>Dashade</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -552,6 +906,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Outdoorsman</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Coercion</Name>
@@ -576,6 +937,10 @@
   <Species>
     <Key>DEFEL</Key>
     <Name>Defel</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -589,6 +954,18 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Indistinguishable</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Vigilance</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -616,6 +993,16 @@
   <Species>
     <Key>DEVAR</Key>
     <Name>Devaronian</Name>
+    <Sources>
+      <Source>
+        <Book>Nexus of Power</Book>
+        <Page>100</Page>
+      </Source>
+      <Source>
+        <Book>No Disintegrations</Book>
+        <Page>23</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -629,6 +1016,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>95</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Deception</Name>
@@ -651,6 +1040,10 @@
   <Species>
     <Key>DRALL</Key>
     <Name>Drall</Name>
+    <Source>
+      <Book>Suns of Fortune</Book>
+      <Page>90</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>1</Agility>
@@ -664,6 +1057,13 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -675,6 +1075,10 @@
   <Species>
     <Key>DRESSELLIAN</Key>
     <Name>Dressellian</Name>
+    <Source>
+      <Book>Stay on Target</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -688,6 +1092,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices>
       <Option>
         <Name>Primitive</Name>
@@ -696,13 +1107,26 @@
       <Option>
         <Name>Non-Primitive</Name>
         <Description>Tech-saavy Dressellians do not need to upgrade the difficulty of checks involving non-Dressellian technology.</Description>
+        <Bonus>
+          <Experience>-10</Experience>
+        </Bonus>
       </Option>
     </OptionChoices>
     <SpecialAbilities/>
   </Species>
   <Species>
-    <Key>DROID</Key>
-    <Name>Droid</Name>
+    <Key>DROIDSUB1</Key>
+    <Name>Droid - 2-1B Surgical</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>1</Agility>
@@ -716,6 +1140,355 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>175</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB2</Key>
+    <Name>Droid - 3P0 Protocol</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB3</Key>
+    <Name>Droid - IG Assassin</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB4</Key>
+    <Name>Droid - LE-V0 Law Enforcement</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB5</Key>
+    <Name>Droid - LOM Protocol</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB6</Key>
+    <Name>Droid - R-Series Astromech</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Additional Career Skills</Name>
+        <Description>May train in two additional career skills and one additional specialization skills</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Feature</Name>
+        <Description>Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Inorganic</Name>
+        <Description>Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Mechanical Being</Name>
+        <Description>Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Cybernetics</Name>
+        <Description>Droids have a cybernetics implant cap of 6.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>DROIDSUB7</Key>
+    <Name>Droid - Other Model</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>45</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>53</Page>
+      </Source>
+    </Sources>
+    <Characteristics>
+      <Brawn>1</Brawn>
+      <Agility>1</Agility>
+      <Intellect>1</Intellect>
+      <Cunning>1</Cunning>
+      <Willpower>1</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>175</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -743,6 +1516,10 @@
   <Species>
     <Key>DUG</Key>
     <Name>Dug</Name>
+    <Source>
+      <Book>Special Modifications</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -756,12 +1533,34 @@
       <StrainThreshold>8</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Defensive Driving</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>DUROS</Key>
     <Name>Duros</Name>
+    <Sources>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>55</Page>
+      </Source>
+      <Source>
+        <Book>Enter the Unknown</Book>
+        <Page>21</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -775,6 +1574,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Piloting - Space</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -786,6 +1592,10 @@
   <Species>
     <Key>ELOM</Key>
     <Name>Elom</Name>
+    <Source>
+      <Book>Forged in Battle</Book>
+      <Page>18</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -799,6 +1609,13 @@
       <StrainThreshold>9</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -812,6 +1629,10 @@
   <Species>
     <Key>ELOMIN</Key>
     <Name>Elomin</Name>
+    <Source>
+      <Book>Forged in Battle</Book>
+      <Page>18</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -825,12 +1646,27 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>105</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Charm</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>EWOK</Key>
     <Name>Ewok</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -844,6 +1680,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Stealth</Name>
@@ -874,6 +1712,10 @@
   <Species>
     <Key>FALLEEN</Key>
     <Name>Falleen</Name>
+    <Source>
+      <Book>Fly Casual</Book>
+      <Page>18</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -887,6 +1729,13 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Charm</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -900,6 +1749,10 @@
   <Species>
     <Key>FARGHUL</Key>
     <Name>Farghul</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -913,6 +1766,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Convincing Demeanor</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Deception</Name>
@@ -928,6 +1788,10 @@
   <Species>
     <Key>GAMORREAN</Key>
     <Name>Gamorrean</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -941,6 +1805,13 @@
       <StrainThreshold>8</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Melee</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -957,6 +1828,16 @@
   <Species>
     <Key>GAND</Key>
     <Name>Gand</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>47</Page>
+      </Source>
+      <Source>
+        <Book>Endless Vigil</Book>
+        <Page>18</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -970,10 +1851,20 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Discipline</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices>
       <Option>
         <Name>Has Lungs</Name>
         <Description>Requires ammonia respirator</Description>
+        <Bonus>
+          <Experience>10</Experience>
+        </Bonus>
       </Option>
       <Option>
         <Name>Lungless</Name>
@@ -985,6 +1876,10 @@
   <Species>
     <Key>GANK</Key>
     <Name>Gank</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>95</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -998,6 +1893,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Coercion</Name>
@@ -1018,6 +1915,10 @@
   <Species>
     <Key>GIVIN</Key>
     <Name>Givin</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1031,6 +1932,18 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Researcher</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1044,6 +1957,10 @@
   <Species>
     <Key>GOSSAM</Key>
     <Name>Gossam</Name>
+    <Source>
+      <Book>Desperate Allies</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1057,6 +1974,13 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Deception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1070,6 +1994,10 @@
   <Species>
     <Key>GOTAL</Key>
     <Name>Gotal</Name>
+    <Source>
+      <Book>Fly Casual</Book>
+      <Page>21</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1083,6 +2011,13 @@
       <StrainThreshold>8</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1094,6 +2029,16 @@
   <Species>
     <Key>GRAN</Key>
     <Name>Gran</Name>
+    <Sources>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>56</Page>
+      </Source>
+      <Source>
+        <Book>Far Horizons</Book>
+        <Page>22</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1107,6 +2052,8 @@
       <StrainThreshold>9</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One rank in Charm</Name>
@@ -1127,6 +2074,10 @@
   <Species>
     <Key>GUNGAN</Key>
     <Name>Gungan</Name>
+    <Source>
+      <Book>Nexus of Power</Book>
+      <Page>101</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1140,6 +2091,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Athletics</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1151,6 +2109,10 @@
   <Species>
     <Key>HERGLIC</Key>
     <Name>Herglic</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -1164,12 +2126,33 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Charm</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>HUMAN</Key>
     <Name>Human</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>48</Page>
+      </Source>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>57</Page>
+      </Source>
+      <Source>
+        <Book>Force and Destiny Core Rulebook</Book>
+        <Page>55</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1183,6 +2166,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1195,6 +2180,10 @@
   <Species>
     <Key>HUTT</Key>
     <Name>Hutt</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>94</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -1208,6 +2197,17 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>70</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+      <Talent>
+        <Name>Nobody's Fool</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Coercion</Name>
@@ -1228,6 +2228,10 @@
   <Species>
     <Key>IKTOTCHI</Key>
     <Name>Iktotchi</Name>
+    <Source>
+      <Book>Keeping the Peace</Book>
+      <Page>18</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1241,6 +2245,13 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Vigilance</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1252,6 +2263,10 @@
   <Species>
     <Key>ISHITIB</Key>
     <Name>Ishi Tib</Name>
+    <Source>
+      <Book>Lead by Example</Book>
+      <Page>21</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1265,6 +2280,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Discipline</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1280,6 +2302,16 @@
   <Species>
     <Key>ITHORIAN</Key>
     <Name>Ithorian</Name>
+    <Sources>
+      <Source>
+        <Book>Age of Rebellion Core Rulebook</Book>
+        <Page>58</Page>
+      </Source>
+      <Source>
+        <Book>Savage Spirits</Book>
+        <Page>20</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>1</Agility>
@@ -1293,6 +2325,13 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1304,6 +2343,10 @@
   <Species>
     <Key>JAWA</Key>
     <Name>Jawa</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1317,6 +2360,18 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Utinni!</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Mechanics</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1332,6 +2387,10 @@
   <Species>
     <Key>KALLERAN</Key>
     <Name>Kalleran</Name>
+    <Source>
+      <Book>No Disintegrations</Book>
+      <Page>25</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -1345,12 +2404,28 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Heightened Awareness</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Streetwise</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>KELDOR</Key>
     <Name>Kel Dor</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>57</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1364,6 +2439,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1383,6 +2465,10 @@
   <Species>
     <Key>KLATOO</Key>
     <Name>Klatooinian</Name>
+    <Source>
+      <Book>Dangerous Covenants</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1396,6 +2482,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Brawl</Name>
@@ -1422,6 +2510,10 @@
   <Species>
     <Key>KUBAZ</Key>
     <Name>Kubaz</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1435,12 +2527,28 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Street Smarts</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>KYUZO</Key>
     <Name>Kyuzo</Name>
+    <Source>
+      <Book>Forged in Battle</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1454,6 +2562,13 @@
       <StrainThreshold>11</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coordination</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1467,6 +2582,16 @@
   <Species>
     <Key>LANNIK</Key>
     <Name>Lannik</Name>
+    <Sources>
+      <Source>
+        <Book>Keeping the Peace</Book>
+        <Page>20</Page>
+      </Source>
+      <Source>
+        <Book>Lead by Example</Book>
+        <Page>23</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>1</Agility>
@@ -1480,6 +2605,13 @@
       <StrainThreshold>12</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Streetwise</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1491,6 +2623,10 @@
   <Species>
     <Key>LEPI</Key>
     <Name>Lepi</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1504,6 +2640,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Athletics</Name>
@@ -1519,6 +2657,12 @@
   <Species>
     <Key>MANDOHUMAN</Key>
     <Name>Mandalorian Human</Name>
+    <Sources>
+      <Source>
+        <Book>Friends Like These</Book>
+        <Page>7</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1532,6 +2676,8 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>105</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Combat Skill</Name>
@@ -1547,6 +2693,10 @@
   <Species>
     <Key>MIRIALAN</Key>
     <Name>Mirialan</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>58</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1560,12 +2710,27 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Discipline</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+      <Skill>
+        <Name>Cool</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>MONCAL</Key>
     <Name>Mon Calamari</Name>
+    <Source>
+      <Book>Age of Rebellion Core Rulebook</Book>
+      <Page>59</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1579,6 +2744,13 @@
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1591,8 +2763,12 @@ water.</Description>
     </SpecialAbilities>
   </Species>
   <Species>
-    <Key>MUSTAFARIAN</Key>
-    <Name>Mustafarian</Name>
+    <Key>MUSTAFARIANSUB1</Key>
+    <Name>Mustafarian - Northern Mustafarian</Name>
+    <Source>
+      <Book>Special Modifications</Book>
+      <Page>24</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1606,12 +2782,77 @@ water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Eye for Detail</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
-    <SpecialAbilities/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Arid/Hot Environments</Name>
+        <Description>
+                Northern Mustafarians may remove [SETBACK][SETBACK] to resist arid or hot environmental conditions.
+              </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>MUSTAFARIANSUB2</Key>
+    <Name>Mustafarian - Southern Mustafarian</Name>
+    <Source>
+      <Book>Special Modifications</Book>
+      <Page>24</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>2</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>10</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Enduring</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Arid/Hot Environments</Name>
+        <Description>
+                Southern Mustafarians may remove [SETBACK][SETBACK] to resist arid or hot environmental conditions.
+              </Description>
+      </SpecialAbility>
+    </SpecialAbilities>
   </Species>
   <Species>
     <Key>MUUN</Key>
     <Name>Muun</Name>
+    <Source>
+      <Book>Endless Vigil</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1625,6 +2866,17 @@ water.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Education</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+      <Skill>
+        <Name>Core Worlds</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1638,6 +2890,10 @@ water.</Description>
   <Species>
     <Key>NAGAI</Key>
     <Name>Nagai</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1651,6 +2907,13 @@ water.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Kill With Kindness</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Charm</Name>
@@ -1666,6 +2929,10 @@ water.</Description>
   <Species>
     <Key>NAUTOLAN</Key>
     <Name>Nautolan</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>59</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -1679,6 +2946,13 @@ water.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Athletics</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1693,6 +2967,10 @@ water.</Description>
   <Species>
     <Key>NEIM</Key>
     <Name>Neimoidian</Name>
+    <Source>
+      <Book>Desperate Allies</Book>
+      <Page>20</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1706,6 +2984,8 @@ water.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Negotiation</Name>
@@ -1722,8 +3002,12 @@ water.</Description>
     <SpecialAbilities/>
   </Species>
   <Species>
-    <Key>NIKTO</Key>
-    <Name>Nikto</Name>
+    <Key>NIKTOCH1OP1</Key>
+    <Name>Nikto - Kajain'sa'Nikto (Red Nikto)</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>96</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -1737,12 +3021,172 @@ water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Resilience</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Arid/Hot Environments</Name>
+        <Description>Red Niktos may remove [SETBACK] imposed due to arid or hot enviromental conditions.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>NIKTOCH1OP2</Key>
+    <Name>Nikto - Kadas'sa'Nikto (Green Nikto)</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>96</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coordination</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>May use claws when brawling</Name>
+        <Description>When a Green Nikto makes Brawl checks to deal damage to an opponent, he deals +1 damage and has a Critical Rating of 3.</Description>
+      </SpecialAbility>
+      <SpecialAbility>
+        <Name>Climbing</Name>
+        <Description>Green Nikto gain [BOOST] to Athletics checks made to climb trees and other surfaces their claws can pierce.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>NIKTOCH1OP3</Key>
+    <Name>Nikto - Esral'sa'Nikto (Mountain Nikto)</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>96</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Natural Outdoorsman</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
+    <Key>NIKTOCH1OP4</Key>
+    <Name>Nikto - Gluss'sa'Nikto (Pale Nikto)</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>96</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Athletics</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Swimmer</Name>
+        <Description>A Pale Nikto never suffers movement penalties for traveling through water and can hold his breath for a number of rounds equal to twice his Brawn rating before beginning to drown.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
+    <Key>NIKTOCH1OP5</Key>
+    <Name>Nikto - M'shento'su'Nikto (Southern Nikto)</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>96</Page>
+    </Source>
+    <Characteristics>
+      <Brawn>3</Brawn>
+      <Agility>2</Agility>
+      <Intellect>2</Intellect>
+      <Cunning>2</Cunning>
+      <Willpower>2</Willpower>
+      <Presence>1</Presence>
+    </Characteristics>
+    <Attributes>
+      <WoundThreshold>11</WoundThreshold>
+      <StrainThreshold>10</StrainThreshold>
+      <Experience>100</Experience>
+    </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
+    <OptionChoices/>
+    <SpecialAbilities>
+      <SpecialAbility>
+        <Name>Sounds</Name>
+        <Description>Southern Nikto may add [BOOST] to Perception and Vigilance checks to detect sounds.</Description>
+      </SpecialAbility>
+    </SpecialAbilities>
+  </Species>
+  <Species>
     <Key>NOGHRI</Key>
     <Name>Noghri</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1756,6 +3200,18 @@ water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Stalker</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1776,6 +3232,10 @@ water.</Description>
   <Species>
     <Key>ORTOLAN</Key>
     <Name>Ortolan</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -1789,6 +3249,13 @@ water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1811,6 +3278,12 @@ on Perception checks.</Description>
   <Species>
     <Key>PANTORAN</Key>
     <Name>Pantoran</Name>
+    <Sources>
+      <Source>
+        <Book>Endless Vigil</Book>
+        <Page>22</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1824,6 +3297,8 @@ on Perception checks.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>110</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Cool</Name>
@@ -1846,6 +3321,10 @@ on Perception checks.</Description>
   <Species>
     <Key>PAUAN</Key>
     <Name>Pau'an</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1859,6 +3338,8 @@ on Perception checks.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Coercion</Name>
@@ -1874,6 +3355,10 @@ on Perception checks.</Description>
   <Species>
     <Key>POLISMASSAN</Key>
     <Name>Polis Massan</Name>
+    <Source>
+      <Book>Strongholds of Resistance</Book>
+      <Page>98</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1887,6 +3372,13 @@ on Perception checks.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Medicine</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices>
       <Option>
         <Name>No Vocal Chords</Name>
@@ -1899,6 +3391,9 @@ on Perception checks.</Description>
         <Description>
             A small minority of Polis Massans do possess vocal chords.  Referred to as &quot;speakers&quot; by their people, these rare individuals can physically speak languages, though their voices are soft and strangely resonant.
           </Description>
+        <Bonus>
+          <Experience>-10</Experience>
+        </Bonus>
       </Option>
     </OptionChoices>
     <SpecialAbilities>
@@ -1911,6 +3406,16 @@ on Perception checks.</Description>
   <Species>
     <Key>QUARREN</Key>
     <Name>Quarren</Name>
+    <Sources>
+      <Source>
+        <Book>Fly Casual</Book>
+        <Page>23</Page>
+      </Source>
+      <Source>
+        <Book>Strongholds of Resistance</Book>
+        <Page>100</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1924,6 +3429,13 @@ on Perception checks.</Description>
       <StrainThreshold>8</StrainThreshold>
       <Experience>95</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Negotiation</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1939,6 +3451,10 @@ on Perception checks.</Description>
   <Species>
     <Key>QUERMIAN</Key>
     <Name>Quermian</Name>
+    <Source>
+      <Book>Savage Spirits</Book>
+      <Page>98</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -1952,6 +3468,13 @@ on Perception checks.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>85</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -1963,6 +3486,10 @@ on Perception checks.</Description>
   <Species>
     <Key>ROD</Key>
     <Name>Rodian</Name>
+    <Source>
+      <Book>Edge of the Empire Core Rulebook</Book>
+      <Page>49</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -1976,12 +3503,28 @@ on Perception checks.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Expert Tracker</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>RYN</Key>
     <Name>Ryn</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -1995,6 +3538,13 @@ on Perception checks.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Know Somebody</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Deception</Name>
@@ -2019,6 +3569,10 @@ that item to make an attack.</Description>
   <Species>
     <Key>SAKIYAN</Key>
     <Name>Sakiyan</Name>
+    <Source>
+      <Book>Lords of Nal Hutta</Book>
+      <Page>98</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2032,6 +3586,13 @@ that item to make an attack.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Expert Tracker</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Perception</Name>
@@ -2047,6 +3608,10 @@ that item to make an attack.</Description>
   <Species>
     <Key>SATHARI</Key>
     <Name>Sathari</Name>
+    <Source>
+      <Book>Chronicles of the Gatekeeper</Book>
+      <Page>15</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>3</Agility>
@@ -2060,6 +3625,13 @@ that item to make an attack.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coordination</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2071,6 +3643,10 @@ that item to make an attack.</Description>
   <Species>
     <Key>SELKATH</Key>
     <Name>Selkath</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2084,6 +3660,13 @@ that item to make an attack.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Surgeon</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Medicine</Name>
@@ -2108,6 +3691,10 @@ penalties for traveling through water.</Description>
   <Species>
     <Key>SELONIAN</Key>
     <Name>Selonian</Name>
+    <Source>
+      <Book>Suns of Fortune</Book>
+      <Page>91</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -2121,6 +3708,13 @@ penalties for traveling through water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coordination</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2132,6 +3726,10 @@ penalties for traveling through water.</Description>
   <Species>
     <Key>SHIST</Key>
     <Name>Shistavanen</Name>
+    <Source>
+      <Book>Forged in Battle</Book>
+      <Page>24</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -2145,6 +3743,8 @@ penalties for traveling through water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Brawl</Name>
@@ -2165,6 +3765,10 @@ penalties for traveling through water.</Description>
   <Species>
     <Key>SLUISSI</Key>
     <Name>Sluissi</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2178,6 +3782,13 @@ penalties for traveling through water.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Mechanics</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices>
       <Option>
         <Name>Gearhead</Name>
@@ -2198,6 +3809,10 @@ penalties for traveling through water.</Description>
   <Species>
     <Key>SNIVVIAN</Key>
     <Name>Snivvian</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2211,6 +3826,8 @@ penalties for traveling through water.</Description>
       <StrainThreshold>12</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Charm</Name>
@@ -2237,6 +3854,10 @@ imposed due to cold environmental conditions.</Description>
   <Species>
     <Key>SQUIB</Key>
     <Name>Squib</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>3</Agility>
@@ -2250,6 +3871,13 @@ imposed due to cold environmental conditions.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Negotiation</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2267,6 +3895,10 @@ career.</Description>
   <Species>
     <Key>SULLUSTAN</Key>
     <Name>Sullustan</Name>
+    <Source>
+      <Book>Age of Rebellion Core Rulebook</Book>
+      <Page>60</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -2280,12 +3912,28 @@ career.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Skilled Jockey</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Astrogation</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>
   <Species>
     <Key>TALZ</Key>
     <Name>Talz</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2299,6 +3947,13 @@ career.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2310,6 +3965,10 @@ career.</Description>
   <Species>
     <Key>THAKWAASH</Key>
     <Name>Thakwaash</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2323,6 +3982,8 @@ career.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2334,6 +3995,10 @@ career.</Description>
   <Species>
     <Key>TOGORIAN</Key>
     <Name>Togorian</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2347,6 +4012,13 @@ career.</Description>
       <StrainThreshold>8</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Coercion</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2361,6 +4033,10 @@ of 3.</Description>
   <Species>
     <Key>TOGRUTA</Key>
     <Name>Togruta</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>60</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -2374,6 +4050,13 @@ of 3.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2387,6 +4070,10 @@ of 3.</Description>
   <Species>
     <Key>TOYDARIAN</Key>
     <Name>Toydarians</Name>
+    <Source>
+      <Book>Enter the Unknown</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>1</Agility>
@@ -2400,6 +4087,8 @@ of 3.</Description>
       <StrainThreshold>12</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2417,6 +4106,10 @@ of 3.</Description>
   <Species>
     <Key>TRAND</Key>
     <Name>Trandoshan</Name>
+    <Source>
+      <Book>Edge of the Empire Core Rulebook</Book>
+      <Page>50</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>1</Agility>
@@ -2430,6 +4123,13 @@ of 3.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Perception</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2445,6 +4145,16 @@ of 3.</Description>
   <Species>
     <Key>TWI</Key>
     <Name>Twi'lek</Name>
+    <Sources>
+      <Source>
+        <Book>Edge of the Empire Core Rulebook</Book>
+        <Page>51</Page>
+      </Source>
+      <Source>
+        <Book>Force and Destiny Core Rulebook</Book>
+        <Page>61</Page>
+      </Source>
+    </Sources>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>2</Agility>
@@ -2458,6 +4168,8 @@ of 3.</Description>
       <StrainThreshold>11</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Charm</Name>
@@ -2480,6 +4192,10 @@ of 3.</Description>
   <Species>
     <Key>UBESE</Key>
     <Name>Ubese</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2493,6 +4209,8 @@ of 3.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Perception</Name>
@@ -2508,6 +4226,10 @@ of 3.</Description>
   <Species>
     <Key>UGNAUGHTS</Key>
     <Name>Ugnaught</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>1</Agility>
@@ -2521,6 +4243,8 @@ of 3.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>Mechanics</Name>
@@ -2545,6 +4269,10 @@ of 3.</Description>
   <Species>
     <Key>VERPINE</Key>
     <Name>Verpine</Name>
+    <Source>
+      <Book>Strongholds of Resistance</Book>
+      <Page>102</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>3</Agility>
@@ -2558,6 +4286,13 @@ of 3.</Description>
       <StrainThreshold>12</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Mechanics</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2573,6 +4308,10 @@ of 3.</Description>
   <Species>
     <Key>WEEQUAY</Key>
     <Name>Weequay</Name>
+    <Source>
+      <Book>Dangerous Covenants</Book>
+      <Page>22</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2586,6 +4325,8 @@ of 3.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills/>
     <OptionChoices>
       <Option>
         <Name>One Rank in Resilience</Name>
@@ -2606,6 +4347,10 @@ of 3.</Description>
   <Species>
     <Key>WHIPHID</Key>
     <Name>Whiphid</Name>
+    <Source>
+      <Book>Keeping the Peace</Book>
+      <Page>21</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2619,6 +4364,13 @@ of 3.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>80</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2637,6 +4389,10 @@ of 4, and has the Vicious 1 quality.</Description>
   <Species>
     <Key>WOOK</Key>
     <Name>Wookiee</Name>
+    <Source>
+      <Book>Edge of the Empire Core Rulebook</Book>
+      <Page>52</Page>
+    </Source>
     <Characteristics>
       <Brawn>3</Brawn>
       <Agility>2</Agility>
@@ -2650,6 +4406,13 @@ of 4, and has the Vicious 1 quality.</Description>
       <StrainThreshold>8</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Brawl</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2661,6 +4424,10 @@ of 4, and has the Vicious 1 quality.</Description>
   <Species>
     <Key>XEXTO</Key>
     <Name>Xexto</Name>
+    <Source>
+      <Book>Stay on Target</Book>
+      <Page>24</Page>
+    </Source>
     <Characteristics>
       <Brawn>1</Brawn>
       <Agility>3</Agility>
@@ -2674,6 +4441,13 @@ of 4, and has the Vicious 1 quality.</Description>
       <StrainThreshold>9</StrainThreshold>
       <Experience>85</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Confidence</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills/>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2685,6 +4459,10 @@ of 4, and has the Vicious 1 quality.</Description>
   <Species>
     <Key>ZABRAK</Key>
     <Name>Zabrak</Name>
+    <Source>
+      <Book>Force and Destiny Core Rulebook</Book>
+      <Page>62</Page>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2698,6 +4476,13 @@ of 4, and has the Vicious 1 quality.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Survival</Name>
+        <RankAdd>1</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2712,6 +4497,10 @@ of 4, and has the Vicious 1 quality.</Description>
   <Species>
     <Key>ZELTRON</Key>
     <Name>Zeltron</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2725,6 +4514,13 @@ of 4, and has the Vicious 1 quality.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>90</Experience>
     </Attributes>
+    <Talents/>
+    <Skills>
+      <Skill>
+        <Name>Charm</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities>
       <SpecialAbility>
@@ -2740,6 +4536,10 @@ of 4, and has the Vicious 1 quality.</Description>
   <Species>
     <Key>ZYGERRIAN</Key>
     <Name>Zygerrian</Name>
+    <Source>
+      <Book>Unofficial Species Menagerie</Book>
+      <Page/>
+    </Source>
     <Characteristics>
       <Brawn>2</Brawn>
       <Agility>2</Agility>
@@ -2753,6 +4553,18 @@ of 4, and has the Vicious 1 quality.</Description>
       <StrainThreshold>10</StrainThreshold>
       <Experience>100</Experience>
     </Attributes>
+    <Talents>
+      <Talent>
+        <Name>Frenzied Attack</Name>
+        <RankAdd>1</RankAdd>
+      </Talent>
+    </Talents>
+    <Skills>
+      <Skill>
+        <Name>Coercion</Name>
+        <RankAdd>0</RankAdd>
+      </Skill>
+    </Skills>
     <OptionChoices/>
     <SpecialAbilities/>
   </Species>

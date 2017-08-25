@@ -3,6 +3,7 @@
     {
       "Key": "ALEENA",
       "Name": "Aleena",
+      "Source": {"Book": "Nexus of Power"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 3,
@@ -15,6 +16,18 @@
         "WoundThreshold": 8,
         "StrainThreshold": 10,
         "Experience": 95
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Durable",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Coordination",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -29,6 +42,7 @@
     {
       "Key": "ANX",
       "Name": "Anx",
+      "Source": {"Book": "Savage Spirits"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -42,6 +56,19 @@
         "StrainThreshold": 10,
         "Experience": 85
       },
+      "Talents": {
+        "Talent": [
+          {
+            "Name": "Kill With Kindness",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Lethal Blows",
+            "RankAdd": 1
+          }
+        ]
+      },
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": {
@@ -53,8 +80,9 @@
       "Thumbnail": "data\/img\/SpeciesANX.png"
     },
     {
-      "Key": "AQUA",
-      "Name": "Aqualish",
+      "Key": "AQUASUB1",
+      "Name": "Aqualish - Aquala",
+      "Source": {"Book": "Dangerous Covenants"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -68,19 +96,141 @@
         "StrainThreshold": 8,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": [
+          {
+            "Name": "Brawl",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Resilience",
+            "RankAdd": 1
+          }
+        ]
+      },
       "OptionChoices": {},
       "SpecialAbilities": {
-        "SpecialAbility": {
-          "Name": "Underwater Breathing",
-          "Description": "All Aqualish are capable of breathing underwater."
-        }
+        "SpecialAbility": [
+          {
+            "Name": "Underwater Breathing",
+            "Description": "All Aqualish are capable of breathing underwater."
+          },
+          {
+            "Name": "Environmental Conditions",
+            "Description": "Aquala may remove [SETBACK] imposed due to any cold or wet conditions."
+          }
+        ]
       },
       "Description": "",
-      "Thumbnail": "data\/img\/SpeciesAQUA.png"
+      "Thumbnail": "data\/img\/SpeciesAQUASUB1.png"
+    },
+    {
+      "Key": "AQUASUB2",
+      "Name": "Aqualish - Ualaq",
+      "Source": {"Book": "Dangerous Covenants"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 1,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 2
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 8,
+        "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {
+        "Option": [
+          {
+            "Name": "Survival",
+            "Description": "Ualaq may begin the game with one rank in Survival."
+          },
+          {
+            "Name": "Perception",
+            "Description": "Ualaq may begin the game with one rank in Perception."
+          }
+        ]
+      },
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Underwater Breathing",
+            "Description": "All Aqualish are capable of breathing underwater."
+          },
+          {
+            "Name": "Environmental Conditions",
+            "Description": "Ualaq may remove [SETBACK] imposed due to dark conditions, but suffer [SETBACK] to \n              Perception checks in brightly lit environments"
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesAQUASUB2.png"
+    },
+    {
+      "Key": "AQUASUB3",
+      "Name": "Aqualish - Quara",
+      "Source": {"Book": "Dangerous Covenants"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 1,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 2
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 8,
+        "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {
+        "Option": [
+          {
+            "Name": "Athletics",
+            "Description": "Quara may begin the game with one rank in Athletics."
+          },
+          {
+            "Name": "Coercion",
+            "Description": "Quara may begin the game with one rank in Coercion."
+          }
+        ]
+      },
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Underwater Breathing",
+            "Description": "All Aqualish are capable of breathing underwater."
+          },
+          {
+            "Name": "Environmental Conditions",
+            "Description": "\n                Quara may remove [SETBACK] when attempting to track anything through a natural environment.\n              "
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesAQUASUB3.png"
     },
     {
       "Key": "ARCONA",
       "Name": "Arcona",
+      "Source": {"Book": "Far Horizons"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -93,6 +243,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Vigilance",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -113,6 +270,7 @@
     {
       "Key": "ARKANOFF",
       "Name": "Arkanian Offshoot",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -126,6 +284,8 @@
         "StrainThreshold": 10,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": [
@@ -145,6 +305,7 @@
     {
       "Key": "ARKAN",
       "Name": "Arkanian",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -157,6 +318,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coercion",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -171,6 +339,7 @@
     {
       "Key": "BARAB",
       "Name": "Barabel",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -183,6 +352,13 @@
         "WoundThreshold": 14,
         "StrainThreshold": 8,
         "Experience": 80
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coercion",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -207,6 +383,7 @@
     {
       "Key": "BARDOTTAN",
       "Name": "Bardottan",
+      "Source": {"Book": "Nexus of Power"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -220,6 +397,13 @@
         "StrainThreshold": 10,
         "Experience": 105
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Lore",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -228,6 +412,7 @@
     {
       "Key": "BESALISK",
       "Name": "Besalisk",
+      "Source": {"Book": "Special Modifications"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -240,6 +425,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 7,
         "Experience": 85
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Resilience",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -254,6 +446,7 @@
     {
       "Key": "BITH",
       "Name": "Bith",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -267,6 +460,18 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Researcher",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -275,6 +480,18 @@
     {
       "Key": "BOTH",
       "Name": "Bothan",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 43
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 51
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -288,6 +505,18 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Convincing Demeanor",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Streetwise",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -296,6 +525,7 @@
     {
       "Key": "CAAMASI",
       "Name": "Caamasi",
+      "Source": {"Book": "Desperate Allies"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -309,6 +539,8 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -333,6 +565,7 @@
     {
       "Key": "CATHAR",
       "Name": "Cathar",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -346,6 +579,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -370,6 +605,7 @@
     {
       "Key": "CEREAN",
       "Name": "Cerean",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 1,
@@ -383,6 +619,16 @@
         "StrainThreshold": 13,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": [
+          {
+            "Name": "Vigilance",
+            "RankAdd": 1
+          },
+          {"Special": "All Knowledge Skills as Career Skills"}
+        ]
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -391,6 +637,7 @@
     {
       "Key": "CHADRA",
       "Name": "Chadra-Fan",
+      "Source": {"Book": "Stay on Target"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 3,
@@ -403,6 +650,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 11,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Mechanics",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -423,6 +677,7 @@
     {
       "Key": "CHAGRIAN",
       "Name": "Chagrian",
+      "Source": {"Book": "Lead by Example"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 1,
@@ -435,6 +690,18 @@
         "WoundThreshold": 11,
         "StrainThreshold": 10,
         "Experience": 90
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Knowledge Specialization",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Resilience",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -449,6 +716,7 @@
     {
       "Key": "CHEVIN",
       "Name": "Chevin",
+      "Source": {"Book": "Far Horizons"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -461,6 +729,18 @@
         "WoundThreshold": 11,
         "StrainThreshold": 11,
         "Experience": 80
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Durable",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Negotiation",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -475,6 +755,7 @@
     {
       "Key": "CHISS",
       "Name": "Chiss",
+      "Source": {"Book": "Enter the Unknown"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -487,6 +768,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Cool",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -501,6 +789,7 @@
     {
       "Key": "CLAWDITE",
       "Name": "Clawdite",
+      "Source": {"Book": "No Disintegrations"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -513,6 +802,18 @@
         "WoundThreshold": 9,
         "StrainThreshold": 9,
         "Experience": 95
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Indistinguishable",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Resilience",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -527,6 +828,7 @@
     {
       "Key": "HUMANCOR",
       "Name": "Corellian Human",
+      "Source": {"Book": "Suns of Fortune"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -540,6 +842,8 @@
         "StrainThreshold": 10,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -559,6 +863,7 @@
     {
       "Key": "DASHADE",
       "Name": "Dashade",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -572,6 +877,13 @@
         "StrainThreshold": 10,
         "Experience": 90
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Outdoorsman",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -596,6 +908,7 @@
     {
       "Key": "DEFEL",
       "Name": "Defel",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -608,6 +921,18 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Indistinguishable",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Vigilance",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -632,6 +957,18 @@
     {
       "Key": "DEVAR",
       "Name": "Devaronian",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Nexus of Power",
+            "Page": 100
+          },
+          {
+            "Book": "No Disintegrations",
+            "Page": 23
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -645,6 +982,8 @@
         "StrainThreshold": 10,
         "Experience": 95
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -669,6 +1008,7 @@
     {
       "Key": "DRALL",
       "Name": "Drall",
+      "Source": {"Book": "Suns of Fortune"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 1,
@@ -681,6 +1021,13 @@
         "WoundThreshold": 8,
         "StrainThreshold": 12,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Education",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -695,6 +1042,7 @@
     {
       "Key": "DRESSELLIAN",
       "Name": "Dressellian",
+      "Source": {"Book": "Stay on Target"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -708,6 +1056,13 @@
         "StrainThreshold": 10,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {
         "Option": [
           {
@@ -716,7 +1071,8 @@
           },
           {
             "Name": "Non-Primitive",
-            "Description": "Tech-saavy Dressellians do not need to upgrade the difficulty of checks involving non-Dressellian technology."
+            "Description": "Tech-saavy Dressellians do not need to upgrade the difficulty of checks involving non-Dressellian technology.",
+            "Bonus": {"Experience": -10}
           }
         ]
       },
@@ -725,8 +1081,20 @@
       "Thumbnail": "data\/img\/SpeciesDRESSELLIAN.png"
     },
     {
-      "Key": "DROID",
-      "Name": "Droid",
+      "Key": "DROIDSUB1",
+      "Name": "Droid - 2-1B Surgical",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 1,
         "Agility": 1,
@@ -740,6 +1108,13 @@
         "StrainThreshold": 10,
         "Experience": 175
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": [
@@ -766,11 +1141,390 @@
         ]
       },
       "Description": "",
-      "Thumbnail": "data\/img\/SpeciesDROID.png"
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB1.png"
+    },
+    {
+      "Key": "DROIDSUB2",
+      "Name": "Droid - 3P0 Protocol",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB2.png"
+    },
+    {
+      "Key": "DROIDSUB3",
+      "Name": "Droid - IG Assassin",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB3.png"
+    },
+    {
+      "Key": "DROIDSUB4",
+      "Name": "Droid - LE-V0 Law Enforcement",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB4.png"
+    },
+    {
+      "Key": "DROIDSUB5",
+      "Name": "Droid - LOM Protocol",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB5.png"
+    },
+    {
+      "Key": "DROIDSUB6",
+      "Name": "Droid - R-Series Astromech",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB6.png"
+    },
+    {
+      "Key": "DROIDSUB7",
+      "Name": "Droid - Other Model",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 45
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 53
+          }
+        ]
+      },
+      "Characteristics": {
+        "Brawn": 1,
+        "Agility": 1,
+        "Intellect": 1,
+        "Cunning": 1,
+        "Willpower": 1,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 175
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "Additional Career Skills",
+            "Description": "May train in two additional career skills and one additional specialization skills"
+          },
+          {
+            "Name": "Feature",
+            "Description": "Droids do not need to eat, sleep, or breath, and are unaffected by vacuum, toxins, and poisons."
+          },
+          {
+            "Name": "Inorganic",
+            "Description": "Droids do not gain benefits from bacta, stimpacks, or Medicine checks.  They must be repaired with repair patches and Mechanics checks."
+          },
+          {
+            "Name": "Mechanical Being",
+            "Description": "Droids cannot become Force sensitive, cannot acquire a Force Rating or Force powers, and are not affected by mind-altering Force powers."
+          },
+          {
+            "Name": "Cybernetics",
+            "Description": "Droids have a cybernetics implant cap of 6."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesDROIDSUB7.png"
     },
     {
       "Key": "DUG",
       "Name": "Dug",
+      "Source": {"Book": "Special Modifications"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -784,6 +1538,18 @@
         "StrainThreshold": 8,
         "Experience": 90
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Defensive Driving",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -792,6 +1558,18 @@
     {
       "Key": "DUROS",
       "Name": "Duros",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 55
+          },
+          {
+            "Book": "Enter the Unknown",
+            "Page": 21
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -804,6 +1582,13 @@
         "WoundThreshold": 11,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Piloting - Space",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -818,6 +1603,7 @@
     {
       "Key": "ELOM",
       "Name": "Elom",
+      "Source": {"Book": "Forged in Battle"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -830,6 +1616,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 9,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Resilience",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -844,6 +1637,7 @@
     {
       "Key": "ELOMIN",
       "Name": "Elomin",
+      "Source": {"Book": "Forged in Battle"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -857,6 +1651,19 @@
         "StrainThreshold": 10,
         "Experience": 105
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": [
+          {
+            "Name": "Charm",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Education",
+            "RankAdd": 1
+          }
+        ]
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -865,6 +1672,7 @@
     {
       "Key": "EWOK",
       "Name": "Ewok",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -878,6 +1686,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -908,6 +1718,7 @@
     {
       "Key": "FALLEEN",
       "Name": "Falleen",
+      "Source": {"Book": "Fly Casual"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -920,6 +1731,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 12,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Charm",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -934,6 +1752,7 @@
     {
       "Key": "FARGHUL",
       "Name": "Farghul",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -947,6 +1766,13 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Convincing Demeanor",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -966,6 +1792,7 @@
     {
       "Key": "GAMORREAN",
       "Name": "Gamorrean",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -978,6 +1805,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 8,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Melee",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -992,6 +1826,18 @@
     {
       "Key": "GAND",
       "Name": "Gand",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 47
+          },
+          {
+            "Book": "Endless Vigil",
+            "Page": 18
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1005,11 +1851,19 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Discipline",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {
         "Option": [
           {
             "Name": "Has Lungs",
-            "Description": "Requires ammonia respirator"
+            "Description": "Requires ammonia respirator",
+            "Bonus": {"Experience": 10}
           },
           {
             "Name": "Lungless",
@@ -1024,6 +1878,7 @@
     {
       "Key": "GANK",
       "Name": "Gank",
+      "Source": {"Book": "Lords of Nal Hutta"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1037,6 +1892,8 @@
         "StrainThreshold": 10,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1061,6 +1918,7 @@
     {
       "Key": "GIVIN",
       "Name": "Givin",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1073,6 +1931,18 @@
         "WoundThreshold": 12,
         "StrainThreshold": 10,
         "Experience": 90
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Researcher",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Education",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1087,6 +1957,7 @@
     {
       "Key": "GOSSAM",
       "Name": "Gossam",
+      "Source": {"Book": "Desperate Allies"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1099,6 +1970,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 11,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Deception",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1113,6 +1991,7 @@
     {
       "Key": "GOTAL",
       "Name": "Gotal",
+      "Source": {"Book": "Fly Casual"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1125,6 +2004,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 8,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1139,6 +2025,18 @@
     {
       "Key": "GRAN",
       "Name": "Gran",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 56
+          },
+          {
+            "Book": "Far Horizons",
+            "Page": 22
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1152,6 +2050,8 @@
         "StrainThreshold": 9,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1176,6 +2076,7 @@
     {
       "Key": "GUNGAN",
       "Name": "Gungan",
+      "Source": {"Book": "Nexus of Power"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1188,6 +2089,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Athletics",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1202,6 +2110,7 @@
     {
       "Key": "HERGLIC",
       "Name": "Herglic",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -1215,6 +2124,13 @@
         "StrainThreshold": 10,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Charm",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -1223,6 +2139,22 @@
     {
       "Key": "HUMAN",
       "Name": "Human",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 48
+          },
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 57
+          },
+          {
+            "Book": "Force and Destiny Core Rulebook",
+            "Page": 55
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1236,6 +2168,8 @@
         "StrainThreshold": 10,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": {
@@ -1249,6 +2183,7 @@
     {
       "Key": "HUTT",
       "Name": "Hutt",
+      "Source": {"Book": "Lords of Nal Hutta"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -1262,6 +2197,19 @@
         "StrainThreshold": 11,
         "Experience": 70
       },
+      "Talents": {
+        "Talent": [
+          {
+            "Name": "Enduring",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Nobody's Fool",
+            "RankAdd": 1
+          }
+        ]
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1286,6 +2234,7 @@
     {
       "Key": "IKTOTCHI",
       "Name": "Iktotchi",
+      "Source": {"Book": "Keeping the Peace"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1298,6 +2247,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 12,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Vigilance",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1312,6 +2268,7 @@
     {
       "Key": "ISHITIB",
       "Name": "Ishi Tib",
+      "Source": {"Book": "Lead by Example"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1324,6 +2281,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Discipline",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1344,6 +2308,18 @@
     {
       "Key": "ITHORIAN",
       "Name": "Ithorian",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Age of Rebellion Core Rulebook",
+            "Page": 58
+          },
+          {
+            "Book": "Savage Spirits",
+            "Page": 20
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 1,
@@ -1356,6 +2332,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 12,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1370,6 +2353,7 @@
     {
       "Key": "JAWA",
       "Name": "Jawa",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1382,6 +2366,18 @@
         "WoundThreshold": 9,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Utinni!",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Mechanics",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1402,6 +2398,7 @@
     {
       "Key": "KALLERAN",
       "Name": "Kalleran",
+      "Source": {"Book": "No Disintegrations"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -1415,6 +2412,18 @@
         "StrainThreshold": 12,
         "Experience": 90
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Heightened Awareness",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Streetwise",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -1423,6 +2432,7 @@
     {
       "Key": "KELDOR",
       "Name": "Kel Dor",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1435,6 +2445,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Education",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1455,6 +2472,7 @@
     {
       "Key": "KLATOO",
       "Name": "Klatooinian",
+      "Source": {"Book": "Dangerous Covenants"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -1468,6 +2486,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1496,6 +2516,7 @@
     {
       "Key": "KUBAZ",
       "Name": "Kubaz",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1509,6 +2530,18 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Street Smarts",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -1517,6 +2550,7 @@
     {
       "Key": "KYUZO",
       "Name": "Kyuzo",
+      "Source": {"Book": "Forged in Battle"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -1529,6 +2563,13 @@
         "WoundThreshold": 11,
         "StrainThreshold": 11,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coordination",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1543,6 +2584,18 @@
     {
       "Key": "LANNIK",
       "Name": "Lannik",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Keeping the Peace",
+            "Page": 20
+          },
+          {
+            "Book": "Lead by Example",
+            "Page": 23
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 1,
@@ -1555,6 +2608,13 @@
         "WoundThreshold": 8,
         "StrainThreshold": 12,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Streetwise",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1569,6 +2629,7 @@
     {
       "Key": "LEPI",
       "Name": "Lepi",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -1582,6 +2643,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1601,6 +2664,12 @@
     {
       "Key": "MANDOHUMAN",
       "Name": "Mandalorian Human",
+      "Sources": {
+        "Source": {
+          "Book": "Friends Like These",
+          "Page": 7
+        }
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1614,6 +2683,8 @@
         "StrainThreshold": 10,
         "Experience": 105
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1633,6 +2704,7 @@
     {
       "Key": "MIRIALAN",
       "Name": "Mirialan",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -1646,6 +2718,19 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": [
+          {
+            "Name": "Discipline",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Cool",
+            "RankAdd": 1
+          }
+        ]
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -1654,6 +2739,7 @@
     {
       "Key": "MONCAL",
       "Name": "Mon Calamari",
+      "Source": {"Book": "Age of Rebellion Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1667,6 +2753,13 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Education",
+          "RankAdd": 0
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": {
@@ -1678,8 +2771,9 @@
       "Thumbnail": "data\/img\/SpeciesMONCAL.png"
     },
     {
-      "Key": "MUSTAFARIAN",
-      "Name": "Mustafarian",
+      "Key": "MUSTAFARIANSUB1",
+      "Name": "Mustafarian - Northern Mustafarian",
+      "Source": {"Book": "Special Modifications"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1693,14 +2787,71 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Eye for Detail",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
-      "SpecialAbilities": {},
+      "SpecialAbilities": {
+        "SpecialAbility": {
+          "Name": "Arid\/Hot Environments",
+          "Description": "\n                Northern Mustafarians may remove [SETBACK][SETBACK] to resist arid or hot environmental conditions.\n              "
+        }
+      },
       "Description": "",
-      "Thumbnail": "data\/img\/SpeciesMUSTAFARIAN.png"
+      "Thumbnail": "data\/img\/SpeciesMUSTAFARIANSUB1.png"
+    },
+    {
+      "Key": "MUSTAFARIANSUB2",
+      "Name": "Mustafarian - Southern Mustafarian",
+      "Source": {"Book": "Special Modifications"},
+      "Characteristics": {
+        "Brawn": 2,
+        "Agility": 2,
+        "Intellect": 2,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 10,
+        "StrainThreshold": 10,
+        "Experience": 100
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Enduring",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": {
+          "Name": "Arid\/Hot Environments",
+          "Description": "\n                Southern Mustafarians may remove [SETBACK][SETBACK] to resist arid or hot environmental conditions.\n              "
+        }
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesMUSTAFARIANSUB2.png"
     },
     {
       "Key": "MUUN",
       "Name": "Muun",
+      "Source": {"Book": "Endless Vigil"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1713,6 +2864,19 @@
         "WoundThreshold": 9,
         "StrainThreshold": 9,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": [
+          {
+            "Name": "Education",
+            "RankAdd": 1
+          },
+          {
+            "Name": "Core Worlds",
+            "RankAdd": 1
+          }
+        ]
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1727,6 +2891,7 @@
     {
       "Key": "NAGAI",
       "Name": "Nagai",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1740,6 +2905,13 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Kill With Kindness",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1759,6 +2931,7 @@
     {
       "Key": "NAUTOLAN",
       "Name": "Nautolan",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -1771,6 +2944,13 @@
         "WoundThreshold": 11,
         "StrainThreshold": 9,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Athletics",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1785,6 +2965,7 @@
     {
       "Key": "NEIM",
       "Name": "Neimoidian",
+      "Source": {"Book": "Desperate Allies"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1798,6 +2979,8 @@
         "StrainThreshold": 9,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1815,8 +2998,9 @@
       "Thumbnail": "data\/img\/SpeciesNEIM.png"
     },
     {
-      "Key": "NIKTO",
-      "Name": "Nikto",
+      "Key": "NIKTOCH1OP1",
+      "Name": "Nikto - Kajain'sa'Nikto (Red Nikto)",
+      "Source": {"Book": "Lords of Nal Hutta"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -1830,14 +3014,169 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Resilience",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": {
+          "Name": "Arid\/Hot Environments",
+          "Description": "Red Niktos may remove [SETBACK] imposed due to arid or hot enviromental conditions."
+        }
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesNIKTOCH1OP1.png"
+    },
+    {
+      "Key": "NIKTOCH1OP2",
+      "Name": "Nikto - Kadas'sa'Nikto (Green Nikto)",
+      "Source": {"Book": "Lords of Nal Hutta"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 2,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 10,
+        "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coordination",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": [
+          {
+            "Name": "May use claws when brawling",
+            "Description": "When a Green Nikto makes Brawl checks to deal damage to an opponent, he deals +1 damage and has a Critical Rating of 3."
+          },
+          {
+            "Name": "Climbing",
+            "Description": "Green Nikto gain [BOOST] to Athletics checks made to climb trees and other surfaces their claws can pierce."
+          }
+        ]
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesNIKTOCH1OP2.png"
+    },
+    {
+      "Key": "NIKTOCH1OP3",
+      "Name": "Nikto - Esral'sa'Nikto (Mountain Nikto)",
+      "Source": {"Book": "Lords of Nal Hutta"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 2,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 10,
+        "Experience": 100
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Natural Outdoorsman",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
-      "Thumbnail": "data\/img\/SpeciesNIKTO.png"
+      "Thumbnail": "data\/img\/SpeciesNIKTOCH1OP3.png"
+    },
+    {
+      "Key": "NIKTOCH1OP4",
+      "Name": "Nikto - Gluss'sa'Nikto (Pale Nikto)",
+      "Source": {"Book": "Lords of Nal Hutta"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 2,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 10,
+        "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Athletics",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": {
+          "Name": "Swimmer",
+          "Description": "A Pale Nikto never suffers movement penalties for traveling through water and can hold his breath for a number of rounds equal to twice his Brawn rating before beginning to drown."
+        }
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesNIKTOCH1OP4.png"
+    },
+    {
+      "Key": "NIKTOCH1OP5",
+      "Name": "Nikto - M'shento'su'Nikto (Southern Nikto)",
+      "Source": {"Book": "Lords of Nal Hutta"},
+      "Characteristics": {
+        "Brawn": 3,
+        "Agility": 2,
+        "Intellect": 2,
+        "Cunning": 2,
+        "Willpower": 2,
+        "Presence": 1
+      },
+      "Attributes": {
+        "WoundThreshold": 11,
+        "StrainThreshold": 10,
+        "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
+      },
+      "OptionChoices": {},
+      "SpecialAbilities": {
+        "SpecialAbility": {
+          "Name": "Sounds",
+          "Description": "Southern Nikto may add [BOOST] to Perception and Vigilance checks to detect sounds."
+        }
+      },
+      "Description": "",
+      "Thumbnail": "data\/img\/SpeciesNIKTOCH1OP5.png"
     },
     {
       "Key": "NOGHRI",
       "Name": "Noghri",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -1850,6 +3189,18 @@
         "WoundThreshold": 11,
         "StrainThreshold": 10,
         "Experience": 90
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Stalker",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1870,6 +3221,7 @@
     {
       "Key": "ORTOLAN",
       "Name": "Ortolan",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -1882,6 +3234,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -1906,6 +3265,12 @@
     {
       "Key": "PANTORAN",
       "Name": "Pantoran",
+      "Sources": {
+        "Source": {
+          "Book": "Endless Vigil",
+          "Page": 22
+        }
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -1919,6 +3284,8 @@
         "StrainThreshold": 11,
         "Experience": 110
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1943,6 +3310,7 @@
     {
       "Key": "PAUAN",
       "Name": "Pau'an",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1956,6 +3324,8 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -1975,6 +3345,7 @@
     {
       "Key": "POLISMASSAN",
       "Name": "Polis Massan",
+      "Source": {"Book": "Strongholds of Resistance"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -1988,6 +3359,13 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Medicine",
+          "RankAdd": 0
+        }
+      },
       "OptionChoices": {
         "Option": [
           {
@@ -1996,7 +3374,8 @@
           },
           {
             "Name": "Posesses Vocal Chords",
-            "Description": "\n            A small minority of Polis Massans do possess vocal chords.  Referred to as \"speakers\" by their people, these rare individuals can physically speak languages, though their voices are soft and strangely resonant.\n          "
+            "Description": "\n            A small minority of Polis Massans do possess vocal chords.  Referred to as \"speakers\" by their people, these rare individuals can physically speak languages, though their voices are soft and strangely resonant.\n          ",
+            "Bonus": {"Experience": -10}
           }
         ]
       },
@@ -2012,6 +3391,18 @@
     {
       "Key": "QUARREN",
       "Name": "Quarren",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Fly Casual",
+            "Page": 23
+          },
+          {
+            "Book": "Strongholds of Resistance",
+            "Page": 100
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2024,6 +3415,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 8,
         "Experience": 95
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Negotiation",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2044,6 +3442,7 @@
     {
       "Key": "QUERMIAN",
       "Name": "Quermian",
+      "Source": {"Book": "Savage Spirits"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -2056,6 +3455,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 85
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2070,6 +3476,7 @@
     {
       "Key": "ROD",
       "Name": "Rodian",
+      "Source": {"Book": "Edge of the Empire Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -2083,6 +3490,18 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Expert Tracker",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -2091,6 +3510,7 @@
     {
       "Key": "RYN",
       "Name": "Ryn",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2104,6 +3524,13 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Know Somebody",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2128,6 +3555,7 @@
     {
       "Key": "SAKIYAN",
       "Name": "Sakiyan",
+      "Source": {"Book": "Lords of Nal Hutta"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2141,6 +3569,13 @@
         "StrainThreshold": 10,
         "Experience": 80
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Expert Tracker",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2160,6 +3595,7 @@
     {
       "Key": "SATHARI",
       "Name": "Sathari",
+      "Source": {"Book": "Chronicles of the Gatekeeper"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 3,
@@ -2172,6 +3608,13 @@
         "WoundThreshold": 8,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coordination",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2186,6 +3629,7 @@
     {
       "Key": "SELKATH",
       "Name": "Selkath",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2199,6 +3643,13 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Surgeon",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2223,6 +3674,7 @@
     {
       "Key": "SELONIAN",
       "Name": "Selonian",
+      "Source": {"Book": "Suns of Fortune"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -2235,6 +3687,13 @@
         "WoundThreshold": 11,
         "StrainThreshold": 10,
         "Experience": 80
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coordination",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2249,6 +3708,7 @@
     {
       "Key": "SHIST",
       "Name": "Shistavanen",
+      "Source": {"Book": "Forged in Battle"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -2262,6 +3722,8 @@
         "StrainThreshold": 10,
         "Experience": 80
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2286,6 +3748,7 @@
     {
       "Key": "SLUISSI",
       "Name": "Sluissi",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2298,6 +3761,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Mechanics",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {
         "Option": [
@@ -2323,6 +3793,7 @@
     {
       "Key": "SNIVVIAN",
       "Name": "Snivvian",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2336,6 +3807,8 @@
         "StrainThreshold": 12,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2366,6 +3839,7 @@
     {
       "Key": "SQUIB",
       "Name": "Squib",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 3,
@@ -2378,6 +3852,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 11,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Negotiation",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2398,6 +3879,7 @@
     {
       "Key": "SULLUSTAN",
       "Name": "Sullustan",
+      "Source": {"Book": "Age of Rebellion Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -2411,6 +3893,18 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Skilled Jockey",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Astrogation",
+          "RankAdd": 0
+        }
+      },
       "OptionChoices": {},
       "SpecialAbilities": {},
       "Description": "",
@@ -2419,6 +3913,7 @@
     {
       "Key": "TALZ",
       "Name": "Talz",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2431,6 +3926,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 9,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2445,6 +3947,7 @@
     {
       "Key": "THAKWAASH",
       "Name": "Thakwaash",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2458,6 +3961,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": {
@@ -2471,6 +3976,7 @@
     {
       "Key": "TOGORIAN",
       "Name": "Togorian",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2483,6 +3989,13 @@
         "WoundThreshold": 14,
         "StrainThreshold": 8,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Coercion",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2497,6 +4010,7 @@
     {
       "Key": "TOGRUTA",
       "Name": "Togruta",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -2509,6 +4023,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2523,6 +4044,7 @@
     {
       "Key": "TOYDARIAN",
       "Name": "Toydarians",
+      "Source": {"Book": "Enter the Unknown"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 1,
@@ -2536,6 +4058,8 @@
         "StrainThreshold": 12,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": [
@@ -2555,6 +4079,7 @@
     {
       "Key": "TRAND",
       "Name": "Trandoshan",
+      "Source": {"Book": "Edge of the Empire Core Rulebook"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 1,
@@ -2567,6 +4092,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 9,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Perception",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2587,6 +4119,18 @@
     {
       "Key": "TWI",
       "Name": "Twi'lek",
+      "Sources": {
+        "Source": [
+          {
+            "Book": "Edge of the Empire Core Rulebook",
+            "Page": 51
+          },
+          {
+            "Book": "Force and Destiny Core Rulebook",
+            "Page": 61
+          }
+        ]
+      },
       "Characteristics": {
         "Brawn": 1,
         "Agility": 2,
@@ -2600,6 +4144,8 @@
         "StrainThreshold": 11,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2624,6 +4170,7 @@
     {
       "Key": "UBESE",
       "Name": "Ubese",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2637,6 +4184,8 @@
         "StrainThreshold": 10,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2656,6 +4205,7 @@
     {
       "Key": "UGNAUGHTS",
       "Name": "Ugnaught",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 1,
@@ -2669,6 +4219,8 @@
         "StrainThreshold": 10,
         "Experience": 100
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2699,6 +4251,7 @@
     {
       "Key": "VERPINE",
       "Name": "Verpine",
+      "Source": {"Book": "Strongholds of Resistance"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 3,
@@ -2711,6 +4264,13 @@
         "WoundThreshold": 9,
         "StrainThreshold": 12,
         "Experience": 80
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Mechanics",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2731,6 +4291,7 @@
     {
       "Key": "WEEQUAY",
       "Name": "Weequay",
+      "Source": {"Book": "Dangerous Covenants"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2744,6 +4305,8 @@
         "StrainThreshold": 9,
         "Experience": 90
       },
+      "Talents": {},
+      "Skills": {},
       "OptionChoices": {
         "Option": [
           {
@@ -2768,6 +4331,7 @@
     {
       "Key": "WHIPHID",
       "Name": "Whiphid",
+      "Source": {"Book": "Keeping the Peace"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2780,6 +4344,13 @@
         "WoundThreshold": 12,
         "StrainThreshold": 10,
         "Experience": 80
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2800,6 +4371,7 @@
     {
       "Key": "WOOK",
       "Name": "Wookiee",
+      "Source": {"Book": "Edge of the Empire Core Rulebook"},
       "Characteristics": {
         "Brawn": 3,
         "Agility": 2,
@@ -2812,6 +4384,13 @@
         "WoundThreshold": 14,
         "StrainThreshold": 8,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Brawl",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2826,6 +4405,7 @@
     {
       "Key": "XEXTO",
       "Name": "Xexto",
+      "Source": {"Book": "Stay on Target"},
       "Characteristics": {
         "Brawn": 1,
         "Agility": 3,
@@ -2839,6 +4419,13 @@
         "StrainThreshold": 9,
         "Experience": 85
       },
+      "Talents": {
+        "Talent": {
+          "Name": "Confidence",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {},
       "OptionChoices": {},
       "SpecialAbilities": {
         "SpecialAbility": {
@@ -2852,6 +4439,7 @@
     {
       "Key": "ZABRAK",
       "Name": "Zabrak",
+      "Source": {"Book": "Force and Destiny Core Rulebook"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2864,6 +4452,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Survival",
+          "RankAdd": 1
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2878,6 +4473,7 @@
     {
       "Key": "ZELTRON",
       "Name": "Zeltron",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2890,6 +4486,13 @@
         "WoundThreshold": 10,
         "StrainThreshold": 10,
         "Experience": 90
+      },
+      "Talents": {},
+      "Skills": {
+        "Skill": {
+          "Name": "Charm",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {
@@ -2910,6 +4513,7 @@
     {
       "Key": "ZYGERRIAN",
       "Name": "Zygerrian",
+      "Source": {"Book": "Unofficial Species Menagerie"},
       "Characteristics": {
         "Brawn": 2,
         "Agility": 2,
@@ -2922,6 +4526,18 @@
         "WoundThreshold": 11,
         "StrainThreshold": 10,
         "Experience": 100
+      },
+      "Talents": {
+        "Talent": {
+          "Name": "Frenzied Attack",
+          "RankAdd": 1
+        }
+      },
+      "Skills": {
+        "Skill": {
+          "Name": "Coercion",
+          "RankAdd": 0
+        }
       },
       "OptionChoices": {},
       "SpecialAbilities": {},
