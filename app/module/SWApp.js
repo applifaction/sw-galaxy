@@ -61,7 +61,7 @@ App.filter('trustAsHtmlFilter', function ($sce) {
 
 App.filter('arrayFulltextFilter', function () {
     return function (items, searchItems, attribute, key) {
-        if (!searchItems) {
+        if (!searchItems || searchItems.length == 0) {
             return items;
         }
         var i, l = searchItems.length, search;
@@ -83,7 +83,7 @@ App.filter('arrayFulltextFilter', function () {
 
 App.filter('arrayFulltextFilterOr', function () {
     return function (items, searchItems, attribute, key) {
-        if (!searchItems) {
+        if (!searchItems || searchItems.length == 0) {
             return items;
         }
         items = items.filter(function (item) {
