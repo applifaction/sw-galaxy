@@ -60,7 +60,7 @@ App.filter('trustAsHtmlFilter', function ($sce) {
 });
 
 App.filter('arrayFulltextFilter', function () {
-    return function (items, searchItems, attribute) {
+    return function (items, searchItems, attribute, key) {
         if (!searchItems) {
             return items;
         }
@@ -70,13 +70,31 @@ App.filter('arrayFulltextFilter', function () {
             items = items.filter(function (item) {
                 var i2, l2 = item[attribute].length;
                 for (i2 = 0; i2 < l2; i2++) {
-                    if (item[attribute][i2].Key == search) {
+                    if (item[attribute][i2][key] == search) {
                         return true;
                     }
                 }
                 return false;
             });
         }
+        return items;
+    }
+});
+
+App.filter('arrayFulltextFilterOr', function () {
+    return function (items, searchItems, attribute, key) {
+        if (!searchItems) {
+            return items;
+        }
+        items = items.filter(function (item) {
+            var i2, l2 = item[attribute].length;
+            for (i2 = 0; i2 < l2; i2++) {
+                if (searchItems.indexOf(item[attribute][i2][key]) != -1) {
+                    return true;
+                }
+            }
+            return false;
+        });
         return items;
     }
 });
@@ -422,6 +440,7 @@ App.directive('itemList', function () {
                 $scope.favourites = [];
                 $scope.types = [];
                 $scope.skills = [];
+                $scope.sources = [];
                 $scope.ranges = [];
                 $scope.qualities = [];
                 $scope.baseMods = [];
@@ -474,8 +493,9 @@ App.directive('itemList', function () {
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.type, 'Type');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.skill, 'SkillKey');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.range, 'RangeValue');
-                            filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.baseMod, 'BaseMods');
-                            filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.quality, 'Qualities');
+                            filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.baseMod, 'BaseMods', 'Key');
+                            filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.quality, 'Qualities', 'Key');
+                            filteredItems = $filter('arrayFulltextFilterOr')(filteredItems, $scope.filters.source, 'Sources', 'Book');
                             if ($scope.order.length > 0) {
                                 filteredItems = $filter('orderBy')(filteredItems, $scope.order);
                             }
@@ -506,7 +526,7 @@ App.directive('itemList', function () {
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
-                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, outputItems = [];
+                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, sources, outputItems = [];
                         items = res.data[$scope.name];
                         l = items.length;
                         $scope.min.Damage = $scope.getMinValue(items, 'Damage');
@@ -528,6 +548,7 @@ App.directive('itemList', function () {
                                 continue;
                             }
                             qualities = [];
+                            sources = [];
                             talents = [];
                             skills = [];
                             abilities = [];
@@ -595,6 +616,20 @@ App.directive('itemList', function () {
                                 }
                             }
                             items[i].Qualities = qualities;
+                            if (typeof items[i].Sources != 'undefined' && typeof items[i].Sources.Source != 'undefined') {
+                                for (var i4 = 0, l4 = items[i].Sources.Source.length; i4 < l4; i4++) {
+                                    if (typeof items[i].Sources.Source[i4].Book == 'string') {
+                                        sources.push(items[i].Sources.Source[i4]);
+                                    }
+                                }
+                            }
+                            if (typeof items[i].Source == 'object') {
+                                if (typeof items[i].Source.Book == 'string') {
+                                    sources.push(items[i].Source);
+                                }
+                                delete items[i].Source;
+                            }
+                            items[i].Sources = sources;
                             if (typeof items[i].BaseMods == 'object') {
                                 if (typeof items[i].BaseMods.Mod == 'object' && items[i].BaseMods.Mod.length > 0) {
                                     for (var i3 = 0, l3 = items[i].BaseMods.Mod.length; i3 < l3; i3++) {
@@ -619,8 +654,6 @@ App.directive('itemList', function () {
                                     if (items[i].DamageAdd > 0 && items[i].Damage == 0) {
                                         items[i].Damage = items[i].DamageAdd;
                                     }
-                                } else {
-
                                 }
                             }
                             if (typeof items[i].RangeValue == 'string') {
@@ -766,6 +799,8 @@ App.directive('itemList', function () {
                             }
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
+                            $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
+                            $scope.collectValues(items[i].Sources, 'Book', $scope.sources);
                             outputItems.push(items[i]);
                         }
                         $scope.min.Defensive = $scope.getMinValue(items, 'Defensive');

@@ -552,6 +552,21 @@
                         </md-select>
                     </div>
                 </md-list-item>
+                <md-list-item ng-if="sources.length">
+                    <h4 layout="row">Sources</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.source"
+                                   ng-change="filterItems()"
+                                   multiple=""
+                                   aria-label="Sources">
+                            <md-option ng-repeat="source in sources"
+                                       ng-value="source">
+                                {{source}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
             </md-list>
         </md-content>
     </md-sidenav>
@@ -747,14 +762,14 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="sw-description" ng-if="name == 'Species' && (item.Source.Book || item.Sources.Source)">
-                                    <div ng-if="item.Source.Book">
-                                        <i>Source: {{item.Source.Book}}<span ng-if="item.Source.Page"> page {{item.Source.Page}}</span></i>
+                                <div class="sw-description" ng-if="name == 'Species' && item.Sources">
+                                    <div ng-if="item.Sources.length == 1 && item.Sources[0].Book">
+                                        <i>Source: {{item.Sources[0].Book}}<span ng-if="item.Sources[0].Page"> page {{item.Sources[0].Page}}</span></i>
                                     </div>
-                                    <div ng-if="item.Sources.Source">
+                                    <div ng-if="item.Sources.length > 1">
                                         <p><i>Sources:</i></p>
                                         <ul>
-                                            <li ng-repeat="source in item.Sources.Source">
+                                            <li ng-repeat="source in item.Sources">
                                                 <i>{{source.Book}}<span ng-if="source.Page"> page {{source.Page}}</span></i>
                                             </li>
                                         </ul>
