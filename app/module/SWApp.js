@@ -621,13 +621,27 @@ App.directive('itemList', function () {
                                     if (typeof items[i].Sources.Source[i4].Book == 'string') {
                                         sources.push(items[i].Sources.Source[i4]);
                                     }
+                                    if (typeof items[i].Sources.Source == 'object' && typeof items[i].Sources.Source[i4] == 'string') {
+                                        sources.push({'Book': items[i].Sources.Source[i4]});
+                                    }
+                                }
+                                if (typeof items[i].Sources.Source == 'string') {
+                                    sources.push({'Book': items[i].Sources.Source});
+                                }
+                                if (typeof items[i].Sources.Source == 'object' && typeof items[i].Sources.Source.Book == 'string') {
+                                    sources.push({'Book': items[i].Sources.Source.Book});
                                 }
                             }
-                            if (typeof items[i].Source == 'object') {
-                                if (typeof items[i].Source.Book == 'string') {
-                                    sources.push(items[i].Source);
-                                }
+                            if (typeof items[i].Source == 'object' && typeof items[i].Source.Book == 'string') {
+                                sources.push(items[i].Source);
                                 delete items[i].Source;
+                            }
+                            if (typeof items[i].Source == 'string') {
+                                sources.push({'Book': items[i].Source});
+                                delete items[i].Source;
+                            }
+                            if (sources.length == 0) {
+                                sources.push({'Book': 'Missing'});
                             }
                             items[i].Sources = sources;
                             if (typeof items[i].BaseMods == 'object') {
