@@ -523,6 +523,17 @@ App.directive('itemList', function () {
                         $scope.loading = false;
                     });
                 };
+                $scope.showAll = function () {
+                    $scope.loading = true;
+                    $timeout(function () {
+                        var newItems = $filter('limitTo')($scope.filteredItems, $scope.filteredItems.length, $scope.outputItems.length), l, i;
+                        l = newItems.length;
+                        for (i = 0; i < l; i++) {
+                            $scope.outputItems.push(newItems[i]);
+                        }
+                        $scope.loading = false;
+                    });
+                };
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
