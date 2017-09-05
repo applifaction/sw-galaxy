@@ -197,3 +197,7 @@ md-tooltip ._md-content {
     white-space: initial;
     max-width: 100%;
 }
+
+md-sidenav md-select {
+    max-width: 180px;
+}

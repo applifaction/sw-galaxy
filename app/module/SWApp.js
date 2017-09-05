@@ -509,7 +509,9 @@ App.directive('itemList', function () {
                     });
                 };
                 $scope.resetFilters = function () {
-                    $scope.filters = {};
+                    $scope.filters = {
+                        source: $scope.sources
+                    };
                     $scope.filterItems();
                 };
                 $scope.increaseLimit = function () {
@@ -857,6 +859,7 @@ App.directive('itemList', function () {
                         $scope.min.Presence = $scope.getMinValue(items, 'Presence');
                         $scope.max.Presence = $scope.getMaxValue(items, 'Presence');
                         $scope.items = outputItems;
+                        $scope.filters.source = $scope.sources;
                         $scope.filterItems();
                         $scope.loading = false;
                     });
