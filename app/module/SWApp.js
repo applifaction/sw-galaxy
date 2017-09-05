@@ -143,7 +143,45 @@ App.filter('descriptionFilter', function ($sce, $filter) {
                 }
             }
             if (mods.length > 0) {
-                html += "<ul>" + mods + "</ul>";
+                html += "<p><strong>Base Mods:</strong></p><ul>" + mods + "</ul>";
+            }
+        }
+        if (typeof item.AddedMods == 'object') {
+            if (typeof item.AddedMods.Mod == 'object' && item.AddedMods.Mod.length > 0) {
+                for (i = 0, l = item.AddedMods.Mod.length; i < l; i++) {
+                    if (typeof item.AddedMods.Mod[i].MiscDesc == 'string') {
+                        mods += "<li>" + item.AddedMods.Mod[i].MiscDesc + "</li>";
+                    } else {
+                        if (typeof item.AddedMods.Mod[i].Key == 'string') {
+                            count = '';
+                            if (typeof item.AddedMods.Mod[i].Count == 'number' && item.AddedMods.Mod[i].Count > 0) {
+                                count = item.AddedMods.Mod[i].Count + ' x ';
+                            }
+                            mods += "<li>" + count + $filter('modFilter')(item.AddedMods.Mod[i].Key) + "</li>";
+                        } else {
+                            console.log('debugging!');
+                        }
+                    }
+                }
+            } else {
+                if (typeof item.AddedMods.Mod != 'undefined') {
+                    if (typeof item.AddedMods.Mod.MiscDesc == 'string') {
+                        mods += "<li>" + item.AddedMods.Mod.MiscDesc + "</li>";
+                    } else {
+                        if (typeof item.AddedMods.Mod.Key == 'string') {
+                            count = '';
+                            if (typeof item.AddedMods.Mod.Count == 'number' && item.AddedMods.Mod.Count > 0) {
+                                count = item.AddedMods.Mod.Count + ' x ';
+                            }
+                            mods += "<li>" + count + $filter('modFilter')(item.AddedMods.Mod.Key) + "</li>";
+                        } else {
+                            console.log('debugging!');
+                        }
+                    }
+                }
+            }
+            if (mods.length > 0) {
+                html += "<p><strong>Additional Mods:</strong></p><ul>" + mods + "</ul>";
             }
         }
         if (html.length > 0) {
@@ -250,9 +288,11 @@ App.filter('modFilter', function ($filter) {
             var initText = text;
             text = text.replace(/JURYADD/g, "May select 1 additional Jury Rigged option Mod");
             text = text.replace(/NOSTUN/g, "Cannot deal strain damage Mod");
+            text = text.replace(/BREACH/g, "Grant Quality (Breach 1) Mod");
             text = text.replace(/DAMSUB/g, "Damage -1 Mod");
-            text = text.replace(/VIGIL/g, "1 Skill (Vigilance) Mod");
-            text = text.replace(/PERC/g, "1 Skill (Perception) Mod");
+            text = text.replace(/DAMADD/g, "Damage +1 Mod");
+            text = text.replace(/VIGIL/g, "Skill (Vigilance) Mod");
+            text = text.replace(/PERC/g, "Skill (Perception) Mod");
             text = text.replace(/BRAWL/g, "Skill (Brawl) Mod");
             text = text.replace(/BR/g, "Characteristic (Brawn) Mod");
             text = text.replace(/ATHL/g, "Skill (Athletics) Mod");
@@ -279,6 +319,7 @@ App.filter('modFilter', function ($filter) {
             text = text.replace(/SKUL/g, "Skill (Skulduggery as Career Skill) Mod");
             text = text.replace(/XEN/g, "Skill (Xenology as Career Skill) Mod");
             text = text.replace(/SURV/g, "Skill (Survival as Career Skill) Mod");
+            text = text.replace(/NATMAR/g, "Innate Talent (Natural Marksman) Mod");
             text = text.replace(/SETBACKADD/g, "Add [SETBACK]");
             text = text.replace(/BOOSTADD/g, "Add [BOOST]");
             text = text.replace(/SOAKADD/g, "Implant Armor");
@@ -286,6 +327,7 @@ App.filter('modFilter', function ($filter) {
             text = text.replace(/CYBERADD/g, "Add 1 to Cybernetics Cap Mods");
             text = text.replace(/CYBERNONE/g, "Does not count toward Cybernetics Cap Mod");
             text = text.replace(/ENCTADD/g, "Increase Encumbrance Threshold by 1 Mod");
+            text = text.replace(/ENCTADD/g, "Decrease Encumbrance Threshold by 1 Mod");
             text = text.replace(/CUMBERSOME/g, "Quality (Cumbersome 1) Mods");
             text = text.replace(/MEDFOCUS/g, "Increase strain threshold by 2 if light side paragon Mod");
             text = text.replace(/MOVEBASIC/g, "Innate Force Ability (Move Basic Power Force Ability) Mod");
@@ -294,7 +336,29 @@ App.filter('modFilter', function ($filter) {
             text = text.replace(/BLO/g, "Innate Talent (Blooded) Mod");
             text = text.replace(/BYP/g, "Innate Talent (Bypass Security) Mod");
             text = text.replace(/AG/g, "Characteristic (Agility) Mod");
+            text = text.replace(/INTIM/g, "Innate Talent (Intimidating) Mod");
             text = text.replace(/INT/g, "Characteristic (Intellect) Mod");
+            text = text.replace(/STRAINADD/g, "Increases user's strain by 1 Mod");
+            text = text.replace(/CORTOSIS/g, "Quality (Cortosis) Mod");
+            text = text.replace(/ENCADD/g, "Increase Encumbrance by 1 Mod");
+            text = text.replace(/INACCURATE/g, "Quality (Inaccurate 1) Mod");
+            text = text.replace(/ACCURATE/g, "Quality (Accurate 1) Mod");
+            text = text.replace(/PIERCE/g, "Quality (Pierce 1) Mod");
+            text = text.replace(/RANGEADD/g, "Increases weapon's range by 1 Range Band(s) Mod");
+            text = text.replace(/SUBQUALINACCURATE/g, "Decrease the Inaccurate Quality by 1 Mods");
+            text = text.replace(/ENCSUB/g, "Decrease Encumbrance by 1 Mod");
+            text = text.replace(/AUTOFIRE/g, "Quality (Auto Fire) Mod");
+            text = text.replace(/QUICKDR/g, "Innate Talent (Quick Draw) Mod");
+            text = text.replace(/SNIPSHOT/g, "Innate Talent (Sniper Shot) Mod");
+            text = text.replace(/DAMSET/g, "Changes Base Damage Mod");
+            text = text.replace(/CRITSET/g, "Changes Base Critical Rating Mod");
+            text = text.replace(/SUNDER/g, "Quality (Sunder) Mod");
+            text = text.replace(/CRITSUB/g, "Decreases Critical by 1 Mod");
+            text = text.replace(/VICIOUS/g, "Quality (Vicious 1) Mod");
+
+            text = text.replace(/LIMITEDAMMO/g, "Quality (Limited Ammo 1) Mods");
+            text = text.replace(/SETBACKSUB/g, "Remove [SE] from all attack checks when using this weapon Mods for Micro-Rocket Launcher");
+
             text = $filter('symbolFilter')(text);
             if (initText == text) {
                 console.log('Please add base mod mapping for: ' + text);
@@ -526,7 +590,7 @@ App.directive('itemList', function () {
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
-                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, sources, outputItems = [];
+                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, sources, categoryLimits, outputItems = [];
                         items = res.data[$scope.name];
                         l = items.length;
                         $scope.min.Damage = $scope.getMinValue(items, 'Damage');
@@ -553,6 +617,7 @@ App.directive('itemList', function () {
                             skills = [];
                             abilities = [];
                             baseMods = [];
+                            categoryLimits = [];
                             items[i].Deflection = 0;
                             if (typeof items[i].Defense == 'number') {
                                 items[i].Defensive = items[i].Defense;
@@ -811,8 +876,21 @@ App.directive('itemList', function () {
                                     items[i].ForceRating = items[i].Attributes.ForceRating;
                                 }
                             }
+                            if (typeof items[i].CategoryLimit == 'object') {
+                                if (typeof items[i].CategoryLimit.Category == 'string') {
+                                    categoryLimits.push(items[i].CategoryLimit.Category);
+                                }
+                                if (typeof items[i].CategoryLimit.Category == 'object') {
+                                    if (typeof items[i].CategoryLimit.Category.length == 'number') {
+                                        l2 = items[i].CategoryLimit.Category.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            categoryLimits.push(items[i].CategoryLimit.Category[i2]);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].CategoryLimit = categoryLimits;
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
-                            $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
                             $scope.collectValues(items[i].Sources, 'Book', $scope.sources);
                             outputItems.push(items[i]);
