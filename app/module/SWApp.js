@@ -584,6 +584,9 @@ App.directive('itemList', function () {
                             if (typeof items[i].DamageAdd == 'undefined') {
                                 items[i].DamageAdd = 0;
                             }
+                            if (typeof items[i].HP == 'undefined') {
+                                items[i].HP = 0;
+                            }
                             if (typeof items[i].Qualities == 'object') {
                                 if (typeof items[i].Qualities.Quality == 'object') {
                                     if (typeof items[i].Qualities.Quality.Key == 'string') {
