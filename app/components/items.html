@@ -507,6 +507,22 @@
                         </md-select>
                     </div>
                 </md-list-item>
+                <md-list-item ng-if="addedMods.length">
+                    <h4 layout="row">Added mod</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.addedMod"
+                                   ng-change="filterItems()"
+                                   multiple=""
+                                   aria-label="Added mod">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="addedMod in addedMods"
+                                       ng-value="addedMod">
+                                {{addedMod | trustAsHtmlFilter}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
                 <md-list-item ng-if="types.length">
                     <h4 layout="row">Type</h4>
 
@@ -905,7 +921,26 @@
                             <td md-cell ng-if="name == 'ItemAttachments'">
                                 <div class="sw-qualities">
                                     <div class="no-break" ng-repeat="categoryLimit in item.CategoryLimit">
-                                        {{categoryLimit}}
+                                        <strong>Category:</strong> {{categoryLimit}}
+                                    </div>
+                                    <div class="no-break" ng-repeat="itemLimit in item.ItemLimit">
+                                        <span ng-if="isString(itemLimit)"><strong>Item:</strong> {{itemLimit}}</span>
+                                        <div ng-if="isObject(itemLimit)" class="no-break" ng-repeat="item in itemLimit">
+                                            <strong>Item:</strong> {{item}}
+                                        </div>
+                                    </div>
+                                    <div class="no-break" ng-repeat="skillLimit in item.SkillLimit">
+                                        <span ng-if="isString(skillLimit)"><strong>Skill:</strong> {{skillLimit}}</span>
+                                        <div ng-if="isObject(skillLimit)" class="no-break" ng-repeat="skill in skillLimit">
+                                            <strong>Skill:</strong> {{skill}}
+                                        </div>
+                                    </div>
+                                    <div class="no-break" ng-repeat="typeLimit in item.TypeLimit">
+                                        <strong>Type:</strong> {{typeLimit}}
+                                    </div>
+                                    <div ng-if="item.IsCrystal">
+                                        <div><strong>Category:</strong> Lightsaber</div>
+                                        <div><strong>Category:</strong> Lightsaber Hilt</div>
                                     </div>
                                 </div>
                             </td>
