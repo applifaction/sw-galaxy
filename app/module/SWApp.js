@@ -573,13 +573,26 @@ App.directive('itemList', function () {
                     });
                 };
                 $scope.resetFilters = function () {
-                    $scope.filters = {};
+                    $scope.filters = {
+                        source: $scope.sources
+                    };
                     $scope.filterItems();
                 };
                 $scope.increaseLimit = function () {
                     $scope.loading = true;
                     $timeout(function () {
                         var newItems = $filter('limitTo')($scope.filteredItems, 100, $scope.outputItems.length), l, i;
+                        l = newItems.length;
+                        for (i = 0; i < l; i++) {
+                            $scope.outputItems.push(newItems[i]);
+                        }
+                        $scope.loading = false;
+                    });
+                };
+                $scope.showAll = function () {
+                    $scope.loading = true;
+                    $timeout(function () {
+                        var newItems = $filter('limitTo')($scope.filteredItems, $scope.filteredItems.length, $scope.outputItems.length), l, i;
                         l = newItems.length;
                         for (i = 0; i < l; i++) {
                             $scope.outputItems.push(newItems[i]);
@@ -637,6 +650,9 @@ App.directive('itemList', function () {
                             }
                             if (typeof items[i].DamageAdd == 'undefined') {
                                 items[i].DamageAdd = 0;
+                            }
+                            if (typeof items[i].HP == 'undefined') {
+                                items[i].HP = 0;
                             }
                             if (typeof items[i].Qualities == 'object') {
                                 if (typeof items[i].Qualities.Quality == 'object') {
@@ -921,6 +937,7 @@ App.directive('itemList', function () {
                         $scope.min.Presence = $scope.getMinValue(items, 'Presence');
                         $scope.max.Presence = $scope.getMaxValue(items, 'Presence');
                         $scope.items = outputItems;
+                        $scope.filters.source = $scope.sources;
                         $scope.filterItems();
                         $scope.loading = false;
                     });

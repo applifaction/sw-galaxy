@@ -553,8 +553,7 @@
                     </div>
                 </md-list-item>
                 <md-list-item ng-if="sources.length">
-                    <h4 layout="row">Sources</h4>
-
+                    <h4 layout="row">Source</h4>
                     <div layout="column" layout-margin flex>
                         <md-select ng-model="filters.source"
                                    ng-change="filterItems()"
@@ -919,6 +918,12 @@
                                 class="md-primary md-raised" ng-click="increaseLimit()">
                             <span ng-hide="loading">Show more</span>
                             <span ng-show="loading">Please wait...</span>
+                        </md-button>
+                        <md-button
+                                ng-if="outputItems.length < filteredItems.length"
+                                class="md-primary md-raised" ng-click="showAll()"
+                                ng-hide="loading">
+                            <span>Show all</span>
                         </md-button>
                     </div>
                 </md-table-container>
