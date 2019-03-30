@@ -386,6 +386,11 @@
         <Key>STUNSETTING</Key>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Adds [SE] to Perception checks when attempting to locate holdout blaster on a person's body</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>BLASTPIS</Key>
@@ -590,7 +595,7 @@
   </Weapon>
   <Weapon>
     <Key>BLASTPISDR45</Key>
-    <Name>DR-45 "Dragoon" Cavalry Blaster</Name>
+    <Name>DR-45 "Dragoon" Cavalry Blaster (Blaster Mode)</Name>
     <Description>
       [H3]DR-45 "Dragoon" Cavalry Blaster[h3]
       Please see page 40 of the Stay on Target Sourcebook for details.
@@ -610,8 +615,6 @@
       <Category>Blaster</Category>
       <Category>Pistol</Category>
       <Category>Ranged</Category>
-      <Category>Carbine</Category>
-      <Category>Blaster Carbine</Category>
     </Categories>
     <Qualities>
       <Quality>
@@ -760,6 +763,11 @@
         <Key>STUNSETTING</Key>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>GM may spend [TH][TH] or [DE] to make heavy blaster pistol run out of ammo</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>BLASTPISHVYGEO</Key>
@@ -1193,15 +1201,18 @@
   </Weapon>
   <Weapon>
     <Key>SE14C</Key>
-    <Name>SE-14C Blaster Pistol</Name>
+    <Name>SE-14c Blaster Pistol</Name>
     <Description>
-      [H3]BlasTech SE-14C Blaster Pistol[h3]
+      [H3]BlasTech SE-14c Blaster Pistol[h3]
       Please see page 42 of the Forged in Battle Sourcebook for details.
     </Description>
     <Source Page="42">Forged in Battle</Source>
     <Type>Energy Weapon</Type>
     <Categories>
       <Category>Blaster Pistol</Category>
+      <Category>Blaster</Category>
+      <Category>Pistol</Category>
+      <Category>Ranged</Category>
     </Categories>
     <Encumbrance>1</Encumbrance>
     <HP>2</HP>
@@ -1220,6 +1231,79 @@
         <Key>STUNSETTING</Key>
       </Quality>
     </Qualities>
+  </Weapon>
+  <Weapon>
+    <Key>HEARTWOODBL</Key>
+    <Name>Heartwood Blaster</Name>
+    <Description>
+      [H3]Heartwood Blaster[h3]
+      Please see page 46 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="46">Unlimited Power</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Blaster Pistol</Category>
+      <Category>Blaster</Category>
+      <Category>Pistol</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>1</HP>
+    <Price>1000</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>6</Damage>
+    <Crit>5</Crit>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>STUN</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>May suffer up to Force Rating in strain, adding automatic [AD] for each to next combat check this turn.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+  <Weapon>
+    <Key>LUCKYBL</Key>
+    <Name>Lucky Blaster</Name>
+    <Description>
+      [H3]Lucky Blaster[h3]
+      Please see page 47 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="47">Unlimited Power</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Blaster Pistol</Category>
+      <Category>Blaster</Category>
+      <Category>Pistol</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>1</HP>
+    <Price>400</Price>
+    <Rarity>10</Rarity>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>5</Damage>
+    <Crit>4</Crit>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>STUNSETTING</Key>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When using a maneuver to aim, gain [BO][BO].  Cannot use second maneuver to aim again.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
 
   <Weapon>
@@ -1498,7 +1582,12 @@
     </Description>
     <Source Page="43">Forged in Battle</Source>
     <Type>Energy Weapon</Type>
-    <Categories />
+    <Categories>
+      <Category>Carbine</Category>
+      <Category>Blaster</Category>
+      <Category>Ranged</Category>
+      <Category>Blaster Carbine</Category>
+    </Categories>
     <Encumbrance>2</Encumbrance>
     <HP>3</HP>
     <Price>900</Price>
@@ -1757,6 +1846,60 @@
         <MiscDesc>A character may make an [B]Average([DI][DI]) Mechanics check[b] to add or remove an attachment to a DDC-MR6 as an action.</MiscDesc>
       </Mod>
     </BaseMods>
+  </Weapon>
+  <Weapon>
+    <Key>AB75BO</Key>
+    <Name>AB-75 Bo-Rifle</Name>
+    <Description>
+      [H3]AB-75 Bo-Rifle[h3]
+      Please see page 46 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="46">Unlimited Power</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Rifle</Category>
+      <Category>Blaster</Category>
+      <Category>Blaster Rifle</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>4</HP>
+    <Price>900</Price>
+    <Restricted>true</Restricted>
+    <Rarity>7</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>8</Damage>
+    <Crit>4</Crit>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>STUNSETTING</Key>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>As a maneuver, may convert the bo-rifle to melee mode.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <WeaponModifiers>
+      <WeaponModifier>
+        <UnarmedName>AB-75 Bo-Rifle (Melee Mode)</UnarmedName>
+        <SkillKey>MELEE</SkillKey>
+        <DamageAdd>3</DamageAdd>
+        <Crit>4</Crit>
+        <Qualities>
+          <Quality>
+            <Key>STUN</Key>
+            <Count>5</Count>
+          </Quality>
+          <Quality>
+            <Key>STUNSETTING</Key>
+          </Quality>
+        </Qualities>
+        <RangeValue>wrEngaged</RangeValue>
+        <Hands>whTwoHanded</Hands>
+      </WeaponModifier>
+    </WeaponModifiers>
   </Weapon>
 
 
@@ -2408,6 +2551,7 @@
     <Categories>
       <Category>Blaster</Category>
       <Category>Ranged</Category>
+      <Category>Portable Gunnery</Category>
     </Categories>
     <Qualities>
       <Quality>
@@ -2439,6 +2583,7 @@
     <Categories>
       <Category>Blaster</Category>
       <Category>Ranged</Category>
+      <Category>Portable Gunnery</Category>
     </Categories>
     <Encumbrance>8</Encumbrance>
     <HP>4</HP>
@@ -2496,6 +2641,7 @@
     <Categories>
       <Category>Blaster</Category>
       <Category>Ranged</Category>
+      <Category>Portable Gunnery</Category>
     </Categories>
     <Encumbrance>10</Encumbrance>
     <HP>4</HP>
@@ -2504,11 +2650,7 @@
     <Restricted>true</Restricted>
     <BaseMods>
       <Mod>
-        <Key />
-        <Count>1</Count>
-        <Index>0</Index>
         <MiscDesc>Mechanics Checks to repair gain [BOOST].</MiscDesc>
-        <DefZone />
       </Mod>
     </BaseMods>
     <SkillKey>GUNN</SkillKey>
@@ -2689,10 +2831,6 @@
       <Quality>
         <Key>INACCURATE</Key>
         <Count>1</Count>
-      </Quality>
-      <Quality>
-        <Key>LINKED</Key>
-        <Count>3</Count>
       </Quality>
       <Quality>
         <Key>PREPARE</Key>
@@ -2924,7 +3062,7 @@
     <Encumbrance>3</Encumbrance>
     <HP>3</HP>
     <Price>250</Price>
-    <Rarity>5</Rarity>
+    <Rarity>3</Rarity>
     <Type>Energy Weapon</Type>
     <Categories>
       <Category>Ranged</Category>
@@ -2936,7 +3074,7 @@
         <Count>5</Count>
       </Quality>
       <Quality>
-        <Key>STUNDAMAGEDROID</Key>
+        <Key>ION</Key>
       </Quality>
     </Qualities>
   </Weapon>
@@ -3007,6 +3145,11 @@
         <Count>4</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Any Critical Injury results are changed to "Crippled", unless result is more grievous</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>DISRRIF</Key>
@@ -3043,6 +3186,11 @@
         <Count>5</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Any Critical Injury results are changed to "Crippled", unless result is more grievous</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>T7DISR </Key>
@@ -3310,7 +3458,42 @@
       </Quality>
     </Qualities>
   </Weapon>
-
+  <Weapon>
+    <Key>PANICPISTOL</Key>
+    <Name>Panic Pistol</Name>
+    <Description>
+      [H3]Panic Pistol[h3]
+      Please see page 48 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="48">Unlimited Power</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Pistol</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Price>400</Price>
+    <Rarity>3</Rarity>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>6</Damage>
+    <Crit>5</Crit>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>INACCURATE</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Does not add +1 difficulty with engaged opponent.</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>GM may spend [TH][TH] to damage panic pistol.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
   <Weapon>
     <Key>VODRANRIFLE</Key>
     <Name>Vodran Hunting Rifle</Name>
@@ -3568,6 +3751,11 @@
         <DefZone />
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>If purchased used, loses the Accurate 2 quality until modified with a [B]Hard ([DI][DI][DI]) Mechanics check[b]</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>MODEL38DET</Key>
@@ -3732,6 +3920,12 @@
         <Count>2</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Any combat check that generates [TH][TH] or [DE] damages weapon by one step</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>VERPSHATRIF</Key>
@@ -3765,6 +3959,12 @@
         <Count>4</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Any combat check that generates [TH][TH] or [DE] damages weapon by one step</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>VERPSHATHVYRIF</Key>
@@ -3803,6 +4003,12 @@
         <Count>6</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Any combat check that generates [TH][TH] or [DE] damages weapon by one step</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   
   <Weapon>
@@ -4024,6 +4230,43 @@
       </Quality>
     </Qualities>
   </Weapon>
+  <Weapon>
+    <Key>ARQUBUS</Key>
+    <Name>Arquebus</Name>
+    <Description>
+      [H3]Arquebus[h3]
+      Please see page 47 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="47">Unlimited Power</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Rifle</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>4</HP>
+    <Price>1200</Price>
+    <Rarity>5</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>9</Damage>
+    <Crit>5</Crit>
+    <RangeValue>wrLong</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>PREPARE</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>As a maneuver, wielder may suffer up to 5 strain.  Next attack with arquebus gains Pierce quality with rating equal to strain suffered.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
 
 
   <Weapon>
@@ -4056,6 +4299,12 @@
         <Count>3</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>User may spend [TR] on a successful hit so that target may not perform any maneuvers, and the only action the target may perform is a [B]Formidable ([DI][DI][DI][DI][DI]) Athletics check[b]
+        to free himself.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>ELECTRONET</Key>
@@ -4096,8 +4345,9 @@
       </Quality>
     </Qualities>
   </Weapon>
-  
-   
+
+
+
   <Weapon>
     <Key>FLAME</Key>
     <Name>Flame Projector</Name>
@@ -4131,6 +4381,14 @@
         <Count>8</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When triggering Burn quality, may apply it to any target hit by the attack</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>GM may spend [TH][TH] or [DE] to apply the Burn quality to any ally hit by the attack</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>MISS</Key>
@@ -4493,6 +4751,119 @@
       <StunDamage>true</StunDamage>
     </Qualities>
   </Weapon>
+
+
+  <Weapon>
+    <Key>BLUEGRENADE</Key>
+    <Name>Blue Shadow Grenade</Name>
+    <Description>
+      [H3]Blue Shadow Grenade[h3]
+      Please see page 48 of the Unlimited Power sourcebook for details.
+    </Description>
+    <Source Page="48">Unlimited Power</Source>
+    <Type>Thrown</Type>
+    <Categories />
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Price>2000</Price>
+    <Rarity>9</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>3</Damage>
+    <Crit>3</Crit>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>All targets suffering at least 1 wound, or are within medium range without environmental protection, must make a [B]Formidable ([DI][DI][DI][DI][DI]) Resilience check[b].  Target suffers 2 wound and 2 strain per [TH] and a +50 Critical Injury if check failed.  [DE] means they must make check again at start of next turn.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+  <Weapon>
+    <Key>MOLTENMAGNET</Key>
+    <Name>Molten Magnet</Name>
+    <Description>
+      [H3]Molten Magnet[h3]
+      Please see page 48 of the Unlimited Power sourcebook for details.
+    </Description>
+    <Source Page="48">Unlimited Power</Source>
+    <Type>Thrown</Type>
+    <Categories />
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Price>1500</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>9</Damage>
+    <Crit>4</Crit>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>BURN</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+    </Qualities>
+  </Weapon>
+  <Weapon>
+    <Key>QUILLBOMB</Key>
+    <Name>Quillbomb</Name>
+    <Description>
+      [H3]Quillbomb[h3]
+      Please see page 48 of the Unlimited Power sourcebook for details.
+    </Description>
+    <Source Page="48">Unlimited Power</Source>
+    <Type>Thrown</Type>
+    <Categories />
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Price>100</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>5</Damage>
+    <Crit>2</Crit>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+  </Weapon>
+
   <Weapon>
     <Key>THERMDET</Key>
     <Name>Thermal Detonator</Name>
@@ -4525,10 +4896,6 @@
         <Count>15</Count>
       </Quality>
       <Quality>
-        <Key>DISORIENT</Key>
-        <Count>3</Count>
-      </Quality>
-      <Quality>
         <Key>LIMITEDAMMO</Key>
         <Count>1</Count>
       </Quality>
@@ -4537,6 +4904,11 @@
         <Count>4</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Any [DE] on check means detonator exploded prematurely.  User takes full damage unless an additional maneuver can be performed.  If so, user takes Blast damage.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>THERMDETMINI</Key>
@@ -4946,6 +5318,12 @@
         <Count>0</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Target must make an [B]Easy ([DI]) Coordination check[b] to keep the foam from filling breathing passages.  Failure means target suffers from suffocation.</MiscDesc>
+        <MiscDesc>Refilling requires an [B]Easy ([DI]) Ranged Light check[b].  Failure means foam has been ruined.  [TH] with a failure requires user to make an [B]Easy ([DI]) Coordination check[b] to avoid suffocating.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>INFERGREND</Key>
@@ -5584,11 +5962,15 @@
     <Name>Baradium Charge</Name>
     <Description>
       [H3]Baradium Charge[h3]
-      Please see page 55 of the Dangerous Covenants Sourcebook for details.
+      Please see page 55 of the Dangerous Covenants Sourcebook, or page 41 of the Fully Operational Sourcebook, for details.
     </Description>
-    <Source Page="55">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="55">Dangerous Covenants</Source>
+      <Source Page="41">Fully Operational</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Explosive</Category>
     </Categories>
     <Encumbrance>2</Encumbrance>
     <HP>0</HP>
@@ -5602,6 +5984,7 @@
     <SizeLow>0</SizeLow>
     <SizeHigh>10</SizeHigh>
     <RangeValue>wrLong</RangeValue>
+    <Scale>wsPersonalRange</Scale>
     <Qualities />
     <BaseMods>
       <Mod>
@@ -5618,11 +6001,15 @@
     <Name>Detonite Charge</Name>
     <Description>
       [H3]Detonite Charge[h3]
-      Please see page 55 of the Dangerous Covenants Sourcebook for details.
+      Please see page 55 of the Dangerous Covenants Sourcebook, or page 41 of the Fully Operational Sourcebook, for details.
     </Description>
-    <Source Page="55">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="55">Dangerous Covenants</Source>
+      <Source Page="41">Fully Operational</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Explosive</Category>
     </Categories>
     <Encumbrance>2</Encumbrance>
     <HP>0</HP>
@@ -5639,6 +6026,116 @@
     <Qualities />
   </Weapon>
   <Weapon>
+    <Key>FLEX5DETCHRG</Key>
+    <Name>Flex-5 Detonite Tape</Name>
+    <Description>
+      [H3]Flex-5 Detonite Tape[h3]
+      Please see page 41 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="41">Fully Operational</Source>
+    </Sources>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Explosive</Category>
+    </Categories>
+    <Damage>5</Damage>
+    <DamageAdd>2</DamageAdd>
+    <Encumbrance>1</Encumbrance>
+    <Price>30</Price>
+    <Restricted>false</Restricted>
+    <Rarity>4</Rarity>
+    <RangeValue>wrEngaged</RangeValue>
+    <HP>0</HP>
+    <SkillKey>MECH</SkillKey>
+    <Crit>0</Crit>
+    <SizeLow>0</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <Qualities />
+  </Weapon>
+  <Weapon>
+    <Key>FUELAIRBOMB</Key>
+    <Name>Fuel-Air Bomb</Name>
+    <Description>
+      [H3]Fuel-Air Bomb[h3]
+      Please see page 42 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="42">Fully Operational</Source>
+    </Sources>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Explosive</Category>
+    </Categories>
+    <Damage>9</Damage>
+    <DamageAdd>10</DamageAdd>
+    <Encumbrance>3</Encumbrance>
+    <Price>150</Price>
+    <Restricted>false</Restricted>
+    <Rarity>2</Rarity>
+    <RangeValue>wrMedium</RangeValue>
+    <HP>0</HP>
+    <SkillKey>MECH</SkillKey>
+    <Crit>0</Crit>
+    <Qualities>
+      <Quality>
+        <Key>CONCUSSIVE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Concussive rating increases by 1 for each additional charge.</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[DE] on check to set up fuel bomb means it detonates immediately.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+  <Weapon>
+    <Key>SHAPEDCHRG</Key>
+    <Name>Shaped Charge</Name>
+    <Description>
+      [H3]Shaped Charge[h3]
+      Please see page 42 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="42">Fully Operational</Source>
+    </Sources>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Explosive</Category>
+    </Categories>
+    <Damage>15</Damage>
+    <DamageAdd>5</DamageAdd>
+    <Encumbrance>2</Encumbrance>
+    <Price>500</Price>
+    <Restricted>false</Restricted>
+    <Rarity>4</Rarity>
+    <RangeValue>wrEngaged</RangeValue>
+    <HP>0</HP>
+    <SkillKey>MECH</SkillKey>
+    <Crit>0</Crit>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Breach and Vicious ratings increases by 1 for each additional charge.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+  <Weapon>
     <Key>PLASMACHRG</Key>
     <Name>Plasma Charge</Name>
     <Description>
@@ -5648,6 +6145,7 @@
     <Source Page="55">Dangerous Covenants</Source>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Explosive</Category>
     </Categories>
     <Encumbrance>2</Encumbrance>
     <HP>0</HP>
@@ -6030,6 +6528,7 @@
     <Type>Explosives/Other</Type>
     <Categories>
       <Category>Ranged</Category>
+      <Category>Portable Gunnery</Category>
     </Categories>
     <Encumbrance>8</Encumbrance>
     <HP>3</HP>
@@ -6726,6 +7225,11 @@
         <Count>3</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Add [SETBACK] to Perception checks to find brass knuckles on a person's body.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>SHOCKGL</Key>
@@ -7318,6 +7822,7 @@
       </Quality>
       <Quality>
         <Key>SLOWFIRING</Key>
+        <Count>1</Count>
       </Quality>
     </Qualities>
   </Weapon>
@@ -7580,6 +8085,7 @@
     <Price>100</Price>
     <Rarity>2</Rarity>
     <Type>Melee</Type>
+    <Hands>whTwoHanded</Hands>
     <Categories>
       <Category>Bludgeoning Melee</Category>
     </Categories>
@@ -7650,6 +8156,7 @@
     <Price>500</Price>
     <Rarity>4</Rarity>
     <Type>Melee</Type>
+    <Hands>whTwoHanded</Hands>
     <Qualities>
       <Quality>
         <Key>PIERCE</Key>
@@ -7659,6 +8166,11 @@
         <Key>STUNSETTING</Key>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When using stun setting, may not benefit from Pierce quality</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>DIIRO</Key>
@@ -7783,6 +8295,11 @@
         <Key>STUNDAMAGE</Key>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Adds [SE] to Perception checks to find a stun master on an individual.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>ENERGYBUCK</Key>
@@ -8387,6 +8904,96 @@
     <BaseMods>
     </BaseMods>
   </Weapon>
+
+  <Weapon>
+    <Key>ASHLASTAFF</Key>
+    <Name>Ashla Staff</Name>
+    <Description>
+      [H3]Ashla Staff[h3]
+      Please see page 49 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="49">Unlimited Power</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Bludgeoning Melee</Category>
+    </Categories>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>2</DamageAdd>
+    <Crit>3</Crit>
+    <RangeValue>wrEngaged</RangeValue>
+    <Encumbrance>4</Encumbrance>
+    <HP>2</HP>
+    <Price>3000</Price>
+    <Restricted>false</Restricted>
+    <Rarity>7</Rarity>
+    <Qualities>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When wielder makes a Force power check, may spend 3 strain to add [LI] to result.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+  <Weapon>
+    <Key>OUROBLADE</Key>
+    <Name>Ouro Blade</Name>
+    <Description>
+      [H3]Ouro Blade[h3]
+      Please see page 50 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="50">Unlimited Power</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Cutting Edge Melee</Category>
+    </Categories>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>1</DamageAdd>
+    <Crit>3</Crit>
+    <RangeValue>wrEngaged</RangeValue>
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Price>600</Price>
+    <Restricted>false</Restricted>
+    <Rarity>4</Rarity>
+    <Qualities>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>After successful combat check, may spend [AD] to inflict automatic hit on target, doing base damage.  May do this multiple times.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+
+  <Weapon>
+    <Key>OBSIDIANDAGGER</Key>
+    <Name>Semblan Obsidian Dagger</Name>
+    <Description>
+      [H3]Semblan Obsidian Dagger[h3]
+      Please see page 50 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="50">Unlimited Power</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Cutting Edge Melee</Category>
+    </Categories>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>0</DamageAdd>
+    <Crit>1</Crit>
+    <RangeValue>wrEngaged</RangeValue>
+    <Encumbrance>1</Encumbrance>
+    <HP>2</HP>
+    <Price>350</Price>
+    <Restricted>false</Restricted>
+    <Rarity>4</Rarity>
+    <Qualities>
+    </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When recovering strain at end of encounter, Vurk may heal one additional strain when holding a Semblan dagger.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Weapon>
+
   <Weapon>
     <Key>SVT300</Key>
     <Name>SVT-300 Stun Cloak</Name>
@@ -8414,6 +9021,14 @@
         <Key>STUNDAMAGE</Key>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>If wielder is hit by a melee or brawl attack, the attacker takes 7 stun damage  This expends one charge of the Limited Ammo quality.</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>When all three charges are expended, must wait 3 minutes to recharge</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>LTSABER</Key>
@@ -9342,6 +9957,7 @@
     <Price>750</Price>
     <Rarity>5</Rarity>
     <Type>Melee</Type>
+    <Hands>whTwoHanded</Hands>
     <Categories>
       <Category>Cutting Edge Melee</Category>
       <Category>Powered Melee</Category>
@@ -9520,6 +10136,7 @@
     </Description>
     <Source Page="43">Enter the Unknown</Source>
     <Type>Melee</Type>
+    <Hands>whTwoHanded</Hands>
     <Categories>
       <Category>Cutting Edge Melee</Category>
       <Category>Powered Melee</Category>
@@ -9561,6 +10178,7 @@
     </Description>
     <Source Page="43">Enter the Unknown</Source>
     <Type>Melee</Type>
+    <Hands>whTwoHanded</Hands>
     <Categories>
       <Category>Cutting Edge Melee</Category>
       <Category>Powered Melee</Category>
@@ -9606,6 +10224,11 @@
         <DefZone />
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>[DE] means wielder hits himself with the vibrosaw</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>MODEL14VIBROSP</Key>
@@ -10089,8 +10712,8 @@
     <Restricted>false</Restricted>
     <BaseMods />
     <SkillKey>MELEE</SkillKey>
-    <Damage>2</Damage>
-    <DamageAdd>0</DamageAdd>
+    <Damage>0</Damage>
+    <DamageAdd>2</DamageAdd>
     <Crit>6</Crit>
     <RangeValue>wrEngaged</RangeValue>
     <Qualities>
@@ -10525,6 +11148,51 @@
       </Quality>
       <Quality>
         <Key>LIMITEDAMMO</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>SLOWFIRING</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+  </Weapon>
+  <Weapon>
+    <Key>CMLORD</Key>
+    <Name>Concussion Missile</Name>
+    <Description>
+      [H3]Concussion Missile[h3]
+      Please see page 229 of the Edge of the Empire Core Rulebook, or page 242 of the Age of Rebellion Core Rulebook, for details.
+    </Description>
+    <Sources>
+      <Source Page="229">Edge of the Empire Core Rulebook</Source>
+      <Source Page="242">Age of Rebellion Core Rulebook</Source>
+    </Sources>
+    <Categories>
+      <Category>Missile</Category>
+    </Categories>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>6</Damage>
+    <DamageAdd>0</DamageAdd>
+    <Crit>3</Crit>
+    <RangeValue>wrShort</RangeValue>
+    <Encumbrance>0</Encumbrance>
+    <HP>0</HP>
+    <Price>500</Price>
+    <Restricted>true</Restricted>
+    <Rarity>5</Rarity>
+    <Type>Vehicle</Type>
+    <Ordnance>true</Ordnance>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
         <Count>3</Count>
       </Quality>
       <Quality>
@@ -11417,6 +12085,7 @@
     <SizeLow>3</SizeLow>
     <SizeHigh>10</SizeHigh>
     <RangeValue>wrClose</RangeValue>
+    <Scale>wsPersonal</Scale>
     <Qualities>
       <Quality>
         <Key>BLAST</Key>
@@ -11491,6 +12160,7 @@
     <Type>Vehicle</Type>
     <SizeLow>2</SizeLow>
     <SizeHigh>10</SizeHigh>
+    <Scale>wsPersonal</Scale>
     <Qualities>
       <Quality>
         <Key>BREACH</Key>
@@ -11595,7 +12265,6 @@
     </Categories>
     <SkillKey>GUNN</SkillKey>
     <Damage>5</Damage>
-    <DamageAdd>0</DamageAdd>
     <Crit>3</Crit>
     <RangeValue>wrShort</RangeValue>
     <Encumbrance>0</Encumbrance>
@@ -12558,6 +13227,11 @@
         <Count>1</Count>
       </Quality>
     </Qualities>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Adds [SE] to Perception checks when attempting to locate holdout blaster on a person's body</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Weapon>
   <Weapon>
     <Key>M53QUICKTRIGGER</Key>
@@ -14268,10 +14942,10 @@ Please see page 119 of the Strongholds of Resistance Sourcebook for details.</De
     <Restricted>true</Restricted>
     <BaseMods>
       <Mod>
-        <MiscDesc>GM may spend [TH][TH] to damage weapon one step.</MiscDesc>
+        <MiscDesc>GM may spend [TH][TH] to damage weapon one step</MiscDesc>
       </Mod>
       <Mod>
-        <MiscDesc>GM may spend [DE] to cause weapon to meltdown and expload, destroying weapon and causing base damage to wielder.</MiscDesc>
+        <MiscDesc>GM may spend [DE] to cause weapon to meltdown and explode, destroying weapon and causing base damage to wielder</MiscDesc>
       </Mod>
     </BaseMods>
     <SkillKey>RANGLT</SkillKey>
@@ -15359,6 +16033,931 @@ Please see page 119 of the Strongholds of Resistance Sourcebook for details.</De
     <NoMelee>true</NoMelee>
     <Range>Medium</Range>
   </Weapon>
+  <Weapon>
+    <Key>AJ23RIF</Key>
+    <Name>AJ-23 Concussive Rifle</Name>
+    <Description>
+      [H3]Merr-Sonn AJ-23 Concussive Rifle[h3]
+      Please see page 42 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="42">Disciples of Harmony</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Carbine</Category>
+      <Category>Ranged</Category>
+      <Category>Rifle</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>2</HP>
+    <Price>8000</Price>
+    <Rarity>4</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>8</Damage>
+    <Crit>5</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>7</Count>
+      </Quality>
+      <Quality>
+        <Key>CONCUSSIVE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>INACCURATE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>CRYOBANRIF</Key>
+    <Name>CryoBan Rifle</Name>
+    <Description>
+      [H3]Loronar CryoBan Rifle[h3]
+      Please see page 42 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="42">Disciples of Harmony</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Ranged</Category>
+      <Category>Rifle</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <HP>1</HP>
+    <Price>450</Price>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>If armor removes one or more [SE] due to extreme cold, Pierce quality counts as 0.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When making a melee attack against a target struck by a Loronar CryoBan in the current round, add [BO][BO] to the check.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>6</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>ENSNARE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>IDX9IONSTUN</Key>
+    <Name>IDX-9 Ion Stunner</Name>
+    <Description>
+      [H3]Tenloss IDX-9 Ion Stunner[h3]
+      Please see page 42 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="42">Disciples of Harmony</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Ion</Category>
+      <Category>Ranged</Category>
+      <Category>Pistol</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>2</HP>
+    <Price>300</Price>
+    <Rarity>4</Rarity>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>7</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>ION</Key>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>SPORESTGREN</Key>
+    <Name>Spore Stun Grenade</Name>
+    <Description>
+      [H3]Speizoc Arms Spore Stun Grenade[h3]
+      Please see page 43 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="43">Disciples of Harmony</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>100</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>8</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>7</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>SPRAYRIF</Key>
+    <Name>Spray Rifle</Name>
+    <Description>
+      [H3]Loronar Spray Rifle[h3]
+      Please see page 43 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="43">Disciples of Harmony</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Ranged</Category>
+      <Category>Rifle</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>1</HP>
+    <Price>2700</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>7</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BURN</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>PREPARE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>SPRAYFOGREN</Key>
+    <Name>Spray Foam Grenade</Name>
+    <Description>
+      [H3]Tenloss Spray Foam Grenade[h3]
+      Please see page 43 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="43">Disciples of Harmony</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>150</Price>
+    <Rarity>5</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Ensnare quality automatically activates if grenade hits, with no need to spend [AD].</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>ENSNARE</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>BORNEURLASH</Key>
+    <Name>Borstel Neuronic Lash</Name>
+    <Description>
+      [H3]Borstel Neuronic Lash[h3]
+      Please see page 44 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="44">Disciples of Harmony</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Powered Melee</Category>
+      <Category>Whip</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>1</HP>
+    <Price>800</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>1</DamageAdd>
+    <Crit>5</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>ENSNARE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+      <Quality>
+        <Key>STUN</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>FEARSTICK</Key>
+    <Name>Fear Stick</Name>
+    <Description>
+      [H3]Fear Stick[h3]
+      Please see page 44 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="44">Disciples of Harmony</Source>
+    <Type>Melee</Type>
+    <Categories />
+    <Encumbrance>1</Encumbrance>
+    <Price>1500</Price>
+    <Rarity>8</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add [SE][SE] to find a fear stick on the owner's body.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>On successful hit, attacker may spend [TR] to force a living target to make a [B]Formidable ([DI][DI][DI][DI][DI]) Fear check[b].</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>MECH</SkillKey>
+    <Damage>5</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>Z6RIOT</Key>
+    <Name>Z6 Riot Baton</Name>
+    <Description>
+      [H3]Z6 Riot Baton[h3]
+      Please see page 44 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="44">Disciples of Harmony</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Bludgeoning Melee</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <HP>1</HP>
+    <Price>1000</Price>
+    <Rarity>3</Rarity>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>2</DamageAdd>
+    <Crit>5</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>CORTOSIS</Key>
+      </Quality>
+      <Quality>
+        <Key>DISORIENT</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
 
+  
+  <!-- Fully Operational -->
 
+  <Weapon>
+    <Key>LJ40CARB</Key>
+    <Name>LJ-40 Concussion Carbine</Name>
+    <Description>
+      [H3]Arakyd LJ-40 Concussion Carbine[h3]
+      See page 38 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="38">Fully Operational</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Carbine</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>1</HP>
+    <Price>2500</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>All [SE] added to a combat check due to the target's cover are removed when using this weapon.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>8</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>CONCUSSIVE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>DH17C</Key>
+    <Name>DH-17c Short Carbine</Name>
+    <Description>
+      [H3]BlasTech DH-17c Short Carbine[h3]
+      See page 39 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="39">Fully Operational</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Blaster</Category>
+      <Category>Blaster Carbine</Category>
+      <Category>Ranged</Category>
+      <Category>Carbine</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>2</HP>
+    <Price>950</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>4</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>AUTOFIRE</Key>
+      </Quality>
+      <Quality>
+        <Key>STUNSETTING</Key>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>M9BOOMER</Key>
+    <Name>M9 "Boomer" Heavy Pistol</Name>
+    <Description>
+      [H3]Czerka M9 "Boomer" Heavy Pistol[h3]
+      See page 39 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="39">Fully Operational</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Pistol</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>2</HP>
+    <Price>1000</Price>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>GMs may make this weapon run out of ammo by spending [TH][TH][TH], as well as [DE].</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>5</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>INACCURATE</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>MKVIIIMORTAR</Key>
+    <Name>Mk VIII Gravitic Mortar Launcher</Name>
+    <Description>
+      [H3]Golan Arms Mk VIII Gravitic Mortar Launcher[h3]
+      See page 39 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="39">Fully Operational</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Portable Gunnery</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>6</Encumbrance>
+    <HP>1</HP>
+    <Price>2800</Price>
+    <Rarity>7</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When detonates inside a mine field, triggers every mine within medium range.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>GM may spend [TH][TH] or [DE] to detonate a fraction of the mines within a mine field.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>4</Damage>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrLong</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>INACCURATE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PREPARE</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Long</Range>
+  </Weapon>
+  <Weapon>
+    <Key>BKX4SHOCKGREN</Key>
+    <Name>BKX-4 "Shockwave" Grenade</Name>
+    <Description>
+      [H3]BKX-4 "Shockwave" Grenade[h3]
+      See page 39 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="39">Fully Operational</Source>
+    <Type>Thrown</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>150</Price>
+    <Rarity>5</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>If Disorient or Knockdown qualities are activated, they affect all characters at short range, even if not damaged.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>10</Damage>
+    <Crit>5</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>8</Count>
+      </Quality>
+      <Quality>
+        <Key>DISORIENT</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>WP19INCGREN</Key>
+    <Name>WP-19 Incendiary Grenade</Name>
+    <Description>
+      [H3]Merr-Sonn WP-19 Incendiary Grenade[h3]
+      See page 40 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="40">Fully Operational</Source>
+    <Type>Thrown</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>125</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>8</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>8</Count>
+      </Quality>
+      <Quality>
+        <Key>BURN</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>WW41CRYOGREN</Key>
+    <Name>WW-41 CryoBan Grenade</Name>
+    <Description>
+      [H3]Merr-Sonn WW-41 CryoBan Grenade[h3]
+      See page 40 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="40">Fully Operational</Source>
+    <Type>Thrown</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>220</Price>
+    <Rarity>7</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>If using to put out a fire, CryoBan grenade adds [BO] to the attempt.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>8</Damage>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>6</Count>
+      </Quality>
+      <Quality>
+        <Key>DISORIENT</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>ENSNARE</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>2</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>TOWCABLE</Key>
+    <Name>Electromagnetic Tow Cable Launcher</Name>
+    <Description>
+      [H3]Electromagnetic Tow Cable Launcher[h3]
+      Please see page 62 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="62">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>2000</Price>
+    <Rarity>2</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When Ensare quantity is activated, target vehicle's pilot must make an [B]Average ([DI][DI]) Piloting check[b] to free vehicle.  If target is at least 1 silhouette lower than attacker, [TH][TH] on failed check will draw target 1 range band closer to attacker.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>GUNN</SkillKey>
+    <SizeLow>2</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrClose</RangeValue>
+    <VehicleNoReplace>true</VehicleNoReplace>
+    <Qualities>
+      <Quality>
+        <Key>ENSNARE</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Close</Range>
+  </Weapon>
+  <Weapon>
+    <Key>IONTORPLAUNCHER</Key>
+    <Name>Ion Torpedo Launcher</Name>
+    <Description>
+      [H3]Ion Torpedo Launcher[h3]
+      Please see page 62 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="62">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ion</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>6500</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>10</Damage>
+    <Crit>3</Crit>
+    <SizeLow>4</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <VehicleNoReplace>true</VehicleNoReplace>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>ION</Key>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>SLOWFIRING</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>IONTORP</Key>
+    <Name>Ion Torpedo</Name>
+    <Description>
+      [H3]Ion Torpedo[h3]
+      Please see page 62 of the Fully Operational Sourcebook for details.
+      [P][I]For use with the Ion Torpedo Launcher[i]
+    </Description>
+    <Source Page="62">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ion</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>100</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>10</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Ordnance>true</Ordnance>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>ION</Key>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>SLOWFIRING</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>REPIONCANNON</Key>
+    <Name>Repeating Ion Cannon</Name>
+    <Description>
+      [H3]Repeating Ion Cannon[h3]
+      Please see page 63 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="63">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ion</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>6000</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>4</Damage>
+    <Crit>4</Crit>
+    <SizeLow>3</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrClose</RangeValue>
+    <VehicleNoReplace>true</VehicleNoReplace>
+    <Qualities>
+      <Quality>
+        <Key>ION</Key>
+      </Quality>
+      <Quality>
+        <Key>LINKED</Key>
+        <Count>4</Count>
+      </Quality>
+    </Qualities>
+    <Range>Close</Range>
+  </Weapon>
+  <Weapon>
+    <Key>TERMITELAUNCH</Key>
+    <Name>Termite Torpedo Launcher</Name>
+    <Description>
+      [H3]Termite Torpedo Launcher[h3]
+      Please see page 63 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="63">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>10000</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>After vehicle is hit by a termite torpedo, for remainder of encounter, whenever crew performs a check, attacker can spend [TH][TH] to have ship suffer 2 hull trauma or system strain, and can spend [DE] to inflict a Critical Hit.  As an action, crew aboard attacked ship may perform a [B]Daunting ([DI][DI][DI][DI]) Mechanics check[b] to repress effect for 1 round.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>3</Damage>
+    <Crit>5</Crit>
+    <SizeLow>4</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <VehicleNoReplace>true</VehicleNoReplace>
+    <Qualities>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>SLOWFIRING</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>TERMITETORP</Key>
+    <Name>Termite Torpedo</Name>
+    <Description>
+      [H3]Termite Torpedo[h3]
+      Please see page 63 of the Fully Operational Sourcebook for details.
+      [P][I]For use with the Termite Torpedo Launcher[i]
+    </Description>
+    <Source Page="63">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Categories>
+      <Category>Ranged</Category>
+    </Categories>
+    <Price>300</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>After vehicle is hit by a termite torpedo, for remainder of encounter, whenever crew performs a check, attacker can spend [TH][TH] to have ship suffer 2 hull trauma or system strain, and can spend [DE] to inflict a Critical Hit.  As an action, crew aboard attacked ship may perform a [B]Daunting ([DI][DI][DI][DI]) Mechanics check[b] to repress effect for 1 round.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>3</Damage>
+    <Crit>5</Crit>
+    <SizeLow>4</SizeLow>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <VehicleNoReplace>true</VehicleNoReplace>
+    <Qualities>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>SLOWFIRING</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
 </Weapons>

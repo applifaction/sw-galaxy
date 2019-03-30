@@ -13,8 +13,6 @@
       <Source Page="150">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <Price>0</Price>
     <HP>0</HP>
     <JuryRigged>true</JuryRigged>
@@ -51,8 +49,6 @@
       <Source Page="150">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Armor</Type>
-    <ItemLimit>
-    </ItemLimit>
     <Price>0</Price>
     <HP>0</HP>
     <JuryRigged>true</JuryRigged>
@@ -86,8 +82,6 @@
       <Source Page="188">Edge of the Empire Core Rulebook</Source>
       <Source Page="200">Age of Rebellion Core Rulebook</Source>
     </Sources>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Blaster Rifle</Category>
       <Category>Heavy Blaster Rifle</Category>
@@ -170,8 +164,6 @@
       <Source Page="200">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Blaster Pistol</Category>
       <Category>Heavy Blaster Pistol</Category>
@@ -304,8 +296,6 @@
     </Description>
     <Source Page="189">Edge of the Empire Core Rulebook</Source>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Bowcaster</Category>
     </CategoryLimit>
@@ -341,8 +331,6 @@
       <Source Page="201">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Pistol</Category>
     </CategoryLimit>
@@ -379,8 +367,6 @@
       <Source Page="201">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Rifle</Category>
       <Category>Carbine</Category>
@@ -461,8 +447,6 @@
       <Source Page="194">Force and Destiny Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Cutting Edge Melee</Category>
     </CategoryLimit>
@@ -495,8 +479,6 @@
       <Source Page="51">Savage Spirits</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Ranged</Category>
     </CategoryLimit>
@@ -532,8 +514,6 @@
       <Source Page="203">Age of Rebellion Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Blaster Rifle</Category>
       <Category>Blaster Carbine</Category>
@@ -572,8 +552,6 @@
       <Source Page="194">Force and Destiny Core Rulebook</Source>
     </Sources>
     <Type>Weapon</Type>
-    <ItemLimit>
-    </ItemLimit>
     <CategoryLimit>
       <Category>Cutting Edge Melee</Category>
     </CategoryLimit>
@@ -724,7 +702,7 @@
       <Category>Carbine</Category>
     </CategoryLimit>
     <Price>3000</Price>
-    <Rarity>4</Rarity>
+    <Rarity>5</Rarity>
     <Restricted>true</Restricted>
     <HP>2</HP>
     <BaseMods>
@@ -1143,7 +1121,7 @@
       <Category>Blaster</Category>
     </CategoryLimit>
     <Price>750</Price>
-    <Rarity>5</Rarity>
+    <Rarity>4</Rarity>
     <Restricted>true</Restricted>
     <HP>1</HP>
     <JuryRigged>false</JuryRigged>
@@ -1180,7 +1158,7 @@
       <Category>Ranged</Category>
     </CategoryLimit>
     <Price>700</Price>
-    <Rarity>5</Rarity>
+    <Rarity>3</Rarity>
     <Restricted>false</Restricted>
     <HP>1</HP>
     <JuryRigged>false</JuryRigged>
@@ -1235,13 +1213,13 @@
     <ItemLimit />
     <SkillLimit />
     <TypeLimit>
-      <Type>Melee</Type>
     </TypeLimit>
     <CategoryLimit>
+      <Category>Bludgeoning Melee</Category>
       <Category>Bludgeoning Brawl</Category>
     </CategoryLimit>
     <Price>250</Price>
-    <Rarity>5</Rarity>
+    <Rarity>4</Rarity>
     <Restricted>false</Restricted>
     <HP>1</HP>
     <JuryRigged>false</JuryRigged>
@@ -1592,7 +1570,7 @@
     <AddedMods>
       <Mod>
         <Key>ENCTADD</Key>
-        <Count>3</Count>
+        <Count>5</Count>
       </Mod>
     </AddedMods>
   </ItemAttachment>
@@ -1925,7 +1903,11 @@
     <BaseMods>
       <Mod>
         <Count>1</Count>
-        <MiscDesc>Mounts single weapon on armor.  User can aim and fire without using his hands.  Use "Notes" feature to specify which weapon is mounted.</MiscDesc>
+        <Key>MOUNTRANGED4</Key>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>User can aim and fire mmounted weapon without using hands.</MiscDesc>
       </Mod>
     </BaseMods>
     <AddedMods />
@@ -2126,7 +2108,7 @@
       <Category>Lightsaber</Category>
     </CategoryLimit>
     <Price>15000</Price>
-    <Rarity>7</Rarity>
+    <Rarity>8</Rarity>
     <Restricted>true</Restricted>
     <HP>2</HP>
     <JuryRigged>false</JuryRigged>
@@ -3128,11 +3110,11 @@ Please see page 196 of the Force and Destiny Core Rulebook for details.
       <Category>Hard</Category>
       <Category>Hard Full Body</Category>
     </CategoryLimit>
-    <Price>2500</Price>
-    <Rarity>7</Rarity>
+    <Price>750</Price>
+    <Rarity>5</Rarity>
     <Restricted>false</Restricted>
-    <HP>2</HP>
-    <Encumbrance>1</Encumbrance>
+    <HP>1</HP>
+    <Encumbrance>0</Encumbrance>
     <JuryRigged>false</JuryRigged>
     <BaseMods>
       <Mod>
@@ -3165,8 +3147,8 @@ Please see page 196 of the Force and Destiny Core Rulebook for details.
     <TypeLimit />
     <CategoryLimit>
     </CategoryLimit>
-    <Price>750</Price>
-    <Rarity>5</Rarity>
+    <Price>650</Price>
+    <Rarity>4</Rarity>
     <Restricted>false</Restricted>
     <HP>1</HP>
     <Encumbrance>0</Encumbrance>
@@ -3198,15 +3180,15 @@ Please see page 196 of the Force and Destiny Core Rulebook for details.
     <Price>2000</Price>
     <Rarity>6</Rarity>
     <Restricted>false</Restricted>
-    <HP>4</HP>
-    <Encumbrance>0</Encumbrance>
+    <HP>2</HP>
+    <Encumbrance>4</Encumbrance>
     <JuryRigged>false</JuryRigged>
     <MinSoak>2</MinSoak>
     <BaseMods>
-      <Mod>
+      <!--<Mod>
         <Key>ENCADD</Key>
         <Count>4</Count>
-      </Mod>
+      </Mod>-->
       <Mod>
         <Count>1</Count>
         <MiscDesc>First time wearer is hit each encounter, reduce damage by 10.  After, armor suffers minor damage and must be repaired to function again.</MiscDesc>
@@ -3755,6 +3737,7 @@ Please see page 196 of the Force and Destiny Core Rulebook for details.
     </ItemLimit>
     <Price>1000</Price>
     <HP>2</HP>
+    <Rarity>7</Rarity>
     <BaseMods>
       <Mod>
         <MiscDesc>Half damage from weapons with Ion quality</MiscDesc>
@@ -4644,9 +4627,12 @@ Please see page 105 of the Lords of Nal Hutta Sourcebook for details.
     <Name>Autopilot Droid Brain</Name>
     <Description>
       [H3]Autopilot Droid Brain[h3]
-      Please see page 62 of the Fly Casual Sourcebook for details.
+      Please see page 62 of the Fly Casual Sourcebook, or page 61 of the Fully Operational Sourceboook, for details.
     </Description>
-    <Source Page="62">Fly Casual</Source>
+    <Sources>
+      <Source Page="62">Fly Casual</Source>
+      <Source Page="61">Fully Operational</Source>
+    </Sources>
     <Type>Vehicle</Type>
     <ItemLimit />
     <SkillLimit />
@@ -4660,7 +4646,7 @@ Please see page 105 of the Lords of Nal Hutta Sourcebook for details.
     <JuryRigged>false</JuryRigged>
     <BaseMods>
       <Mod>
-        <MiscDesc>Adds a Droid Brain with Piloting Skills 2 and Intellect 0</MiscDesc>
+        <MiscDesc>Adds a Droid Brain with Piloting Skills 2 and Agility 0</MiscDesc>
         <Count>1</Count>
         <InnateSkills>
           <InnateSkill>
@@ -4757,6 +4743,7 @@ Please see page 105 of the Lords of Nal Hutta Sourcebook for details.
         <Crit>3</Crit>
         <CritSub>0</CritSub>
         <RangeValue>wrMedium</RangeValue>
+        <Scale>wsPersonal</Scale>
         <Qualities>
           <Quality>
             <Key>AUTOFIRE</Key>
@@ -4958,7 +4945,7 @@ Please see page 105 of the Lords of Nal Hutta Sourcebook for details.
         <AllSkillKey />
         <Damage>6</Damage>
         <DamageAdd>0</DamageAdd>
-        <Crit>2</Crit>
+        <Crit>5</Crit>
         <CritSub>0</CritSub>
         <RangeValue>wrShort</RangeValue>
         <Qualities>
@@ -5713,6 +5700,7 @@ Please see page 54 of the Special Modifications Sourcebook for details.</Descrip
       <Category>Pistol</Category>
       <Category>Rifle</Category>
       <Category>Carbine</Category>
+      <Category>Blaster</Category>
       <Category>Bowcaster</Category>
       <Category>Lightsaber</Category>
       <Category>Lightsaber Hilt</Category>
@@ -5913,6 +5901,9 @@ Please see page 55 of the Special Modifications Sourcebook for details.</Descrip
         <Count>2</Count>
       </Mod>
     </AddedMods>
+    <ExcludeMods>
+      <Key>AUTOFIRE</Key>
+    </ExcludeMods>
   </ItemAttachment>
   <ItemAttachment>
     <Key>REMSAFFEAT</Key>
@@ -7114,7 +7105,15 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
         <Count>1</Count>
       </Mod>
       <Mod>
-        <MiscDesc>Adds automatic [TH][TH] to all combat checks made using this weapon.</MiscDesc>
+        <Key>THRADD</Key>
+        <Count>2</Count>
+        <!--<MiscDesc>Adds automatic [TH][TH] to all combat checks made using this weapon.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>THRADD</SkillKey>
+            <AdvantageCount>2</AdvantageCount>
+          </DieModifier>
+        </DieModifiers>-->
       </Mod>
     </BaseMods>
     <AddedMods>
@@ -7296,7 +7295,7 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
     <BaseMods>
       <Mod>
         <Count>1</Count>
-        <MiscDesc>As a maneuver, my adjust lightsaber to deal Stun damage.  Decrease damage by 2, increase critical rating by 1, lose Breach quality.</MiscDesc>
+        <MiscDesc>As a maneuver, may adjust lightsaber to deal Stun damage.  Decrease damage by 2, increase critical rating by 1, lose Breach quality</MiscDesc>
       </Mod>
     </BaseMods>
     <AddedMods>
@@ -7674,6 +7673,7 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
     <Type>Vehicle</Type>
     <TypeLimit>
       <Type>Landspeeder</Type>
+      <Type>Speeder Truck</Type>
     </TypeLimit>
     <BaseMods>
       <Mod>
@@ -8246,7 +8246,7 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
     </TypeLimit>
     <Price>1100</Price>
     <Rarity>5</Rarity>
-    <HP>2</HP>
+    <HP>1</HP>
     <BaseMods>
       <Mod>
         <Key>SPEEDADD</Key>
@@ -8351,6 +8351,9 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
     <Type>Vehicle</Type>
     <Price>2500</Price>
     <Rarity>3</Rarity>
+    <TypeLimit>
+      <Type>Podracer</Type>
+    </TypeLimit>
     <BaseMods>
       <Mod>
         <Count>1</Count>
@@ -8416,9 +8419,9 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
   </ItemAttachment>
   <ItemAttachment>
     <Key>PODENGINE</Key>
-    <Name>Podracer Engine</Name>
+    <Name>Podracer Engines (pair)</Name>
     <Description>
-      [H3]Podracer Engine[h3]
+      [H3]Podracer Engine (pair)[h3]
       Please see page 60 of the Endless Vigil Sourcebook for details.
     </Description>
     <Source Page="60">Endless Vigil</Source>
@@ -8533,6 +8536,10 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
         <Count>1</Count>
       </Mod>
     </AddedMods>
+    <ExcludedMods>
+      <Key>BLAST</Key>
+      <Key>AUTOFIRE</Key>
+    </ExcludedMods>
   </ItemAttachment>
   <ItemAttachment>
     <Key>SHOCKPULSEMIT</Key>
@@ -8899,6 +8906,2077 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
     </AddedMods>
     <MustBeStarship>true</MustBeStarship>
   </ItemAttachment>
+  <ItemAttachment>
+    <Key>BLADEDRAIN</Key>
+    <Name>Blade Drain</Name>
+    <Description>
+      [H3]Blade Drain[h3]
+      Please see page 50 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="50">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>4000</Price>
+    <Rarity>9</Rarity>
+    <Restricted>true</Restricted>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When making a combat check targeting an opponent with a lightsaber, character may spend [TR] to reduce opponent's lightsaber's base damage by one for remainder of encounter.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>[TH][TH][TH] causes blade to collapse.  Cannot be reignited until character's next turn.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>DEFENSIVE</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>HILTMASK</Key>
+    <Name>Hilt Masking Kit</Name>
+    <Description>
+      [H3]Hilt Masking Kit[h3]
+      Please see page 50 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="50">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Adds [FA][FA] to any attempt to find or identify the lightsaber as a lightsaber.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>2</Count>
+        <MiscDesc>Increase number of [FA] by 1</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>POMMELCAP</Key>
+    <Name>Pommel Cap</Name>
+    <Description>
+      [H3]Pommel Cap[h3]
+      Please see page 51 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="51">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Bludgeoning Melee</Category>
+      <Category>Cutting Edge Melee</Category>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>3000</Price>
+    <Rarity>2</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>STUN</Key>
+        <Count>2</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>STUN</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>STUNBLAST</Key>
+    <Name>Stun Blaster Attachment</Name>
+    <Description>
+      [H3]Stun Blaster Attachment[h3]
+      Please see page 51 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="51">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>750</Price>
+    <Rarity>5</Rarity>
+    <HP>2</HP>
+    <AddedMods>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>1</Count>
+        <WeaponModifierIndex>0</WeaponModifierIndex>
+      </Mod>
+      <Mod>
+        <Key>SUBQUALUNWIELDY</Key>
+        <Count>1</Count>
+        <WeaponModifierIndex>0</WeaponModifierIndex>
+      </Mod>
+      <Mod>
+        <Key>DISORIENT</Key>
+        <Count>2</Count>
+        <WeaponModifierIndex>0</WeaponModifierIndex>
+      </Mod>
+    </AddedMods>
+    <WeaponModifiers>
+      <WeaponModifier>
+        <UnarmedName>Stun Blaster</UnarmedName>
+        <SkillKey>RANGLT</SkillKey>
+        <Damage>5</Damage>
+        <Qualities>
+          <Quality>
+            <Key>STUNDAMAGE</Key>
+          </Quality>
+          <Quality>
+            <Key>UNWIELDY</Key>
+            <Count>2</Count>
+          </Quality>
+        </Qualities>
+        <RangeValue>wrShort</RangeValue>
+        <Range>Short</Range>
+      </WeaponModifier>
+    </WeaponModifiers>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>CORRUPTCRYS</Key>
+    <Name>Corrupted Crystal</Name>
+    <Description>
+      [H3]Corrupted Crystal[h3]
+      Please see page 52 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="52">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Rarity>9</Rarity>
+    <Restricted>true</Restricted>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>6</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>2</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When character wielding this lightsaber makes a Force check, add [DA] to the check</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When wielder's Morality rises to 70 or more, [DA] is no longer added to Force checks, and the crystal loses the Vicious quality</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSUB</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SUBQUALVICIOUS</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <IsCrystal>true</IsCrystal>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>CRACKEDCRYS</Key>
+    <Name>Cracked Crystal</Name>
+    <Description>
+      [H3]Cracked Crystal[h3]
+      Please see page 52 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="52">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>7</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>2</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>If a combat check results in a [DE], GM may cause crystal to shatter.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>CRITSUB</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <IsCrystal>true</IsCrystal>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>SEEKERCRYS</Key>
+    <Name>Seeker Crystal</Name>
+    <Description>
+      [H3]Seeker Crystal[h3]
+      Please see page 53 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="53">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>16000</Price>
+    <Rarity>9</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>7</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Force-sensitive wielders my add [AD][AD] to Perception or Vigilance checks to detect a hidden being within short range.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Increase check range to medium</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <IsCrystal>true</IsCrystal>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>SOLARICRYS</Key>
+    <Name>Solari Crystal</Name>
+    <Description>
+      [H3]Solari Crystal[h3]
+      Please see page 53 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="53">Disciples of Harmony</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>16000</Price>
+    <Rarity>9</Rarity>
+    <Restricted>true</Restricted>
+    <HP>3</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>7</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Key>DEFENSIVE</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Reduce strain from Reflect incidental by 1.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Crystal ceases to function if wielder's Morality is reduced below 50.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>DEFENSIVE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Reduce cost of Improved Reflect by [TH]</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <IsCrystal>true</IsCrystal>
+  </ItemAttachment>
+  
+  <!-- Fully Functional -->
 
+  <ItemAttachment>
+    <Key>DROIDBRAINDETON</Key>
+    <Name>Droid Brain Detonator</Name>
+    <Description>
+      [H3]Droid Brain Detonator[h3]
+      See page 51 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="51">Fully Operational</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Explosive</Category>
+      <Category>Grenade</Category>
+    </CategoryLimit>
+    <Price>1000</Price>
+    <Rarity>4</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Explosive's detonator is controlled by a droid brain that can activate under any predetermined circumstance.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>DROIDTARGET</Key>
+    <Name>Droid Targeting System</Name>
+    <Description>
+      [H3]Droid Targeting System[h3]
+      See page 51 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="51">Fully Operational</Source>
+    <Type>Weapon</Type>
+    <Price>3200</Price>
+    <Rarity>5</Rarity>
+    <HP>3</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Upgrade ability on Ranged combat checks made with this weapon once.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>RANGHVY</SkillKey>
+            <UpgradeAbilityCount>1</UpgradeAbilityCount>
+          </DieModifier>
+          <DieModifier>
+            <SkillKey>RANGLT</SkillKey>
+            <UpgradeAbilityCount>1</UpgradeAbilityCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add [BO] to one Ranged combat check per encounter</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Suffer 3 strain to remove [DE] from Ranged combat check</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>GRENCLING</Key>
+    <Name>Grenade Cling</Name>
+    <Description>
+      [H3]Grenade Cling[h3]
+      See page 52 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="52">Fully Operational</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Explosive</Category>
+      <Category>Grenade</Category>
+    </CategoryLimit>
+    <Price>70</Price>
+    <Rarity>2</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Grenade immediately adheres to its target and requires an [B]Average ([DI][DI]) Athletics check[b] to remove.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>2</Count>
+        <MiscDesc>Increase damage by 1 to stuck targets</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>2</Count>
+        <MiscDesc>Increase difficulty to remove adhered grenade once</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>PROXDET</Key>
+    <Name>Proximity Detonator</Name>
+    <Description>
+      [H3]Proximity Detonator[h3]
+      See page 52 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="52">Fully Operational</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Grenade</Category>
+      <Category>Explosive</Category>
+    </CategoryLimit>
+    <Price>120</Price>
+    <Rarity>3</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Weapon detonates when a silhouette 1 or higher creature comes within short or engaged range, as determined when placed.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>ORDIMPELL</Key>
+    <Name>Ordnance Impeller</Name>
+    <Description>
+      [H3]Ordnance Impeller[h3]
+      See page 52 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="52">Fully Operational</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Explosive</Category>
+      <Category>Grenade</Category>
+    </CategoryLimit>
+    <Price>500</Price>
+    <Rarity>4</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Explosive can move overland at the rate of a character on foot.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Includes a holocam and remote-control unit, allowing for movement and detonation from up to extreme range.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Skill checks to operate device uses either Computers or Piloting (Planetary).</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add ten-meter maximum altitude.</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <MaxEnc>3</MaxEnc>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>AUTOWEAPMOUNT</Key>
+    <Name>Automated Weapon Mounting</Name>
+    <Description>
+      [H3]Automated Weapon Mounting[h3]
+      See page 53 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="53">Fully Operational</Source>
+    <Type>Armor</Type>
+    <Price>3000</Price>
+    <Rarity>5</Rarity>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Key>MOUNT3</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Once per encounter, may spend maneuver to make a combat action with mounted weapon.  Difficulty of check is upgraded once.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add [SE] to combat check instead of upgrading difficulty.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>MOUNTADDL</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>DROIDBRAINDEF</Key>
+    <Name>Droid Brain Defense System</Name>
+    <Description>
+      [H3]Droid Brain Defense System[h3]
+      See page 53 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="53">Fully Operational</Source>
+    <Type>Armor</Type>
+    <Price>5000</Price>
+    <Rarity>6</Rarity>
+    <HP>3</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DEFADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Increase Defense by 1 when taking Guarded Stance maneuver.</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REPULSPACK</Key>
+    <Name>Repulsor Pack</Name>
+    <Description>
+      [H3]Repulsor Pack[h3]
+      See page 53 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="53">Fully Operational</Source>
+    <Type>Armor</Type>
+    <Price>2500</Price>
+    <Rarity>4</Rarity>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Allows user to function as vehicle:  Speed 1, Handling -1, System Strain 2, Silhouette same as user.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Pack can only travel in atmosphere up to 75 meters in altitude.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Operator uses Coordination skil for any relevant checks.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Increase Handling by 1.</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>UTILARM</Key>
+    <Name>Utility Arm</Name>
+    <Description>
+      [H3]Utility Arm[h3]
+      See page 53 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="53">Fully Operational</Source>
+    <Type>Armor</Type>
+    <Price>2000</Price>
+    <Rarity>3</Rarity>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Provides character with an additional mechanical arm that can function as one of the character's normal limbs.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Adds [BO] to Mechanics checks.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>MECH</SkillKey>
+            <BoostCount>1</BoostCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Adds [BO] to Mechanics checks.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>MECH</SkillKey>
+            <BoostCount>1</BoostCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>May spend 1 strain to gain an additional free maneuver per turn (still limited to two maneuvers per turn).</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>ARMCOMCORE</Key>
+    <Name>Armored Computer Core</Name>
+    <Description>
+      [H3]Armored Computer Core[h3]
+      Please see page 60 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="60">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>1100</Price>
+    <Rarity>4</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Incorporates a computer core that records flight and system data and backs up any logs or records entered into the ship's computer.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Computer core remains intact even if the ship suffers a "Vaporized" Critical Hit.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>OVERCHSHIELD</Key>
+    <Name>Overcharged Shields</Name>
+    <Description>
+      [H3]Overcharged Shields[h3]
+      Please see page 61 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="61">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>4000</Price>
+    <Rarity>4</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Once per encounter, can make an [B]Average([DI][DI]) Mechanics check[b] to overcharge shields, adding 2 to all defense zones for 1 round + 1 round per [AD].  If [TH][TH] or [DE] is rolled, shields burn out and stop working until repaired.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>PLASMADRILL</Key>
+    <Name>Plasma Drill</Name>
+    <Description>
+      [H3]Plasma Drill[h3]
+      Please see page 61 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="61">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>4000</Price>
+    <Rarity>4</Rarity>
+    <HP>3</HP>
+    <BaseMods>
+      <Mod>
+        <Key>HANDLINGSUB</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Can tunnel through solid rock and most metals at speed 1.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>May be employed as a weapon.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>HANDLINGADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <WeaponModifiers>
+      <WeaponModifier>
+        <UnarmedName>Plasma Drill</UnarmedName>
+        <SkillKey>PILOTPL</SkillKey>
+        <Damage>9</Damage>
+        <Crit>4</Crit>
+        <Qualities>
+          <Quality>
+            <Key>BREACH</Key>
+            <Count>3</Count>
+          </Quality>
+          <Quality>
+            <Key>INACCURATE</Key>
+            <Count>2</Count>
+          </Quality>
+          <Quality>
+            <Key>SLOWFIRING</Key>
+            <Count>1</Count>
+          </Quality>
+          <Quality>
+            <Key>VICIOUS</Key>
+            <Count>1</Count>
+          </Quality>
+        </Qualities>
+        <VehicleWeaponProperties>
+          <FiringArcs>
+            <Fore>true</Fore>
+          </FiringArcs>
+        </VehicleWeaponProperties>
+        <VehicleWeaponCount>1</VehicleWeaponCount>
+        <RangeValue>wrClose</RangeValue>
+        <Range>Close</Range>
+      </WeaponModifier>
+    </WeaponModifiers>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REINARMPLATE</Key>
+    <Name>Reinforced Armor Plating</Name>
+    <Description>
+      [H3]Reinforced Armor Plating[h3]
+      Please see page 61 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="61">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>4000</Price>
+    <Rarity>2</Rarity>
+    <HP>2</HP>
+    <BaseMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>HANDLINGSUB</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>HULLADD3</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <PriceSizeMult>true</PriceSizeMult>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REPULSBOOST</Key>
+    <Name>Repulsorlift Boost</Name>
+    <Description>
+      [H3]Repulsorlift Boost[h3]
+      Please see page 62 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="61">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>1000</Price>
+    <Rarity>4</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Once per encounter as an incidental, vehicle may suffer 2 system strain to double maximum altitute (or gain 100 meters, whichever is lower) and increase max speed by 1 for 1 round.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>2</Count>
+        <MiscDesc>Increase duration by 1 round</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <MaxSize>4</MaxSize>
+    <PriceSizeMult>true</PriceSizeMult>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>SENSBAFF</Key>
+    <Name>Sensor Baffler</Name>
+    <Description>
+      [H3]Sensor Baffler[h3]
+      Please see page 62 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="62">Fully Operational</Source>
+    <Type>Vehicle</Type>
+    <Price>8000</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When active, upgrade difficulty of checks to determine vehicle's location using sensors twice.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Count>2</Count>
+        <MiscDesc>Add [SE] on Gunnery checks targetting vessel</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
 
+  <!-- Vehicle Crafting Attachments -->
+
+  <!-- Crafting - Engines -->
+  <ItemAttachment>
+    <Key>CRAFTENGINESINGION</Key>
+    <Name>Single Ion Coil</Name>
+    <Description>
+      [H3]Single Ion Coil[h3]
+      Please see page 81 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="81">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>500</Price>
+    <Rarity>2</Rarity>
+    <HP>2</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 1, defense to 0/0/0/0, and system strain to 3 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>SSTRAINADDSIL</Key>
+        <Count>3</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTENGINEELECBAFF</Key>
+    <Name>Electron Baffled Engine</Name>
+    <Description>
+      [H3]Electron Baffled Engine[h3]
+      Please see page 81 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="81">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>1000</Price>
+    <Rarity>3</Rarity>
+    <HP>4</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 2, defense to 0/0/0/2, and system strain to 5 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>5</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD2</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SSTRAINADDSIL</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFAFT</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTENGINEIONTURBINE</Key>
+    <Name>Ion Turbine Engine</Name>
+    <Description>
+      [H3]Ion Turbine Engine[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>2000</Price>
+    <Rarity>2</Rarity>
+    <HP>3</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 1, defense to 1/0/0/0, and system strain to 10 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SSTRAINADDSIL</Key>
+        <Count>5</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFFORE</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTENGINEFUSIALTHRUST</Key>
+    <Name>Fusial Thrust Engine</Name>
+    <Description>
+      [H3]Fusial Thrust Engine[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>2500</Price>
+    <Rarity>4</Rarity>
+    <HP>3</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 3, defense to 1/0/0/0, and system strain to 4 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>4</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFAFT</Key>
+        <Count>2</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTENGINEREPCLUSTER</Key>
+    <Name>High-Performance Repulsor Cluster</Name>
+    <Description>
+      [H3]High-Performance Repulsor Cluster[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>3000</Price>
+    <Rarity>4</Rarity>
+    <HP>4</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 4, defense to 1/1/1/1, and system strain to 5 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>4</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>5</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTENGINEIONDRIVEARRAY</Key>
+    <Name>Ion Drive Array</Name>
+    <Description>
+      [H3]Ion Drive Array[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>5250</Price>
+    <Rarity>5</Rarity>
+    <HP>4</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes speed to 4, defense to 0/0/0/0, and system strain to 2 x Silhouette</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETSPEEDCRAFT</Key>
+        <Count>4</Count>
+      </Mod>
+      <Mod>
+        <Key>SETSSTRAINSILCRAFT</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFFORECRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFAFTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFSTARCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETDEFPORTCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SPEEDADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SSTRAINADDSIL</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFFORE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFAFT</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+  
+  <!-- Crafting - Hulls -->
+  <ItemAttachment>
+    <Key>CRAFTHULLSLEEK</Key>
+    <Name>Sleek Carapace</Name>
+    <Description>
+      [H3]Sleek Carapace[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>450</Price>
+    <Rarity>3</Rarity>
+    <HP>2</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes armor to 0 and handling to +2</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETARMORCRAFT</Key>
+        <Count>0</Count>
+      </Mod>
+      <Mod>
+        <Key>SETHANDCRAFT</Key>
+        <Count>2</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>HANDLINGADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+  
+  <ItemAttachment>
+    <Key>CRAFTHULLEXPCAP</Key>
+    <Name>Expanded-Capacity Holds</Name>
+    <Description>
+      [H3]Expanded-Capacity Holds[h3]
+      Please see page 83 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="83">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>500</Price>
+    <Rarity>2</Rarity>
+    <HP>4</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes armor to 1 and handling to -2, and adds 25 to encumbrance capacity and passenger capacity</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETARMORCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETHANDCRAFT</Key>
+        <Count>-2</Count>
+      </Mod>
+      <Mod>
+        <Key>ENCCADDCRAFT</Key>
+        <Count>25</Count>
+      </Mod>
+      <Mod>
+        <Key>PASSADDCRAFT</Key>
+        <Count>25</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>ENCCADDSIL</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>PASSADDSIL</Key>
+        <Count>8</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>CRAFTHULLLTARMOR</Key>
+    <Name>Lightly Armored Hull</Name>
+    <Description>
+      [H3]Lightly Armored Hull[h3]
+      Please see page 83 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="83">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>500</Price>
+    <Rarity>4</Rarity>
+    <HP>3</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes armor to 1 and handling to -1</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETARMORCRAFT</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SETHANDCRAFT</Key>
+        <Count>-1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>ENCCADDSIL</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>PASSADDSIL</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>HANDLINGADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+ 
+  <ItemAttachment>
+    <Key>CRAFTHULLDEFPLATE</Key>
+    <Name>Deflective Plating</Name>
+    <Description>
+      [H3]Deflective Plating[h3]
+      Please see page 83 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="83">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>700</Price>
+    <Rarity>5</Rarity>
+    <HP>4</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes armor to 2 and handling to -2</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETARMORCRAFT</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SETHANDCRAFT</Key>
+        <Count>-2</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>ADDDEFFORE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>HULLADDSIL</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>CRAFTHULLCOMBATPLATE</Key>
+    <Name>Combat Plating</Name>
+    <Description>
+      [H3]Combat Plating[h3]
+      Please see page 83 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="83">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>1500</Price>
+    <Rarity>7</Rarity>
+    <HP>5</HP>
+    <TypeLimit>
+    </TypeLimit>
+    <!--<CategoryLimit>
+      <Category>Crafted Vehicle</Category>
+    </CategoryLimit>-->
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Changes armor to 3 and handling to -3</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>SETARMORCRAFT</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>SETHANDCRAFT</Key>
+        <Count>-3</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>ARMORADD</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>MASSIVEADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>HULLADDSIL</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>EODMKIILOAD</Key>
+    <Name>Integrated Load-Bearing Gear</Name>
+    <Description>
+      [H3]Integrated Load-Bearing Gear[h3]
+      Please see page 43 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="43">Fully Operational</Source>
+    </Sources>
+    <Type>Armor</Type>
+    <Price>700</Price>
+    <Rarity>3</Rarity>
+    <HP>0</HP>
+    <ItemLimit>
+      <Key>EODMKII</Key>
+    </ItemLimit>
+    <BaseMods>
+      <Mod>
+        <Key>ENCSUB</Key>
+        <Count>3</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>EODMKIIDATALINK</Key>
+    <Name>Data Link</Name>
+    <Description>
+      [H3]Data Link[h3]
+      Please see page 43 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="43">Fully Operational</Source>
+    </Sources>
+    <Type>Armor</Type>
+    <Price>300</Price>
+    <Rarity>4</Rarity>
+    <HP>0</HP>
+    <ItemLimit>
+      <Key>EODMKII</Key>
+    </ItemLimit>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Allows wearer to control a single EOD remote.</MiscDesc>
+        <Count>3</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>HYPERMOD4</Key>
+    <Name>Hyperdrive Module Class 4</Name>
+    <Description>
+      [H3]Hyperdrive Module Class 4[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>6000</Price>
+    <Rarity>4</Rarity>
+    <HP>1</HP>
+    <MustBeStarship>true</MustBeStarship>
+    <BaseMods>
+      <Mod>
+        <Key>HYPERDRIVEADD4</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <MiscDesc>Add astromech slot to starfighter</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVESUB5</Key>
+        <Count>4</Count>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVEADDBACK14</Key>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVEBACKSUB5</Key>
+        <Count>4</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>HYPERMOD8</Key>
+    <Name>Hyperdrive Module Class 8</Name>
+    <Description>
+      [H3]Hyperdrive Module Class 8[h3]
+      Please see page 82 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="82">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>3000</Price>
+    <Rarity>3</Rarity>
+    <HP>1</HP>
+    <MustBeStarship>true</MustBeStarship>
+    <BaseMods>
+      <Mod>
+        <Key>HYPERDRIVEADD8</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <MiscDesc>Add astromech slot to starfighter</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVESUB5</Key>
+        <Count>4</Count>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVEADDBACK14</Key>
+      </Mod>
+      <Mod>
+        <Key>HYPERDRIVEBACKSUB5</Key>
+        <Count>4</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>REVENGARMOR</Key>
+    <Name>Reverse Engineering</Name>
+    <Description>
+      [H3]Reverse Engineering[h3]
+      Please see page 71 of the Fully Operational Sourcebook for details.
+      [P][I]Note:  Use this attachment on armor when you select the "Reverse Engineering" result from the chart on page 71.[i]
+    </Description>
+    <Sources>
+      <Source Page="71">Fully Operational</Source>
+    </Sources>
+    <Type>Armor</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+      <Mod>
+        <Key>HPADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REVENGWEAP</Key>
+    <Name>Reverse Engineering</Name>
+    <Description>
+      [H3]Reverse Engineering[h3]
+      Please see page 71 of the Fully Operational Sourcebook for details.
+      [P][I]Note:  Use this attachment on weapons when you select the "Reverse Engineering" result from the chart on page 71.[i]
+    </Description>
+    <Sources>
+      <Source Page="71">Fully Operational</Source>
+    </Sources>
+    <Type>Weapon</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+      <Mod>
+        <Key>HPADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REVENGGEAR</Key>
+    <Name>Reverse Engineering</Name>
+    <Description>
+      [H3]Reverse Engineering[h3]
+      Please see page 71 of the Fully Operational Sourcebook for details.
+      [P][I]Note:  Use this attachment on gear when you select the "Reverse Engineering" result from the chart on page 71.[i]
+    </Description>
+    <Sources>
+      <Source Page="71">Fully Operational</Source>
+    </Sources>
+    <Type>Gear</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+      <Mod>
+        <Key>HPADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REVENGVEH</Key>
+    <Name>Reverse Engineering</Name>
+    <Description>
+      [H3]Reverse Engineering[h3]
+      Please see page 71 of the Fully Operational Sourcebook for details.
+      [P][I]Note:  Use this attachment on vehicles when you select the "Reverse Engineering" result from the chart on page 71.[i]
+    </Description>
+    <Sources>
+      <Source Page="71">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+      <Mod>
+        <Key>HPADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>CIVRETRO</Key>
+    <Name>Civilian Vehicle Retrofit</Name>
+    <Description>
+      [H3]Civilian Vehicle Retrofit[h3]
+      Please see page 74 of the Fully Operational Sourcebook for details.
+      [P][I]Note:  This attachment contains several custom effects that degrade the vehicle's performance.  These are included as optional 
+      mods.  Talk with your GM about which degradation to choose for your vehicle.[i]
+    </Description>
+    <Sources>
+      <Source Page="74">Fully Operational</Source>
+    </Sources>
+    <Type>Vehicle</Type>
+    <Price>500</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <UseModPrice>true</UseModPrice>
+    <ModPrice>0</ModPrice>
+    <BaseMods>
+      <Mod>
+        <Key>HPADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>HANDLINGSUB</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SSTRAINSUB2</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <MiscDesc>Whenever the vehicle suffers system strain, it suffers one additional point of system strain</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>A [DE] on a piloting checks to control the vehicle causes the vehicle to immediately drop to Speed 0</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>A [DE] when using any of the vehicle's inbuilt systems or attachments cause the system or attachment to fail for the remainder of the encounter</MiscDesc>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>DAIBENDU</Key>
+    <Name>Dai Bendu Lessons</Name>
+    <Description>
+      [H3]Dai Bendu Lessons[h3]
+      Please see page 52 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="52">Unlimited Power</Source>
+    </Sources>
+    <Type>Gear</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <MiscDesc>[B]Brawn Tract[b]:  Once per day, may upgrade a Brawn-related check by two steps</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Agility Tract[b]:  Once per day, may upgrade an Agility-related check by two steps</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Intellect Tract[b]:  Once per day, may upgrade an Intellect-related check by two steps</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Cunning Tract[b]:  Once per day, may upgrade a Cunning-related check by two steps</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Willpower Tract[b]:  Once per day, may upgrade a Willpower-related check by two steps</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Presence Tract[b]:  Once per day, may upgrade a Presence-related check by two steps</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+
+  <ItemAttachment>
+    <Key>LASANCHRON</Key>
+    <Name>Lasan Chronicles Lessons</Name>
+    <Description>
+      [H3]Lasan Chronicles Bonuses[h3]
+      Please see page 52 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="52">Unlimited Power</Source>
+    </Sources>
+    <Type>Gear</Type>
+    <Price>0</Price>
+    <Rarity>0</Rarity>
+    <HP>0</HP>
+    <BaseMods>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <MiscDesc>[B]Perspicacity of the Child[b]:  During current session, may add [BO] to any one knowledge skill check</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Insight of the Fool[b]:  During current session, may re-roll one [AB] for any one combat check</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>[B]Purpose of the Warrior[b]:  During current session, may remove [SE] on a single skill check</MiscDesc>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>THISSCOIL</Key>
+    <Name>Thisspiasian Stabilizing Coils</Name>
+    <Description>
+      [H3]Thisspiasian Stabilizing Coils[h3]
+      Please see page 54 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="54">Unlimited Power</Source>
+    </Sources>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+    </CategoryLimit>
+    <Price>5500</Price>
+    <Rarity>5</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>SETBACKSUB</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>THOLOHILT</Key>
+    <Name>Tholothian Heartwood Hilt</Name>
+    <Description>
+      [H3]Tholothian Heartwood Hilt[h3]
+      Please see page 54 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="54">Unlimited Power</Source>
+    </Sources>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+    </CategoryLimit>
+    <Price>8000</Price>
+    <Rarity>7</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>ENCADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>SUCCADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <MiscDesc>GM may spend [TH][TH][TH][TH] or [DE] to damage weapon by one step</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>WALKHILT</Key>
+    <Name>Walking Stick Hilt Disguise</Name>
+    <Description>
+      [H3]Walking Stick Hilt Disguise[h3]
+      Please see page 55 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Sources>
+      <Source Page="55">Unlimited Power</Source>
+    </Sources>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+    </CategoryLimit>
+    <Price>2500</Price>
+    <Rarity>6</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>INACCURATE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <MiscDesc>Unless ignited, lightsaber is indistinguishable from ordinary walking stick.  Must pass [B]Formidable ([DI][DI][DI][DI][DI]) Perception[b] or [B]Vigilance check[b] to notice.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SUBQUALINACCURATE</Key>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>TAINTNIGHT</Key>
+    <Name>Tainted Nightsister Crystal</Name>
+    <Description>
+      [H3]Tainted Nightsister Crystal[h3]
+      Please see page 55 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="55">Unlimited Power</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+    </CategoryLimit>
+    <Price>13000</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <HP>2</HP>
+    <IsCrystal>true</IsCrystal>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>6</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualSet>true</QualSet>
+      </Mod>
+      <Mod>
+        <Key>DISORIENT</Key>
+        <Count>3</Count>
+        <QualSet>true</QualSet>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+        <QualSet>true</QualSet>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>DISORIENT</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>UNSTKYBER</Key>
+    <Name>Unstable Kyber Crystal</Name>
+    <Description>
+      [H3]Unstable Kyber Crystal[h3]
+      Please see page 55 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="55">Unlimited Power</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+    </CategoryLimit>
+    <Price>16000</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <HP>2</HP>
+    <IsCrystal>true</IsCrystal>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>6</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualSet>true</QualSet>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <MiscDesc>May spend maneuver to increase Force rating by 1.  Persists until extra [FO] is used to fuel a Force power.</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>GM may spend [TH][TH][TH][TH] or [DE] to cause lightsaber to sputter and fail.  Lightsaber cannot be reignited for one hour.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>DUSTCRAWLER</Key>
+    <Name>Additional Cars</Name>
+    <Description>
+      [H3]Additional Cars[h3]
+      Please see page 60 of the Unlimited Power Sourcebook for details.
+      [P][I]Note:  For each additional car, select one of each type of optional mod.  Up to 10 additional cars can be added in this way.[i]
+    </Description>
+    <Source Page="60">Unlimited Power</Source>
+    <Type>Vehicle</Type>
+    <ItemLimit>
+      <Key>DUSTCRAWLER</Key>
+    </ItemLimit>
+    <Price>0</Price>
+    <Rarity>5</Rarity>
+    <Restricted>false</Restricted>
+    <HP>0</HP>
+    <BaseMods>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SILHADD</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>ENCCADD100</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>PASSADD10</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>HPADD2</Key>
+        <Count>10</Count>
+      </Mod>
+      <Mod>
+        <Key>PRICE20000</Key>
+        <Count>10</Count>
+      </Mod>
+    </AddedMods>
+    <Hidden>true</Hidden>
+  </ItemAttachment>
 </ItemAttachments>

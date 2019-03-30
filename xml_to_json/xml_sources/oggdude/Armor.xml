@@ -22,6 +22,11 @@
       <Category>Full Body</Category>
       <Category>Heavy</Category>
     </Categories>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Wearer may ignore [SETBACK] imposed by the environment</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Armor>
   <Armor>
     <Key>AC</Key>
@@ -45,6 +50,11 @@
       <Category>Half Body</Category>
       <Category>Heavy</Category>
     </Categories>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>An [B]Average ([DI][DI]) Perception check[b] detects that the wearer's clothing is armored</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Armor>
   <Armor>
     <Key>ARMROBE</Key>
@@ -58,7 +68,7 @@
     <Soak>2</Soak>
     <Price>4500</Price>
     <Restricted>true</Restricted>
-    <Encumbrance>3</Encumbrance>
+    <Encumbrance>5</Encumbrance>
     <HP>2</HP>
     <Rarity>8</Rarity>
     <Categories>
@@ -189,6 +199,11 @@
     <Categories>
       <Category>Heavy</Category>
     </Categories>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>GM may spend [DE] to have the personal deflector shield run out of power for the remainder of the encounter</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Armor>
   <Armor>
     <Key>PAD</Key>
@@ -404,6 +419,11 @@
     <Encumbrance>4</Encumbrance>
     <HP>2</HP>
     <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>May survive up to 24 hours in a vacuum</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Armor>
   <!-- Dangerous Covenants -->
   <Armor>
@@ -574,7 +594,17 @@
     <BaseMods>
       <Mod>
         <Count>1</Count>
-        <MiscDesc>Add [SETBACK] to all Brawn- and Agility-based checks.</MiscDesc>
+        <MiscDesc>Adds [SE] to any Brawn- or Agility-based skill checks.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillChar>BR</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+          <DieModifier>
+            <SkillChar>AG</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+        </DieModifiers>
       </Mod>
       <Mod>
         <Count>1</Count>
@@ -2556,6 +2586,362 @@
     <Restricted>true</Restricted>
     <Defense>1</Defense>
     <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>BIOGELSUIT</Key>
+    <Name>Biogel Suit</Name>
+    <Description>
+      [H3]Biogel Suit[h3]
+      Please see page 45 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="45">Disciples of Harmony</Source>
+    <Categories>
+      <Category>Full Body</Category>
+    </Categories>
+    <Encumbrance>6</Encumbrance>
+    <Price>3501</Price>
+    <Rarity>1</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Wearer gains +1 soak when hit by Brawl or bludgeoning Melee weapons.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Adds [SE] to any Brawn- or Agility-based skill checks.</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillChar>BR</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+          <DieModifier>
+            <SkillChar>AG</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+    </BaseMods>
+    <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>FORMCOUNARM</Key>
+    <Name>Formal Council Armor</Name>
+    <Description>
+      [H3]Formal Council Armor[h3]
+      Please see page 45 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="45">Disciples of Harmony</Source>
+    <Categories>
+      <Category>Half Body</Category>
+      <Category>Heavy</Category>
+    </Categories>
+    <Encumbrance>5</Encumbrance>
+    <HP>2</HP>
+    <Price>8000</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When wearing, add [AD][AD] to negotiation checks against people who hold Jedi in high regard.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Optionally, when wearing, add [AD][AD] to Coercion checks against people who hate or fear the Jedi.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>INDFLDDISR</Key>
+    <Name>Individual Field Disruptor</Name>
+    <Description>
+      [H3]Individual Field Disruptor[h3]
+      Please see page 45 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="45">Disciples of Harmony</Source>
+    <Categories />
+    <Price>9500</Price>
+    <Rarity>7</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When in contact with another energy field, the field ceases to offer any defense.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When entering engaged range with a droid, the droid suffers 5 Stun damage.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>When entering engaged range with an electronic device, the device becomes inactive for the rest of the encounter.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <WeaponModifiers>
+      <WeaponModifier>
+        <UnarmedName>Field Disruptor</UnarmedName>
+        <SkillKey>MELEE</SkillKey>
+        <DamageAdd>2</DamageAdd>
+        <Qualities>
+          <Quality>
+            <Key>STUNDAMAGE</Key>
+          </Quality>
+        </Qualities>
+        <Range>Engaged</Range>
+      </WeaponModifier>
+    </WeaponModifiers>
+    <Defense>1</Defense>
+  </Armor>
+  <Armor>
+    <Key>REFBODYGL</Key>
+    <Name>Reflect Body Glove</Name>
+    <Description>
+      [H3]Reflect Body Glove[h3]
+      Please see page 46 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="46">Disciples of Harmony</Source>
+    <Categories>
+      <Category>Full Body</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <Price>2500</Price>
+    <Rarity>5</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add [SE][SE] to Vigilance and Perception checks to notice the body glove.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>After each successful combat check against wearer is resolved, reduce Soak by 1, to a minimum of 0.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Original Soak value may be restored by making a successful [B]Average ([DI][DI]) Mechanics check[b].</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <Soak>3</Soak>
+  </Armor>
+  <Armor>
+    <Key>DIVESUIT</Key>
+    <Name>SeaScape Diving Suit</Name>
+    <Description>
+      [H3]SeaScape Diving Suit[h3]
+      Please see page 46 of the Disciples of Harmony Sourcebook for details.
+    </Description>
+    <Source Page="46">Disciples of Harmony</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Sealed</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>2</HP>
+    <Price>400</Price>
+    <Rarity>2</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Wearer does not suffer movement penalties for traveling through water.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>SKAKPRESS</Key>
+    <Name>Skakoan Pressure Suit</Name>
+    <Description>
+      [H3]Skakoan Pressure Suit[h3]
+      Please see page 23 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="23">Fully Operational</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Sealed</Category>
+    </Categories>
+    <Encumbrance>3</Encumbrance>
+    <HP>3</HP>
+    <Price>2500</Price>
+    <Rarity>5</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Allows Skakoans to breath in non-methane atmospheres.</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Cannot acquire unless on Skako.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <Soak>2</Soak>
+  </Armor>
+
+  <Armor>
+    <Key>ALLENGHELVEST</Key>
+    <Name>Alliance Engineer's Helmet and Vest</Name>
+    <Description>
+      [H3]Alliance Engineer's Helmet and Vest[h3]
+      Please see page 42 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="42">Fully Operational</Source>
+    <Categories>
+      <Category>Half Body</Category>
+    </Categories>
+    <Soak>1</Soak>
+    <Price>75</Price>
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Rarity>1</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <Key>DURA</Key>
+      </Mod>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>EODMKII</Key>
+    <Name>EOD-Mk II Armor</Name>
+    <Description>
+      [H3]Creshaldyne EOD-Mk II Armor[h3]
+      Please see page 42 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="42">Fully Operational</Source>
+    <Categories>
+      <Category>Sealable</Category>
+      <Category>Full Body</Category>
+      <Category>Hard Full Body</Category>
+      <Category>Hard</Category>
+      <Category>Heavy</Category>
+    </Categories>
+    <Soak>4</Soak>
+    <Price>5300</Price>
+    <Encumbrance>8</Encumbrance>
+    <HP>0</HP>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Characters wearing this armor lose their free movement.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>FABPROT</Key>
+    <Name>Fabricator's Protective Gear</Name>
+    <Description>
+      [H3]Fabricator's Protective Gear[h3]
+      Please see page 43 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="43">Fully Operational</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Heavy</Category>
+    </Categories>
+    <Soak>1</Soak>
+    <Price>450</Price>
+    <Encumbrance>1</Encumbrance>
+    <HP>0</HP>
+    <Rarity>1</Rarity>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Wearer ignores effects of fires or acides of rating 1 or 2.</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>Has soak 3 against damage from Blast quality.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>PIONEER</Key>
+    <Name>Pioneer Armor</Name>
+    <Description>
+      [H3]Pioneer Armor[h3]
+      Please see page 43 of the Fully Operational Sourcebook for details.
+    </Description>
+    <Source Page="43">Fully Operational</Source>
+    <Categories>
+      <Category>Full Body</Category>
+    </Categories>
+    <Soak>1</Soak>
+    <Price>200</Price>
+    <Encumbrance>2</Encumbrance>
+    <HP>1</HP>
+    <Rarity>4</Rarity>
+    <BaseMods>
+      <Mod>
+        <Key>ENCTADD</Key>
+        <Count>3</Count>
+      </Mod>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>SITHPAIN</Key>
+    <Name>Sith Pain Harness</Name>
+    <Description>
+      [H3]Sith Pain Harness[h3]
+      Please see page 51 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="51">Unlimited Power</Source>
+    <Categories>
+      <Category>Half Body</Category>
+    </Categories>
+    <Defense>0</Defense>
+    <Soak>2</Soak>
+    <Price>3500</Price>
+    <Restricted>true</Restricted>
+    <Encumbrance>2</Encumbrance>
+    <HP>0</HP>
+    <Rarity>9</Rarity>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>Wearer may suffer 1 wound as incidental to add [SU] to next Discipline check that round.  Must suffer 1 Conflict.</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>TIMBERCUIR</Key>
+    <Name>Timber Cuirass</Name>
+    <Description>
+      [H3]Sith Pain Harness[h3]
+      Please see page 51 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="51">Unlimited Power</Source>
+    <Categories>
+      <Category>Half Body</Category>
+    </Categories>
+    <Defense>1</Defense>
+    <Soak>2</Soak>
+    <Price>4000</Price>
+    <Restricted>false</Restricted>
+    <Encumbrance>4</Encumbrance>
+    <HP>1</HP>
+    <Rarity>5</Rarity>
+    <BaseMods>
+    </BaseMods>
+  </Armor>
+  <Armor>
+    <Key>WATERWEAVE</Key>
+    <Name>Waterweave</Name>
+    <Description>
+      [H3]Waterweave[h3]
+      Please see page 51 of the Unlimited Power Sourcebook for details.
+    </Description>
+    <Source Page="51">Unlimited Power</Source>
+    <Categories>
+      <Category>Full Body</Category>
+    </Categories>
+    <Defense>2</Defense>
+    <Soak>1</Soak>
+    <Price>6500</Price>
+    <Restricted>false</Restricted>
+    <Encumbrance>7</Encumbrance>
+    <HP>1</HP>
+    <Rarity>9</Rarity>
+    <BaseMods>
+      <Mod>
+        <MiscDesc>When submerged, encumbrance changes to 0.</MiscDesc>
+      </Mod>
+    </BaseMods>
   </Armor>
 
 </Armors>
