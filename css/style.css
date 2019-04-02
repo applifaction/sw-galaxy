@@ -201,3 +201,11 @@ md-tooltip ._md-content {
 md-sidenav md-select {
     max-width: 180px;
 }
+
+tr.collapse-row td.md-cell {
+    border-top: none;
+}
+
+.sw-description:focus {
+    outline: none;
+}

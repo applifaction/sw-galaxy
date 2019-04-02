@@ -98,15 +98,37 @@ App.filter('arrayFulltextFilterOr', function () {
         return items;
     }
 });
-
-App.filter('descriptionFilter', function ($sce, $filter) {
-    return function (item) {
+App.filter('nameFilter', function ($sce, $filter) {
+ return function (item) {
         var html = '', mods = '', count;
         if (typeof item.Name == 'string') {
             html += "<div><strong>" + item.Name + "</strong></div>";
         }
+	if (html.length > 0) {
+            html = html.replace("[H3]" + item.Name + "[h3]", "");
+            html = html.replace(/\[H3\]/g, "<div><em>");
+            html = html.replace(/\[h3\]/g, "</em></div>");
+            html = html.replace(/\[I\]/g, "<em>");
+            html = html.replace(/\[i\]/g, "</em>");
+            html = html.replace(/\[B\]/g, "<strong>");
+            html = html.replace(/\[b\]/g, "</strong>");
+            html = html.replace(/\[P\]/g, "</p><p>");
+            html = html.replace(/\[BR\]/g, "<br/>");
+            html = $filter('symbolFilter')(html);
+            return $sce.trustAsHtml(html);
+        } else {
+            return null;
+        }
+    };
+});
+
+App.filter('descriptionFilter', function ($sce, $filter) {
+    return function (item) {
+        var html = '', mods = '', count;
+    
+       
         if (typeof item.Description == 'string') {
-            html += "<p>" + item.Description + "</p>";
+           html += "<p>" + item.Description + "</p>";
         }
         if (typeof item.BaseMods == 'object') {
             if (typeof item.BaseMods.Mod == 'object' && item.BaseMods.Mod.length > 0) {
@@ -579,6 +601,9 @@ App.directive('itemList', function () {
                             }
                             if (typeof items[i].Description == 'string') {
                                 items[i].Description = $filter('descriptionFilter')(items[i]);
+                            }
+                            if (typeof items[i].Name == 'string') {
+                                items[i].Name = $filter('nameFilter')(items[i]);
                             }
                             if (typeof items[i].Damage == 'undefined') {
                                 items[i].Damage = 0;

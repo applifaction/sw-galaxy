@@ -56,7 +56,7 @@
             <md-list class="filter-list">
                 <md-list-item layout-margin style="margin-left: 0; margin-bottom: 0;">
                     <md-input-container flex style="margin-left: 0; margin-bottom: 0;">
-                        <md-icon md-font-set="material-icons">search</md-icon>
+                        <md-icon md-font-set="material-icons">search</md-icon>                        
                         <input ng-model="filters.searchText"
                                ng-change="filterItems()"
                                type="text" placeholder="Search">
@@ -710,7 +710,7 @@
                         </tr>
                         </thead>
                         <tbody md-body>
-                        <tr md-row ng-repeat="item in outputItems">
+                        <tr md-row ng-repeat-start="item in outputItems">
                             <td md-cell
                                 ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary' || name == 'Species'"
                                 style="text-align: center;">
@@ -723,7 +723,8 @@
                             </td>
                             <td md-cell>
                                 <div class="sw-description" style="min-width: 200px"
-                                     ng-bind-html="item.Description"></div>
+                                     ng-bind-html="item.Name">
+                            	</div>
                                 <div class="sw-description" ng-if="name == 'Species'">
                                     <div ng-if="item.OptionChoices.Option">
                                         <p>Choose <strong>one</strong> option:</p>
@@ -774,6 +775,11 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div ng-click="expanded = !expanded"  class="sw-description" style="min-width: 200px">                            
+                        			<span ng-show="!expanded"><md-icon md-font-set="material-icons">arrow_drop_down</md-icon>  </span>
+                        			<span ng-show="expanded"><md-icon md-font-set="material-icons">arrow_drop_up</md-icon>   </span>                      		                         			                   			                    			
+                    			<span >Description</span>
+                            	</div>
                             </td>
                             <td md-cell
                                 ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
@@ -888,6 +894,14 @@
                                     </div>
                                 </div>
                             </td>
+                        </tr>
+                        <tr md-row ng-repeat-end class="collapse-row" ng-show="expanded">
+
+                        <td md-cell colspan="14">
+                        <div class="sw-description" style="min-width: 200px"
+                                     ng-bind-html="item.Description">
+                            	</div>
+                        </td>
                         </tr>
                         </tbody>
                     </table>
