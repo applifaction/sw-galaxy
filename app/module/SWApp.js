@@ -108,6 +108,7 @@ App.filter('nameFilter', function ($sce, $filter) {
             html = html.replace("[H3]" + item.Name + "[h3]", "");
             html = html.replace(/\[H3\]/g, "<div><em>");
             html = html.replace(/\[h3\]/g, "</em></div>");
+            html = html.replace("[H4]" + item.Name + "[h4]", "");
             html = html.replace(/\[I\]/g, "<em>");
             html = html.replace(/\[i\]/g, "</em>");
             html = html.replace(/\[B\]/g, "<strong>");
@@ -170,6 +171,7 @@ App.filter('descriptionFilter', function ($sce, $filter) {
         }
         if (html.length > 0) {
             html = html.replace("[H3]" + item.Name + "[h3]", "");
+            html = html.replace("[H4]" + item.Name + "[h4]", "");
             html = html.replace(/\[H3\]/g, "<div><em>");
             html = html.replace(/\[h3\]/g, "</em></div>");
             html = html.replace(/\[I\]/g, "<em>");
@@ -665,13 +667,18 @@ App.directive('itemList', function () {
                                     if (typeof items[i].Sources.Source == 'object' && typeof items[i].Sources.Source[i4] == 'string') {
                                         sources.push({'Book': items[i].Sources.Source[i4]});
                                     }
+                                    
                                 }
                                 if (typeof items[i].Sources.Source == 'string') {
                                     sources.push({'Book': items[i].Sources.Source});
                                 }
                                 if (typeof items[i].Sources.Source == 'object' && typeof items[i].Sources.Source.Book == 'string') {
-                                    sources.push({'Book': items[i].Sources.Source.Book});
-                                }
+                                    if (typeof items[i].Sources.Source.Page == 'number' || typeof items[i].Sources.Source.Page == 'string') {
+                                        sources.push({'Book': items[i].Sources.Source.Book, 'Page' : items[i].Sources.Source.Page});
+                                    } else {
+                                    	sources.push({'Book': items[i].Sources.Source.Book});
+                                    }
+                                }                                
                             }
                             if (typeof items[i].Source == 'object' && typeof items[i].Source.Book == 'string') {
                                 sources.push(items[i].Source);
@@ -680,11 +687,13 @@ App.directive('itemList', function () {
                             if (typeof items[i].Source == 'string') {
                                 sources.push({'Book': items[i].Source});
                                 delete items[i].Source;
-                            }
+                            }                            
                             if (sources.length == 0) {
                                 sources.push({'Book': 'Missing'});
                             }
                             items[i].Sources = sources;
+                            
+                            
                             if (typeof items[i].BaseMods == 'object') {
                                 if (typeof items[i].BaseMods.Mod == 'object' && items[i].BaseMods.Mod.length > 0) {
                                     for (var i3 = 0, l3 = items[i].BaseMods.Mod.length; i3 < l3; i3++) {
