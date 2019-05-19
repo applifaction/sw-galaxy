@@ -507,6 +507,22 @@
                         </md-select>
                     </div>
                 </md-list-item>
+                <md-list-item ng-if="addedMods.length">
+                    <h4 layout="row">Added mod</h4>
+
+                    <div layout="column" layout-margin flex>
+                        <md-select ng-model="filters.addedMod"
+                                   ng-change="filterItems()"
+                                   multiple=""
+                                   aria-label="Added mod">
+                            <md-option ng-value="">None</md-option>
+                            <md-option ng-repeat="addedMod in addedMods"
+                                       ng-value="addedMod">
+                                {{addedMod | trustAsHtmlFilter}}
+                            </md-option>
+                        </md-select>
+                    </div>
+                </md-list-item>
                 <md-list-item ng-if="types.length">
                     <h4 layout="row">Type</h4>
 
@@ -593,12 +609,22 @@
                                 </md-button>
                             </th>
                             <th md-column
-                                md-order-by="Name">Name / Description
+                                md-order-by="Name">
+                                <md-button class="md-primary md-raised"
+                                           ng-click="toggleSideNav()" hide-md hide-sm hide-xs hide-gt-lg
+                                           style="padding: 0 12px"
+                                           ng-if="name == 'ItemAttachments'"
+                                           aria-label="Show filters">
+                                    <md-icon md-font-set="material-icons">search</md-icon>
+                                    Filter
+                                    <div class="md-ripple-container"></div>
+                                </md-button>
+                                Name / Description
                             </th>
                             <th md-column
                                 md-numeric
                                 md-order-by="Price"
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Price
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'ItemAttachments'">Price
                             </th>
                             <th md-column
                                 md-numeric
@@ -628,7 +654,7 @@
                             <th md-column
                                 md-numeric
                                 md-order-by="Rarity"
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">Rarity
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'ItemAttachments'">Rarity
                             </th>
                             <th md-column
                                 md-numeric
@@ -638,12 +664,12 @@
                             <th md-column
                                 md-numeric
                                 md-order-by="HP"
-                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'ItemAttachments'">
                                 HP
                             </th>
                             <th md-column
                                 md-order-by="Type"
-                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary' || name == 'ItemAttachments'">
                                 Type
                             </th>
                             <th md-column
@@ -706,6 +732,10 @@
                             </th>
                             <th md-column
                                 ng-if="name == 'Weapon'">Qualities
+                            </th>
+                            <th md-column
+                                ng-if="name == 'ItemAttachments'">
+                                Limits
                             </th>
                         </tr>
                         </thead>
@@ -782,7 +812,7 @@
                             	</div>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'ItemAttachments'">
                                 <span ng-show="item.Price > 0">{{item.Price}}</span>
                                 <span ng-hide="item.Price > 0">-</span>
                             </td>
@@ -809,7 +839,7 @@
                                 <span ng-hide="item.Crit > 0">-</span>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'ItemAttachments'">
                                 <span ng-show="item.Rarity > 0">{{item.Rarity}}</span>
                                 <span ng-hide="item.Rarity > 0">-</span>
                             </td>
@@ -819,12 +849,12 @@
                                 <span ng-hide="item.Encumbrance > 0">-</span>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor'">
+                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'ItemAttachments'">
                                 <span ng-show="item.HP > 0">{{item.HP}}</span>
                                 <span ng-hide="item.HP > 0">-</span>
                             </td>
                             <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary'">
+                                ng-if="name == 'Weapon' || name == 'Gear' || name == 'Adversary' || name == 'ItemAttachments'">
                                 {{item.Type}}
                             </td>
                             <td md-cell ng-if="name == 'Weapon'">{{item.SkillKey}}
@@ -891,6 +921,32 @@
                                          ng-repeat="quality in item.Qualities">
                                         <md-tooltip md-direction="left">{{quality.Tooltip}}</md-tooltip>
                                         {{quality.Key}} <span ng-show="quality.Count > 0">{{quality.Count}}</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td md-cell ng-if="name == 'ItemAttachments'">
+                                <div class="sw-qualities">
+                                    <div class="no-break" ng-repeat="categoryLimit in item.CategoryLimit">
+                                        <strong>Category:</strong> {{categoryLimit}}
+                                    </div>
+                                    <div class="no-break" ng-repeat="itemLimit in item.ItemLimit">
+                                        <span ng-if="isString(itemLimit)"><strong>Item:</strong> {{itemLimit}}</span>
+                                        <div ng-if="isObject(itemLimit)" class="no-break" ng-repeat="item in itemLimit">
+                                            <strong>Item:</strong> {{item}}
+                                        </div>
+                                    </div>
+                                    <div class="no-break" ng-repeat="skillLimit in item.SkillLimit">
+                                        <span ng-if="isString(skillLimit)"><strong>Skill:</strong> {{skillLimit}}</span>
+                                        <div ng-if="isObject(skillLimit)" class="no-break" ng-repeat="skill in skillLimit">
+                                            <strong>Skill:</strong> {{skill}}
+                                        </div>
+                                    </div>
+                                    <div class="no-break" ng-repeat="typeLimit in item.TypeLimit">
+                                        <strong>Type:</strong> {{typeLimit}}
+                                    </div>
+                                    <div ng-if="item.IsCrystal">
+                                        <div><strong>Category:</strong> Lightsaber</div>
+                                        <div><strong>Category:</strong> Lightsaber Hilt</div>
                                     </div>
                                 </div>
                             </td>

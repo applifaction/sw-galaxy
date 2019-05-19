@@ -139,7 +139,7 @@ App.filter('descriptionFilter', function ($sce, $filter) {
                     } else {
                         if (typeof item.BaseMods.Mod[i].Key == 'string') {
                             count = '';
-                            if (typeof item.BaseMods.Mod[i].Count == 'number' && item.BaseMods.Mod[i].Count > 0) {
+                            if (typeof item.BaseMods.Mod[i].Count == 'number' && item.BaseMods.Mod[i].Count != 0) {
                                 count = item.BaseMods.Mod[i].Count + ' x ';
                             }
                             mods += "<li>" + count + $filter('modFilter')(item.BaseMods.Mod[i].Key) + "</li>";
@@ -155,7 +155,7 @@ App.filter('descriptionFilter', function ($sce, $filter) {
                     } else {
                         if (typeof item.BaseMods.Mod.Key == 'string') {
                             count = '';
-                            if (typeof item.BaseMods.Mod.Count == 'number' && item.BaseMods.Mod.Count > 0) {
+                            if (typeof item.BaseMods.Mod.Count == 'number' && item.BaseMods.Mod.Count != 0) {
                                 count = item.BaseMods.Mod.Count + ' x ';
                             }
                             mods += "<li>" + count + $filter('modFilter')(item.BaseMods.Mod.Key) + "</li>";
@@ -166,7 +166,46 @@ App.filter('descriptionFilter', function ($sce, $filter) {
                 }
             }
             if (mods.length > 0) {
-                html += "<ul>" + mods + "</ul>";
+                html += "<p><strong>Base Mods:</strong></p><ul>" + mods + "</ul>";
+            }
+        }
+        if (typeof item.AddedMods == 'object') {
+            mods = '';
+            if (typeof item.AddedMods.Mod == 'object' && item.AddedMods.Mod.length > 0) {
+                for (i = 0, l = item.AddedMods.Mod.length; i < l; i++) {
+                    if (typeof item.AddedMods.Mod[i].MiscDesc == 'string') {
+                        mods += "<li>" + item.AddedMods.Mod[i].MiscDesc + "</li>";
+                    } else {
+                        if (typeof item.AddedMods.Mod[i].Key == 'string') {
+                            count = '';
+                            if (typeof item.AddedMods.Mod[i].Count == 'number' && item.AddedMods.Mod[i].Count != 0) {
+                                count = item.AddedMods.Mod[i].Count + ' x ';
+                            }
+                            mods += "<li>" + count + $filter('modFilter')(item.AddedMods.Mod[i].Key) + "</li>";
+                        } else {
+                            console.log('debugging!');
+                        }
+                    }
+                }
+            } else {
+                if (typeof item.AddedMods.Mod != 'undefined') {
+                    if (typeof item.AddedMods.Mod.MiscDesc == 'string') {
+                        mods += "<li>" + item.AddedMods.Mod.MiscDesc + "</li>";
+                    } else {
+                        if (typeof item.AddedMods.Mod.Key == 'string') {
+                            count = '';
+                            if (typeof item.AddedMods.Mod.Count == 'number' && item.AddedMods.Mod.Count != 0) {
+                                count = item.AddedMods.Mod.Count + ' x ';
+                            }
+                            mods += "<li>" + count + $filter('modFilter')(item.AddedMods.Mod.Key) + "</li>";
+                        } else {
+                            console.log('debugging!');
+                        }
+                    }
+                }
+            }
+            if (mods.length > 0) {
+                html += "<p><strong>Additional Mods:</strong></p><ul>" + mods + "</ul>";
             }
         }
         if (html.length > 0) {
@@ -174,11 +213,14 @@ App.filter('descriptionFilter', function ($sce, $filter) {
             html = html.replace("[H4]" + item.Name + "[h4]", "");
             html = html.replace(/\[H3\]/g, "<div><em>");
             html = html.replace(/\[h3\]/g, "</em></div>");
+            html = html.replace(/\[H4\]/g, "<div><em>");
+            html = html.replace(/\[h4\]/g, "</em></div>");
             html = html.replace(/\[I\]/g, "<em>");
             html = html.replace(/\[i\]/g, "</em>");
             html = html.replace(/\[B\]/g, "<strong>");
             html = html.replace(/\[b\]/g, "</strong>");
             html = html.replace(/\[P\]/g, "</p><p>");
+            html = html.replace(/\[p\]/g, "");
             html = html.replace(/\[BR\]/g, "<br/>");
             html = $filter('symbolFilter')(html);
             return $sce.trustAsHtml(html);
@@ -272,53 +314,124 @@ App.filter('modFilter', function ($filter) {
     return function (text) {
         if (typeof text === 'string') {
             var initText = text;
-            text = text.replace(/JURYADD/g, "May select 1 additional Jury Rigged option Mod");
-            text = text.replace(/NOSTUN/g, "Cannot deal strain damage Mod");
-            text = text.replace(/DAMSUB/g, "Damage -1 Mod");
-            text = text.replace(/VIGIL/g, "1 Skill (Vigilance) Mod");
-            text = text.replace(/PERC/g, "1 Skill (Perception) Mod");
-            text = text.replace(/BRAWL/g, "Skill (Brawl) Mod");
-            text = text.replace(/BR/g, "Characteristic (Brawn) Mod");
-            text = text.replace(/ATHL/g, "Skill (Athletics) Mod");
-            text = text.replace(/RESIL/g, "Skill (Resilience) Mod");
-            text = text.replace(/DEFSTA/g, "Innate Talent (Defensive Stance) Mod");
-            text = text.replace(/RAPREC/g, "Innate Talent (Rapid Recovery) Mod");
-            text = text.replace(/DEMONMASK/g, "Increase wound threshold by 2 if dark side Force user Mod");
-            text = text.replace(/IRONFIST/g, "Armor and Brawl attacks gain Cortosis quality. Brawl attacks gain Pierce ranks equal to Force rating Mod");
-            text = text.replace(/FORCEADD/g, "Add 1 to Force Rating Mod");
-            text = text.replace(/RANGLT/g, "Skill (Ranged - Light as Career Skill) Mod");
-            text = text.replace(/MECH/g, "Skill (Mechanics as Career Skill) Mod");
-            text = text.replace(/SLEIGHTMIND/g, "Innate Talent (Sleight of Mind) Mods");
-            text = text.replace(/ASTRO/g, "Skill (Astrogation as Career Skill) Mod");
-            text = text.replace(/GUNN/g, "Skill (Gunnery as Career Skill) Mod");
-            text = text.replace(/LORE/g, "Skill (Lore as Career Skill) Mod");
-            text = text.replace(/LTSABER/g, "Skill (Lightsaber as Career Skill) Mod");
-            text = text.replace(/OUT/g, "Skill (Outer Rim as Career Skill) Mod");
-            text = text.replace(/SW/g, "Skill (Streetwise as Career Skill) Mod");
-            text = text.replace(/COMP/g, "Skill (Computers as Career Skill) Mod");
-            text = text.replace(/DISC/g, "Skill (Discipline as Career Skill) Mod");
-            text = text.replace(/MED/g, "Skill (Medicine as Career Skill) Mod");
-            text = text.replace(/COOL/g, "Skill (Cool as Career Skill) Mod");
-            text = text.replace(/COORD/g, "Skill (Coordination as Career Skill) Mod");
-            text = text.replace(/SKUL/g, "Skill (Skulduggery as Career Skill) Mod");
-            text = text.replace(/XEN/g, "Skill (Xenology as Career Skill) Mod");
-            text = text.replace(/SURV/g, "Skill (Survival as Career Skill) Mod");
-            text = text.replace(/SETBACKADD/g, "Add [SETBACK]");
-            text = text.replace(/BOOSTADD/g, "Add [BOOST]");
-            text = text.replace(/SOAKADD/g, "Implant Armor");
-            text = text.replace(/PILOTSP/g, "Skill (Piloting - Space as Career Skill) Mod");
-            text = text.replace(/CYBERADD/g, "Add 1 to Cybernetics Cap Mods");
-            text = text.replace(/CYBERNONE/g, "Does not count toward Cybernetics Cap Mod");
-            text = text.replace(/ENCTADD/g, "Increase Encumbrance Threshold by 1 Mod");
-            text = text.replace(/CUMBERSOME/g, "Quality (Cumbersome 1) Mods");
-            text = text.replace(/MEDFOCUS/g, "Increase strain threshold by 2 if light side paragon Mod");
-            text = text.replace(/MOVEBASIC/g, "Innate Force Ability (Move Basic Power Force Ability) Mod");
-            text = text.replace(/RAPREA/g, "Innate Talent (Rapid Reaction) Mod");
-            text = text.replace(/HIDD/g, "Innate Talent (Hidden Storage) Mod");
-            text = text.replace(/BLO/g, "Innate Talent (Blooded) Mod");
-            text = text.replace(/BYP/g, "Innate Talent (Bypass Security) Mod");
-            text = text.replace(/AG/g, "Characteristic (Agility) Mod");
-            text = text.replace(/INT/g, "Characteristic (Intellect) Mod");
+            text = text.replace(/^JURYADD$/g, "May select 1 additional Jury Rigged option");
+            text = text.replace(/^NOSTUN$/g, "Cannot deal strain damage");
+            text = text.replace(/^BREACH$/g, "Grant Quality (Breach 1)");
+            text = text.replace(/^DAMSUB$/g, "Damage -1");
+            text = text.replace(/^DAMADD$/g, "Damage +1");
+            text = text.replace(/^VIGIL$/g, "Skill (Vigilance)");
+            text = text.replace(/^PERC$/g, "Skill (Perception)");
+            text = text.replace(/^BRAWL$/g, "Skill (Brawl)");
+            text = text.replace(/^BR$/g, "Characteristic (Brawn)");
+            text = text.replace(/^ATHL$/g, "Skill (Athletics)");
+            text = text.replace(/^RESIL$/g, "Skill (Resilience)");
+            text = text.replace(/^DEFSTA$/g, "Innate Talent (Defensive Stance)");
+            text = text.replace(/^RAPREC$/g, "Innate Talent (Rapid Recovery)");
+            text = text.replace(/^DEMONMASK$/g, "Increase wound threshold by 2 if dark side Force user");
+            text = text.replace(/^IRONFIST$/g, "Armor and Brawl attacks gain Cortosis quality. Brawl attacks gain Pierce ranks equal to Force rating");
+            text = text.replace(/^FORCEADD$/g, "Add 1 to Force Rating");
+            text = text.replace(/^RANGLT$/g, "Skill (Ranged - Light as Career Skill)");
+            text = text.replace(/^MECH$/g, "Skill (Mechanics as Career Skill)");
+            text = text.replace(/^SLEIGHTMIND$/g, "Innate Talent (Sleight of Mind)");
+            text = text.replace(/^ASTRO$/g, "Skill (Astrogation as Career Skill)");
+            text = text.replace(/^GUNN$/g, "Skill (Gunnery as Career Skill)");
+            text = text.replace(/^LORE$/g, "Skill (Lore as Career Skill)");
+            text = text.replace(/^LTSABER$/g, "Skill (Lightsaber as Career Skill)");
+            text = text.replace(/^OUT$/g, "Skill (Outer Rim as Career Skill)");
+            text = text.replace(/^SW$/g, "Skill (Streetwise as Career Skill)");
+            text = text.replace(/^COMP$/g, "Skill (Computers as Career Skill)");
+            text = text.replace(/^DISC$/g, "Skill (Discipline as Career Skill)");
+            text = text.replace(/^MED$/g, "Skill (Medicine as Career Skill)");
+            text = text.replace(/^COOL$/g, "Skill (Cool as Career Skill)");
+            text = text.replace(/^COORD$/g, "Skill (Coordination as Career Skill)");
+            text = text.replace(/^SKUL$/g, "Skill (Skulduggery as Career Skill)");
+            text = text.replace(/^XEN$/g, "Skill (Xenology as Career Skill)");
+            text = text.replace(/^SURV$/g, "Skill (Survival as Career Skill)");
+            text = text.replace(/^NATMAR$/g, "Innate Talent (Natural Marksman)");
+            text = text.replace(/^SETBACKADD$/g, "Add [SETBACK]");
+            text = text.replace(/^BOOSTADD$/g, "Add [BOOST]");
+            text = text.replace(/^SOAKADD$/g, "Implant Armor");
+            text = text.replace(/^PILOTSP$/g, "Skill (Piloting - Space as Career Skill)");
+            text = text.replace(/^CYBERADD$/g, "Add 1 to Cybernetics Cap");
+            text = text.replace(/^CYBERNONE$/g, "Does not count toward Cybernetics Cap");
+            text = text.replace(/^ENCTADD$/g, "Increase Encumbrance Threshold by 1");
+            text = text.replace(/^CUMBERSOME$/g, "Quality (Cumbersome 1)");
+            text = text.replace(/^MEDFOCUS$/g, "Increase strain threshold by 2 if light side paragon");
+            text = text.replace(/^MOVEBASIC$/g, "Innate Force Ability (Move Basic Power Force Ability)");
+            text = text.replace(/^RAPREA$/g, "Innate Talent (Rapid Reaction)");
+            text = text.replace(/^HIDD$/g, "Innate Talent (Hidden Storage)");
+            text = text.replace(/^BLO$/g, "Innate Talent (Blooded)");
+            text = text.replace(/^BYP$/g, "Innate Talent (Bypass Security)");
+            text = text.replace(/^AG$/g, "Characteristic (Agility)");
+            text = text.replace(/^INTIM$/g, "Innate Talent (Intimidating)");
+            text = text.replace(/^INT$/g, "Characteristic (Intellect)");
+            text = text.replace(/^STRAINADD$/g, "Increases user's strain by 1");
+            text = text.replace(/^CORTOSIS$/g, "Quality (Cortosis)");
+            text = text.replace(/^ENCADD$/g, "Increase Encumbrance by 1");
+            text = text.replace(/^INACCURATE$/g, "Quality (Inaccurate 1)");
+            text = text.replace(/^ACCURATE$/g, "Quality (Accurate 1)");
+            text = text.replace(/^PIERCE$/g, "Quality (Pierce 1)");
+            text = text.replace(/^RANGEADD$/g, "Increases weapon's range by 1 Range Band(s)");
+            text = text.replace(/^SUBQUALINACCURATE$/g, "Decrease the Inaccurate Quality by 1");
+            text = text.replace(/^ENCSUB$/g, "Decrease Encumbrance by 1");
+            text = text.replace(/^AUTOFIRE$/g, "Quality (Auto Fire)");
+            text = text.replace(/^QUICKDR$/g, "Innate Talent (Quick Draw)");
+            text = text.replace(/^SNIPSHOT$/g, "Innate Talent (Sniper Shot)");
+            text = text.replace(/^DAMSET$/g, "Changes Base Damage");
+            text = text.replace(/^CRITSET$/g, "Changes Base Critical Rating");
+            text = text.replace(/^SUNDER$/g, "Quality (Sunder)");
+            text = text.replace(/^CRITSUB$/g, "Decreases Critical by 1");
+            text = text.replace(/^VICIOUS$/g, "Quality (Vicious 1)");
+            text = text.replace(/^LIMITEDAMMO$/g, "Quality (Limited Ammo 1)");
+            text = text.replace(/^SETBACKSUB$/g, "Remove [SE] from all attack checks when using this weapon");
+            text = text.replace(/^BURN$/g, "Grant Quality (Burn 1)");
+            text = text.replace(/^BLAST$/g, "Replace Quality (Blast [Weapon Damage times one half])");
+            text = text.replace(/^RANGESUB$/g, "Decreases weapon's range by 1 Range Band");
+            text = text.replace(/^DISORIENT$/g, "Quality (Disorient 1)");
+            text = text.replace(/^DEFENSIVE$/g, "Quality (Defensive 1)");
+            text = text.replace(/^ADDCRYSTNC$/g, "Add 1 Additional Crystal with no HP Cost");
+            text = text.replace(/^CONCUSSIVE$/g, "Quality (Concussive 1)");
+            text = text.replace(/^CARRY1$/g, "Carry 1 Item up to Encumbrance 1");
+            text = text.replace(/^ADVADD$/g, "Add [AD] to Successful Check");
+            text = text.replace(/^POINTBL$/g, "Innate Talent (Point Blank)");
+            text = text.replace(/^DURA$/g, "Innate Talent (Durable)");
+            text = text.replace(/^ENCTBRADD$/g, "Increase Brawn for Determining Encumbrance Threshold by 1");
+            text = text.replace(/^GUIDED$/g, "Grant Quality (Guided 2)");
+            text = text.replace(/^REMQUALION$/g, "Removes the Ion Quality");
+            text = text.replace(/^STUN$/g, "Quality (Stun 1)");
+            text = text.replace(/^HEALPLUSONE$/g, "Successful Medicine checks heal +1 wound");
+            text = text.replace(/^PRECAIM$/g, "Innate Talent (Precise Aim)");
+            text = text.replace(/^PARRY$/g, "Innate Talent (Parry)");
+            text = text.replace(/^BRA$/g, "Innate Talent (Brace)");
+            text = text.replace(/^SUPERIOR$/g, "Quality (Superior)");
+            text = text.replace(/^DIFFSUBLONGEXT$/g, "Decrease the difficulty of combat checks at long and extreme range by 1");
+            text = text.replace(/^ADVADDINIT$/g, "Add [AD] to Initiative Check");
+            text = text.replace(/^QUICKST$/g, "Innate Talent (Quick Strike)");
+            text = text.replace(/^REMQUALLIMITEDAMMO$/g, "Removes the Limited Ammo Quality");
+            text = text.replace(/^STUNDAMAGE$/g, "Quality (Stun Damage)");
+            text = text.replace(/^ENCSUB2$/g, "Decrease Encumbrance by");
+            text = text.replace(/^MELEEDEFADD$/g, "Increases Melee Defense value by 1");
+            text = text.replace(/^RANGEDEFADD$/g, "Increases Ranged Defense value by 1");
+            text = text.replace(/^QUALADVSUB$/g, "Quality Takes 1 Less [AD] to Activate");
+            text = text.replace(/^MASSHAD$/g, "Innate Talent (Master of Shadows)");
+            text = text.replace(/^STEAL$/g, "Skill (Stealth)");
+            text = text.replace(/^USERANGLT$/g, "Weapon's skill changes to Ranged-Light");
+            text = text.replace(/^RANGEREDMED$/g, "Reduces weapon's range to Medium, if longer");
+            text = text.replace(/^LETHALBL$/g, "Innate Talent (Lethal Blows)");
+            text = text.replace(/^RESDOSE$/g, "Increase doses by 1");
+            text = text.replace(/^DEFLECTION$/g, "Quality (Deflection 1)");
+            text = text.replace(/^PRESSHOT$/g, "Innate Talent (Prescient Shot)");
+            text = text.replace(/^HPADD$/g, "Add One Hard Point to Item");
+            text = text.replace(/^HPSUB$/g, "Remove One Hard Point from Item");
+            text = text.replace(/^THRCANCEL$/g, "Cancel [TH] from Check");
+            text = text.replace(/^HOLSTER3$/g, "Holster Weapon up to Encumbrance 3");
+            text = text.replace(/^ENCTADD3$/g, "Increase Encumbrance Threshold by 3");
+            text = text.replace(/^PLANMAP$/g, "Innate Talent (Planet Mapper)");
+            text = text.replace(/^STALK$/g, "Innate Talent (Stalker)");
+            text = text.replace(/^TECHAPT$/g, "Innate Talent (Technical Apti");
+            text = text.replace(/^SUBQUALCUMBERSOME$/g, "Decrease the Cumbersome Quality by 1");
+            text = text.replace(/^BAR$/g, "Innate Talent (Barrage)");
+            text = text.replace(/^REFLECT$/g, "Innate Talent (Reflect)");
             text = $filter('symbolFilter')(text);
             if (initText == text) {
                 console.log('Please add base mod mapping for: ' + text);
@@ -468,6 +581,7 @@ App.directive('itemList', function () {
                 $scope.ranges = [];
                 $scope.qualities = [];
                 $scope.baseMods = [];
+                $scope.addedMods = [];
                 $scope.filteredItems = [];
                 $scope.outputItems = [];
                 $scope.min = {};
@@ -518,6 +632,7 @@ App.directive('itemList', function () {
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.skill, 'SkillKey');
                             filteredItems = $filter('fulltextFilter')(filteredItems, $scope.filters.range, 'RangeValue');
                             filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.baseMod, 'BaseMods', 'Key');
+                            filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.addedMod, 'AddedMods', 'Key');
                             filteredItems = $filter('arrayFulltextFilter')(filteredItems, $scope.filters.quality, 'Qualities', 'Key');
                             filteredItems = $filter('arrayFulltextFilterOr')(filteredItems, $scope.filters.source, 'Sources', 'Book');
                             if ($scope.order.length > 0) {
@@ -563,7 +678,7 @@ App.directive('itemList', function () {
                 $scope.fetchSource = function () {
                     $scope.loading = true;
                     $http.get($scope.sourceUrl).then(function (res) {
-                        var i, l, i2, l2, items, qualities, baseMods, talents, skills, abilities, sources, outputItems = [];
+                        var i, l, i2, l2, items, qualities, baseMods, addedMods, talents, skills, abilities, sources, categoryLimits, outputItems = [];
                         items = res.data[$scope.name];
                         l = items.length;
                         $scope.min.Damage = $scope.getMinValue(items, 'Damage');
@@ -590,6 +705,11 @@ App.directive('itemList', function () {
                             skills = [];
                             abilities = [];
                             baseMods = [];
+                            addedMods = [];
+                            categoryLimits = [];
+                            itemLimits = [];
+                            skillLimits = [];
+                            typeLimits = [];
                             items[i].Deflection = 0;
                             if (typeof items[i].Defense == 'number') {
                                 items[i].Defensive = items[i].Defense;
@@ -712,6 +832,24 @@ App.directive('itemList', function () {
                                 }
                             }
                             items[i].BaseMods = baseMods;
+                            if (typeof items[i].AddedMods == 'object') {
+                                if (typeof items[i].AddedMods.Mod == 'object' && items[i].AddedMods.Mod.length > 0) {
+                                    for (i3 = 0, l3 = items[i].AddedMods.Mod.length; i3 < l3; i3++) {
+                                        if (typeof items[i].AddedMods.Mod[i3].Key == 'string') {
+                                            items[i].AddedMods.Mod[i3].Key = $filter('modFilter')(items[i].AddedMods.Mod[i3].Key);
+                                            addedMods.push(items[i].AddedMods.Mod[i3]);
+                                        }
+                                    }
+                                } else {
+                                    if (typeof items[i].AddedMods.Mod != 'undefined') {
+                                        if (typeof items[i].AddedMods.Mod.Key == 'string') {
+                                            items[i].AddedMods.Mod.Key = $filter('modFilter')(items[i].AddedMods.Mod.Key);
+                                            addedMods.push(items[i].AddedMods.Mod);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].AddedMods = addedMods;
                             if (typeof items[i].SkillKey == 'string') {
                                 items[i].SkillKey = $filter('skillFilter')(items[i].SkillKey);
                                 if (items[i].SkillKey == 'Melee' || items[i].SkillKey == 'Lightsaber' || items[i].SkillKey == 'Brawl' || items[i].Type == 'Thrown') {
@@ -861,9 +999,65 @@ App.directive('itemList', function () {
                                     items[i].ForceRating = items[i].Attributes.ForceRating;
                                 }
                             }
+                            if (typeof items[i].CategoryLimit == 'object') {
+                                if (typeof items[i].CategoryLimit.Category == 'string') {
+                                    categoryLimits.push(items[i].CategoryLimit.Category);
+                                }
+                                if (typeof items[i].CategoryLimit.Category == 'object') {
+                                    if (typeof items[i].CategoryLimit.Category.length == 'number') {
+                                        l2 = items[i].CategoryLimit.Category.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            categoryLimits.push(items[i].CategoryLimit.Category[i2]);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].CategoryLimit = categoryLimits;
+                            if (typeof items[i].ItemLimit == 'object') {
+                                if (typeof items[i].ItemLimit.Item == 'string') {
+                                    itemLimits.push(items[i].ItemLimit.Item);
+                                }
+                                if (typeof items[i].ItemLimit.Item == 'object') {
+                                    if (typeof items[i].ItemLimit.Item.length == 'number') {
+                                        l2 = items[i].ItemLimit.Item.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            itemLimits.push(items[i].ItemLimit.Item[i2]);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].ItemLimit = itemLimits;
+                            if (typeof items[i].TypeLimit == 'object') {
+                                if (typeof items[i].TypeLimit.Type == 'string') {
+                                    typeLimits.push(items[i].TypeLimit.Type);
+                                }
+                                if (typeof items[i].TypeLimit.Type == 'object') {
+                                    if (typeof items[i].TypeLimit.Type.length == 'number') {
+                                        l2 = items[i].TypeLimit.Type.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            typeLimits.push(items[i].TypeLimit.Type[i2]);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].TypeLimit = typeLimits;
+                            if (typeof items[i].SkillLimit == 'object') {
+                                if (typeof items[i].SkillLimit.Skill == 'string') {
+                                    skillLimits.push(items[i].SkillLimit.Skill);
+                                }
+                                if (typeof items[i].SkillLimit.Skill == 'object') {
+                                    if (typeof items[i].SkillLimit.Skill.length == 'number') {
+                                        l2 = items[i].SkillLimit.Skill.length;
+                                        for (i2 = 0; i2 < l2; i2++) {
+                                            skillLimits.push(items[i].SkillLimit.Skill[i2]);
+                                        }
+                                    }
+                                }
+                            }
+                            items[i].SkillLimit = skillLimits;
                             $scope.collectValues(items[i].Qualities, 'Key', $scope.qualities);
                             $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
-                            $scope.collectValues(items[i].BaseMods, 'Key', $scope.baseMods);
+                            $scope.collectValues(items[i].AddedMods, 'Key', $scope.addedMods);
                             $scope.collectValues(items[i].Sources, 'Book', $scope.sources);
                             outputItems.push(items[i]);
                         }

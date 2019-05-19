@@ -115,7 +115,7 @@ md-pagination-wrapper {
     position: absolute;
     left: -9px;
     display: inline-block;
-    content: '-';
+    content: ' ';
 }
 
 .afkl-lazy-wrapper {
