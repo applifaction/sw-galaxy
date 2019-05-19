@@ -27,19 +27,19 @@
              md-center-tabs="true"
              md-selected="currentTab">
         <md-tab label="Weapons">
-            <div item-list source-name='Weapon' source-url='data/json/Weapons.json' is-active='{{currentTab==0}}' layout="column" style="height: 100%"></div>
+            <div item-list source-name='Weapon' source-url='data/json/Weapons.json' keyDesc='data/json/ItemDescriptors.json' is-active='{{currentTab==0}}' layout="column" style="height: 100%"></div>
         </md-tab>
         <md-tab label="Armors">
-            <div item-list source-name='Armor' source-url='data/json/Armor.json' is-active='{{currentTab==1}}' layout="column" style="height: 100%"></div>
+            <div item-list source-name='Armor' source-url='data/json/Armor.json' keyDesc='data/json/ItemDescriptors.json' is-active='{{currentTab==1}}' layout="column" style="height: 100%"></div>
         </md-tab>
         <md-tab label="Gear">
-            <div item-list source-name='Gear' source-url='data/json/Gear.json' is-active='{{currentTab==2}}' layout="column" style="height: 100%"></div>
+            <div item-list source-name='Gear' source-url='data/json/Gear.json' keyDesc='data/json/ItemDescriptors.json' is-active='{{currentTab==2}}' layout="column" style="height: 100%"></div>
         </md-tab>
         <md-tab label="Species">
-            <div item-list source-name='Species' source-url='data/json/Species.json' is-active='{{currentTab==3}}' layout="column" style="height: 100%"></div>
+            <div item-list source-name='Species' source-url='data/json/Species.json' keyDesc='data/json/ItemDescriptors.json' is-active='{{currentTab==3}}' layout="column" style="height: 100%"></div>
         </md-tab>
         <md-tab label="Attachments">
-            <div item-list source-name='ItemAttachments' source-url='data/json/ItemAttachments.json' is-active='{{currentTab==4}}' layout="column" style="height: 100%"></div>
+            <div item-list source-name='ItemAttachments' source-url='data/json/ItemAttachments.json' keyDesc='data/json/ItemDescriptors.json' is-active='{{currentTab==4}}' layout="column" style="height: 100%"></div>
         </md-tab>
     </md-tabs>
 </div>

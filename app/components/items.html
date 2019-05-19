@@ -741,8 +741,7 @@
                         </thead>
                         <tbody md-body>
                         <tr md-row ng-repeat-start="item in outputItems">
-                            <td md-cell
-                                ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary' || name == 'Species'"
+                            <td md-cell ng-if="name == 'Weapon' || name == 'Armor' || name == 'Gear' || name == 'Adversary' || name == 'Species'"
                                 style="text-align: center;">
                                 <img style="max-width: 100px; max-height: 100px; display: inline-block;"
                                      ng-src="{{item.imageUrl}}"
@@ -804,7 +803,10 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div>          
+                                <div class="sw-info" style="min-width: 200px"
+                                     ng-bind-html="item.Info">
+                            	</div>
                                 <div ng-click="expanded = !expanded"  class="sw-description" style="min-width: 200px">                            
                         			<span ng-show="!expanded"><md-icon md-font-set="material-icons">arrow_drop_down</md-icon>  </span>
                         			<span ng-show="expanded"><md-icon md-font-set="material-icons">arrow_drop_up</md-icon>   </span>                      		                         			                   			                    			
