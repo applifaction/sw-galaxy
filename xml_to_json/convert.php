@@ -50,9 +50,9 @@ foreach ($validFileNames as $typeKey => $fileName) {
                     $row->Thumbnail = 'img/no_image.png';
                 }
                 $fileData[$typeKey][$row->Key] = $row;
-                 print "$typeKey: ".$typeKey;
-                 print "$row->Key: ".$row->Key;
-                 print "$row: ". $row
+                // print "$typeKey: ".$typeKey;
+                // print "$row->Key: ".$row->Key;
+                // print "$row: ". $row;
             }
         }
         print "Read {$xmlFile}\n";
