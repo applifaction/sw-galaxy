@@ -2944,6 +2944,124 @@
     </BaseMods>
   </Armor>
 
+  <!-- Knights of Fate-->
+
+  <Armor>
+    <Key>ANCBATARM</Key>
+    <Name>Ancient Battle Armor</Name>
+    <Description>
+      [H3]Ancient Battle Armor[h3]
+      Please see page 47 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="47">Knights of Fate</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Heavy</Category>
+    </Categories>
+    <Encumbrance>6</Encumbrance>
+    <HP>1</HP>
+    <Price>3750</Price>
+    <Rarity>9</Rarity>
+    <BaseMods>
+      <Mod>
+        <Key>DEFADDFORCE</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>MK1KATARN</Key>
+    <Name>Mk I Katarn-Class Commando Armor</Name>
+    <Description>
+      [H3]Mk I [I]Katarn[i] -Class Commando Armor[h3]
+      Please see page 47 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="47">Knights of Fate</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Hard</Category>
+      <Category>Hard Full Body</Category>
+      <Category>Heavy</Category>
+      <Category>Sealed</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>6500</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Suit provides all benefits of a combat scanner</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Suit provides all benefits of a breath mask</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>ENCTADD3</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Removes [SE] from Perception and Survival checks</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>PERC</SkillKey>
+            <SetbackCount>1</SetbackCount>
+          </DieModifier>
+          <DieModifier>
+            <SkillKey>SURV</SkillKey>
+            <SetbackCount>1</SetbackCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+    </BaseMods>
+    <Defense>1</Defense>
+    <Soak>2</Soak>
+  </Armor>
+  <Armor>
+    <Key>PHASEIARC</Key>
+    <Name>Phase I ARC Trooper Armor</Name>
+    <Description>
+      [H3]Phase I ARC Trooper Armor[h3]
+      Please see page 48 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="48">Knights of Fate</Source>
+    <Categories>
+      <Category>Full Body</Category>
+      <Category>Hard</Category>
+      <Category>Hard Full Body</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>2</HP>
+    <Price>5000</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Provides all benefits of a hardened comlink</MiscDesc>
+      </Mod>
+      <Mod>
+        <Key>ENCTADD3</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Removes [SE] from all Perception checks</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillKey>PERC</SkillKey>
+            <SetbackCount>1</SetbackCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+    </BaseMods>
+    <Defense>1</Defense>
+    <Soak>2</Soak>
+  </Armor>
 </Armors>
       <!--
       <Category>Sealable</Category>

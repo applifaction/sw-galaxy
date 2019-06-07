@@ -5379,9 +5379,12 @@
     <Name>G2 Concussion Grenade</Name>
     <Description>
       [H3]G2 Concussion Grenade[h3]
-      Please see page 46 of the Dangerous Covenants Sourcebook for details.
+      Please see page 46 of the Dangerous Covenants Sourcebook, and page 44 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="46">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="46">Dangerous Covenants</Source>
+      <Source Page="44">Knights of Fate</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
       <Category>Ranged</Category>
@@ -5444,9 +5447,12 @@
     <Name>Lightning 22 Ion Grenade</Name>
     <Description>
       [H3]Lightning 22 Ion Grenade[h3]
-      Please see page 46 of the Dangerous Covenants Sourcebook for details.
+      Please see page 46 of the Dangerous Covenants Sourcebook, or page 44 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="46">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="46">Dangerous Covenants</Source>
+      <Source Page="44">Knights of Fate</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
       <Category>Ranged</Category>
@@ -5500,9 +5506,12 @@
     <Name>NOVA40 Plasma Grenade</Name>
     <Description>
       [H3]NOVA40 Plasma Grenade[h3]
-      Please see page 46 of the Dangerous Covenants Sourcebook for details.
+      Please see page 46 of the Dangerous Covenants Sourcebook, and page 45 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="46">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="46">Dangerous Covenants</Source>
+      <Source Page="45">Knights of Fate</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
       <Category>Ranged</Category>
@@ -5757,11 +5766,15 @@
     <Name>Mk.10 Concussion Missile</Name>
     <Description>
       [H3]Mk.10 Concussion Missile[h3]
-      Please see page 42 of the Dangerous Covenants Sourcebook for details.
+      Please see page 42 of the Dangerous Covenants Sourcebook, or page 46 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="42">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="42">Dangerous Covenants</Source>
+      <Source Page="46">Dangerous Covenants</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Missile</Category>
       <Category>Portable Gunnery</Category>
       <Category>Ranged</Category>
     </Categories>
@@ -5824,9 +5837,13 @@
       [H3]C-88 Fragmentation Missile[h3]
       Please see page 42 of the Dangerous Covenants Sourcebook for details.
     </Description>
-    <Source Page="42">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="42">Dangerous Covenants</Source>
+      <Source Page="46">Knights of Fate</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Missile</Category>
       <Category>Portable Gunnery</Category>
       <Category>Ranged</Category>
     </Categories>
@@ -5869,6 +5886,7 @@
     <Source Page="42">Dangerous Covenants</Source>
     <Type>Explosives/Other</Type>
     <Categories>
+      <Category>Missile</Category>
       <Category>Portable Gunnery</Category>
       <Category>Ranged</Category>
     </Categories>
@@ -5913,13 +5931,17 @@
     <Name>C-908 Incendiary Missile</Name>
     <Description>
       [H3]C-908 Incendiary Missile[h3]
-      Please see page 42 of the Dangerous Covenants Sourcebook for details.
+      Please see page 42 of the Dangerous Covenants Sourcebook, or page 46 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="42">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="42">Dangerous Covenants</Source>
+      <Source Page="46">Knights of Fate</Source>
+    </Sources>
     <Type>Explosives/Other</Type>
     <Categories>
       <Category>Portable Gunnery</Category>
       <Category>Ranged</Category>
+      <Category>Missile</Category>
     </Categories>
     <Encumbrance>0</Encumbrance>
     <HP>0</HP>
@@ -7223,6 +7245,10 @@
       <Quality>
         <Key>DISORIENT</Key>
         <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>1</Count>
       </Quality>
     </Qualities>
     <BaseMods>
@@ -10520,9 +10546,12 @@
     <Name>Riot Shield</Name>
     <Description>
       [H3]Riot Shield[h3]
-      Please see page 42 of the Far Horizons Sourcebook for details.
+      Please see page 42 of the Far Horizons Sourcebook, and page 43 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="42">Far Horizons</Source>
+    <Sources>
+      <Source Page="42">Far Horizons</Source>
+      <Source Page="43">Knights of Fate</Source>
+    </Sources>
     <Type>Melee</Type>
     <Categories>
       <Category>Shield</Category>
@@ -16616,9 +16645,12 @@ Please see page 119 of the Strongholds of Resistance Sourcebook for details.</De
     <Name>WP-19 Incendiary Grenade</Name>
     <Description>
       [H3]Merr-Sonn WP-19 Incendiary Grenade[h3]
-      See page 40 of the Fully Operational Sourcebook for details.
+      See page 40 of the Fully Operational Sourcebook, or page 45 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="40">Fully Operational</Source>
+    <Sourcs>
+      <Source Page="40">Fully Operational</Source>
+      <Source Page="45">Knights of Fate</Source>
+    </Sourcs>
     <Type>Thrown</Type>
     <Categories>
       <Category>Grenade</Category>
@@ -16959,5 +16991,723 @@ Please see page 119 of the Strongholds of Resistance Sourcebook for details.</De
       </Quality>
     </Qualities>
     <Range>Short</Range>
+  </Weapon>
+
+<!-- Knights of Fate -->
+
+  <Weapon>
+    <Key>FWG7F</Key>
+    <Name>FWG-7 Flechette Smart Carbine</Name>
+    <Description>[H3]FWG-7 Flechette Smart Carbine[h3]
+Please see page 40 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="40">Knights of Fate</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Carbine</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>5</Encumbrance>
+    <HP>3</HP>
+    <Price>1800</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>5</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Scale>wsPersonal</Scale>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>4</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>MR90</Key>
+    <Name>MR-90 Proton Rifle</Name>
+    <Description>[H3]MR-90 Proton Rifle[h3]
+Please see page 40 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="40">Knights of Fate</Source>
+    <Type>Energy Weapon</Type>
+    <Categories>
+      <Category>Ranged</Category>
+      <Category>Rifle</Category>
+      <Category>Heavy Rifle</Category>
+    </Categories>
+    <Encumbrance>6</Encumbrance>
+    <HP>2</HP>
+    <Price>3100</Price>
+    <Rarity>8</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>10</Damage>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrExtreme</RangeValue>
+    <Scale>wsPersonal</Scale>
+    <Qualities>
+      <Quality>
+        <Key>ACCURATE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+    </Qualities>
+    <Range>Extreme</Range>
+  </Weapon>
+  <Weapon>
+    <Key>REPTHROWRAZ</Key>
+    <Name>Repulsor Throwing Razor</Name>
+    <Description>[H3]Repulsor Throwing Razor[h3]
+Please see page 41 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="41">Knights of Fate</Source>
+    <Type>Thrown</Type>
+    <Categories>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <HP>1</HP>
+    <Price>850</Price>
+    <Rarity>7</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Character may spend [AD][AD] on a missed attack to have it return to their hands at the beginning of their next turn.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>5</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>RLR331</Key>
+    <Name>RLR-331 "Bulldog" Rocket Rifle</Name>
+    <Description>[H3]RLR-331 "Bulldog" Rocket Rifle[h3]
+Please see page 41 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="41">Knights of Fate</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Ranged</Category>
+      <Category>Rifle</Category>
+    </Categories>
+    <Encumbrance>6</Encumbrance>
+    <HP>3</HP>
+    <Price>2200</Price>
+    <Rarity>7</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>10</Damage>
+    <Crit>4</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrLong</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>8</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>6</Count>
+      </Quality>
+    </Qualities>
+    <Range>Long</Range>
+  </Weapon>
+  <Weapon>
+    <Key>134ABUZZ</Key>
+    <Name>Model 134a "Buzzsaw" Rotary Cannon</Name>
+    <Description>[H3]Model 134a "Buzzsaw" Rotary Cannon[h3]
+Please see page 41 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="41">Knights of Fate</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Portable Gunnery</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>8</Encumbrance>
+    <HP>4</HP>
+    <Price>4500</Price>
+    <Rarity>7</Rarity>
+    <Restricted>true</Restricted>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>May only be fired using the Autofire quality</MiscDesc>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>GM may spend [DE] or [TH][TH][TH] to have the weapon overheat and jam.  Clearing jam requires a maneuver.</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>12</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrLong</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>AUTOFIRE</Key>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Long</Range>
+  </Weapon>
+  <Weapon>
+    <Key>RGL318</Key>
+    <Name>RGL-318 Rotary Grenade Launcher</Name>
+    <Description>[H3]RGL-318 Rotary Grenade Launcher[h3]
+Please see page 41 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="41">Knights of Fate</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Portable Gunnery</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>5</Encumbrance>
+    <HP>3</HP>
+    <Price>1000</Price>
+    <Rarity>4</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>8</Damage>
+    <Crit>4</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrMedium</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>6</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>5</Count>
+      </Quality>
+    </Qualities>
+    <Range>Medium</Range>
+  </Weapon>
+  <Weapon>
+    <Key>MODEL4THUND</Key>
+    <Name>Model 4 "Thunderhead" Scattergun</Name>
+    <Description>[H3]Model 4 "Thunderhead" Scattergun[h3]
+Please see page 42 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="42">Knights of Fate</Source>
+    <Type>Slugthrower</Type>
+    <Categories>
+      <Category>Rifle</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>700</Price>
+    <Rarity>5</Rarity>
+    <SkillKey>RANGHVY</SkillKey>
+    <Damage>7</Damage>
+    <Crit>4</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>DOUBVIBROSW</Key>
+    <Name>Double-Bladed Vibrosword</Name>
+    <Description>[H3]Double-Bladed Vibrosword[h3]
+Please see page 42 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="42">Knights of Fate</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Cutting Edge Melee</Category>
+      <Category>Powered Melee</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>1300</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>2</DamageAdd>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Hands>whTwoHanded</Hands>
+    <Qualities>
+      <Quality>
+        <Key>DEFENSIVE</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>LINKED</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>UNWIELDY</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>RS01RIP</Key>
+    <Name>RS01 "Ripper" Powersword</Name>
+    <Description>[H3]RS01 "Ripper" Powersword[h3]
+Please see page 43 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="43">Knights of Fate</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Cutting Edge Melee</Category>
+      <Category>Powered Melee</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>1050</Price>
+    <Rarity>6</Rarity>
+    <SkillKey>MELEE</SkillKey>
+    <DamageAdd>3</DamageAdd>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Hands>whTwoHanded</Hands>
+    <Qualities>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>KNOCKDOWN</Key>
+      </Quality>
+      <Quality>
+        <Key>PIERCE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>2</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>SHOCKSTAFF</Key>
+    <Name>Shockprod Staff</Name>
+    <Description>[H3]Shockprod Staff[h3]
+Please see page 43 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="43">Knights of Fate</Source>
+    <Type>Melee</Type>
+    <Categories>
+      <Category>Powered Melee</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>1500</Price>
+    <Rarity>7</Rarity>
+    <SkillKey>MELEE</SkillKey>
+    <Damage>7</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Hands>whTwoHanded</Hands>
+    <Qualities>
+      <Quality>
+        <Key>DISORIENT</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNSETTING</Key>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>BROADSABER</Key>
+    <Name>Broadsaber</Name>
+    <Description>[H3]Broadsaber[h3]
+Please see page 43 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="43">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>2</HP>
+    <Price>11000</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>LTSABER</SkillKey>
+    <Damage>7</Damage>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+      <Quality>
+        <Key>UNWIELDY</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>CONTENERAXE</Key>
+    <Name>Contained Energy Axe</Name>
+    <Description>[H3]Contained Energy Axe[h3]
+Please see page 43 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="43">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Cutting Edge Melee</Category>
+      <Category>Powered Melee</Category>
+    </Categories>
+    <Encumbrance>4</Encumbrance>
+    <HP>3</HP>
+    <Price>7500</Price>
+    <Rarity>8</Rarity>
+    <SkillKey>LTSABER</SkillKey>
+    <DamageAdd>3</DamageAdd>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+      <Quality>
+        <Key>VICIOUS</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>GRLIGHTSABER</Key>
+    <Name>Great Lightsaber</Name>
+    <Description>[H3]Great Lightsaber[h3]
+Please see page 44 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="44">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <HP>3</HP>
+    <Price>12000</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>LTSABER</SkillKey>
+    <Damage>7</Damage>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>LIGHTFOIL</Key>
+    <Name>Lightfoil</Name>
+    <Description>[H3]Lightfoil[h3]
+Please see page 44 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="44">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>1</HP>
+    <Price>9850</Price>
+    <Rarity>10</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>LTSABER</SkillKey>
+    <Damage>5</Damage>
+    <Crit>2</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>DEFENSIVE</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>SUNDER</Key>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>BROADSABERHILT</Key>
+    <Name>Broadsaber Hilt</Name>
+    <Description>[H3]Broadsaber Hilt[h3]
+Please see page 43 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="43">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>4</HP>
+    <Price>600</Price>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <Key>DAMADDCRYS</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <SkillKey>LTSABER</SkillKey>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <NoMelee>true</NoMelee>
+    <Qualities>
+      <Quality>
+        <Key>UNWIELDY</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>GRLIGHTSABERHILT</Key>
+    <Name>Great Lightsaber Hilt</Name>
+    <Description>[H3]Great Lightsaber Hilt[h3]
+Please see page 44 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="44">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </Categories>
+    <Encumbrance>2</Encumbrance>
+    <HP>5</HP>
+    <Price>700</Price>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <Key>DAMADDCRYS</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <SkillKey>LTSABER</SkillKey>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <NoMelee>true</NoMelee>
+    <Qualities>
+      <Quality>
+        <Key>CUMBERSOME</Key>
+        <Count>3</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>LIGHTFOILHILT</Key>
+    <Name>Lightfoil Hilt</Name>
+    <Description>[H3]Lightfoil Hilt[h3]
+Please see page 44 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="44">Knights of Fate</Source>
+    <Type>Lightsaber</Type>
+    <Categories>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <HP>3</HP>
+    <Price>350</Price>
+    <Rarity>6</Rarity>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSUBCRYS</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <SkillKey>LTSABER</SkillKey>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrEngaged</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>DEFENSIVE</Key>
+        <Count>2</Count>
+      </Quality>
+    </Qualities>
+    <Range>Engaged</Range>
+  </Weapon>
+  <Weapon>
+    <Key>SONICGREND</Key>
+    <Name>Sonic Grenade</Name>
+    <Description>[H3]Sonic Grenade[h3]
+Please see page 45 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="45">Knights of Fate</Source>
+    <Type>Thrown</Type>
+    <Categories>
+      <Category>Grenade</Category>
+      <Category>Ranged</Category>
+    </Categories>
+    <Encumbrance>1</Encumbrance>
+    <Price>250</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>RANGLT</SkillKey>
+    <Damage>10</Damage>
+    <Crit>4</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrShort</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>8</Count>
+      </Quality>
+      <Quality>
+        <Key>DISORIENT</Key>
+        <Count>5</Count>
+      </Quality>
+      <Quality>
+        <Key>LIMITEDAMMO</Key>
+        <Count>1</Count>
+      </Quality>
+      <Quality>
+        <Key>STUNDAMAGE</Key>
+      </Quality>
+    </Qualities>
+    <Range>Short</Range>
+  </Weapon>
+  <Weapon>
+    <Key>HIGHEXPMISSILE</Key>
+    <Name>High-Explosive Missile</Name>
+    <Description>[H3]High-Explosive Missile[h3]
+Please see page 46 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="46">Knights of Fate</Source>
+    <Type>Explosives/Other</Type>
+    <Categories>
+      <Category>Missile</Category>
+      <Category>Ranged</Category>
+      <Category>Portable Gunnery</Category>
+    </Categories>
+    <Price>200</Price>
+    <Rarity>6</Rarity>
+    <Restricted>true</Restricted>
+    <SkillKey>GUNN</SkillKey>
+    <Damage>18</Damage>
+    <Crit>3</Crit>
+    <SizeHigh>10</SizeHigh>
+    <RangeValue>wrLong</RangeValue>
+    <Qualities>
+      <Quality>
+        <Key>BLAST</Key>
+        <Count>6</Count>
+      </Quality>
+      <Quality>
+        <Key>BREACH</Key>
+        <Count>2</Count>
+      </Quality>
+      <Quality>
+        <Key>GUIDED</Key>
+        <Count>2</Count>
+      </Quality>
+    </Qualities>
+    <Range>Long</Range>
   </Weapon>
 </Weapons>

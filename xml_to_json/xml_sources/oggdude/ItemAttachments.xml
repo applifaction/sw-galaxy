@@ -1227,6 +1227,7 @@
       <Mod>
         <Key>STUN</Key>
         <Count>2</Count>
+        <QualSet>true</QualSet>
       </Mod>
     </BaseMods>
     <AddedMods>
@@ -10978,5 +10979,161 @@ Please see page 67 of the Special Modifications Sourcebook for details.</Descrip
       </Mod>
     </AddedMods>
     <Hidden>true</Hidden>
+  </ItemAttachment>
+  
+  <!-- Knights of Fate -->
+
+  <ItemAttachment>
+    <Key>JEDHACR</Key>
+    <Name>Cracked Jedha Crystal</Name>
+    <Description>
+      [H4]Cracked Jedha Crystal[h4]
+      Please see page 48 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="48">Knights of Fate</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>8000</Price>
+    <Rarity>7</Rarity>
+    <Restricted>true</Restricted>
+    <HP>3</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSET</Key>
+        <Count>7</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSET</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>BREACH</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>INACCURATE</Key>
+        <Count>2</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+      <Mod>
+        <Key>SUNDER</Key>
+      </Mod>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>1</Count>
+        <QualReplace>true</QualReplace>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>VICIOUS</Key>
+        <Count>3</Count>
+      </Mod>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>SUBQUALINACCURATE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>CRITSUB</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+    <IsCrystal>true</IsCrystal>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>FLICKERPHASE</Key>
+    <Name>Flickerphase Blade</Name>
+    <Description>
+      [H4]Flickerphase Blade[h4]
+      Please see page 48 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="48">Knights of Fate</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>5000</Price>
+    <Rarity>4</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>DAMSUB</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>INACCURATE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Target cannot  use the Parry incidental to reduce the damage of an attack by this weapon</MiscDesc>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>SUBQUALINACCURATE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>DAMADD</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
+  </ItemAttachment>
+  <ItemAttachment>
+    <Key>REMAGSH</Key>
+    <Name>Reinforced Magnetic Shielding</Name>
+    <Description>
+      [H4]Reinforced Magnetic Shielding[h4]
+      Please see page 48 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="48">Knights of Fate</Source>
+    <Type>Weapon</Type>
+    <CategoryLimit>
+      <Category>Lightsaber</Category>
+      <Category>Lightsaber Hilt</Category>
+    </CategoryLimit>
+    <Price>4000</Price>
+    <Rarity>5</Rarity>
+    <HP>1</HP>
+    <BaseMods>
+      <Mod>
+        <Key>REMQUALBREACH</Key>
+      </Mod>
+      <Mod>
+        <Key>CONCUSSIVE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>KNOCKDOWN</Key>
+      </Mod>
+      <Mod>
+        <Key>PIERCE</Key>
+        <Count>1</Count>
+      </Mod>
+    </BaseMods>
+    <AddedMods>
+      <Mod>
+        <Key>CONCUSSIVE</Key>
+        <Count>1</Count>
+      </Mod>
+      <Mod>
+        <Key>DISORIENT</Key>
+        <Count>2</Count>
+      </Mod>
+      <Mod>
+        <Key>PIERCE</Key>
+        <Count>1</Count>
+      </Mod>
+    </AddedMods>
   </ItemAttachment>
 </ItemAttachments>
