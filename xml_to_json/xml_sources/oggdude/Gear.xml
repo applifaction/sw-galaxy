@@ -113,10 +113,13 @@
     <Key>COMLINKHARD</Key>
     <Name>Shockhold Hardened Comlink</Name>
     <Description>
-      [H3]Shockhold Hardened Comlink[h3]
-      Please see page 56 of the Dangerous Covenants Sourcebook for details.
+      [H3]TaggeCo Shockhold Hardened Comlink[h3]
+      Please see page 56 of the Dangerous Covenants Sourcebook, or page 49 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="56">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="56">Dangerous Covenants</Source>
+      <Source Page="49">Knights of Fate</Source>
+    </Sources>
     <Type>Communications</Type>
     <Categories />
     <Encumbrance>3</Encumbrance>
@@ -127,7 +130,7 @@
     <BaseMods>
       <Mod>
         <Count>1</Count>
-        <MiscDesc>Adds automatic [FAILURE][FAILURE] to any checks made to decode and understand its transmission and automatic [SUCCESS][SUCCESS] to any checks made to broadcast through a com jammer.</MiscDesc>
+        <MiscDesc>Adds automatic [FAILURE] to any checks made to decode and understand its transmission and automatic [SUCCESS] to any checks made to broadcast through a comms jammer.</MiscDesc>
       </Mod>
     </BaseMods>
   </Gear>
@@ -1533,10 +1536,13 @@
     <Key>SCANCOMBAT</Key>
     <Name>Mark 6  Combat Scanner</Name>
     <Description>
-      [H3]Mark 6 Combat scanner[h3]
-      Please see page 56 of the Dangerous Covenants Sourcebook for details.
+      [H3]Chedak Mark 6 Combat Scanner[h3]
+      Please see page 56 of the Dangerous Covenants Sourcebook, and page 49 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="56">Dangerous Covenants</Source>
+    <Sources>
+      <Source Page="56">Dangerous Covenants</Source>
+      <Source Page="49">Knights of Fate</Source>
+    </Sources>
     <Type>Detection/Surveillance Devices</Type>
     <Categories />
     <Encumbrance>1</Encumbrance>
@@ -1546,11 +1552,13 @@
     <Restricted>false</Restricted>
     <BaseMods>
       <Mod>
-        <Key />
-        <Count>1</Count>
-        <Index>0</Index>
-        <MiscDesc>Can see normally in dark, track motion, heat, and metal, and adds [SETBACK][SETBACK] to attempts to decode transmissions to/from combat scanners.</MiscDesc>
-        <DefZone />
+        <MiscDesc>Can be used to see normally in darkness, can track motion, and detect heat and metal</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>Adds [SE][SE] to attempts to intercept or decrypt broadcast from the unit</MiscDesc>
+      </Mod>
+      <Mod>
+        <MiscDesc>Removes [SE][SE] added to checks due to darkness</MiscDesc>
       </Mod>
     </BaseMods>
   </Gear>
@@ -4384,9 +4392,12 @@
     <Name>Portable Survival Shelter</Name>
     <Description>
       [H3]Portable Survival Shelter[h3]
-      Please see page 49 of the Enter the Unknown Sourcebook for details.
+      Please see page 49 of the Enter the Unknown Sourcebook, or page 50 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="49">Enter the Unknown</Source>
+    <Sources>
+      <Source Page="49">Enter the Unknown</Source>
+      <Source Page="50">Knights of Fate</Source>
+    </Sources>
     <Type>Survival</Type>
     <Categories />
     <Encumbrance>2</Encumbrance>
@@ -4563,7 +4574,7 @@
     <Key>CAMONETROLL</Key>
     <Name>CN-15 Camouflage Netting (Roll)</Name>
     <Description>
-      [H3]CN-15 Camouflage Netting (Roll)[h3]
+      [H3]Fabritech CN-15 Camouflage Netting (Roll)[h3]
       Please see page 57 of the Dangerous Covenants Sourcebook for details.
     </Description>
     <Source Page="57">Dangerous Covenants</Source>
@@ -5973,11 +5984,12 @@
     <Name>Entrenching Tool</Name>
     <Description>
       [H3]Entrenching Tool[h3]
-      Please see page 59 of the Dangerous Covenants Sourcebook, or page 54 of the Forged in Battle Sourcebook, for details.
+      Please see page 59 of the Dangerous Covenants Sourcebook, page 54 of the Forged in Battle Sourcebook, or page 50 of the Knights of Fate Sourcebook, for details.
     </Description>
     <Sources>
       <Source Page="59">Dangerous Covenants</Source>
       <Source Page="54">Forged in Battle</Source>
+      <Source Page="50">Knights of Fate</Source>
     </Sources>
     <Type>Tools/Electronics</Type>
     <Categories />
@@ -5987,6 +5999,26 @@
     <Rarity>1</Rarity>
     <Restricted>false</Restricted>
     <BaseMods />
+    <WeaponModifiers>
+      <WeaponModifier>
+        <Unarmed>false</Unarmed>
+        <UnarmedName>Entrenching Tool</UnarmedName>
+        <SkillKey>MELEE</SkillKey>
+        <DamageAdd>2</DamageAdd>
+        <Crit>4</Crit>
+        <RangeValue>wrEngaged</RangeValue>
+        <Qualities>
+          <Quality>
+            <Key>INFERIOR</Key>
+          </Quality>
+        </Qualities>
+        <BaseMods>
+          <Mod>
+            <MiscDesc>Does not break due to spending [TH] or [DE]</MiscDesc>
+          </Mod>
+        </BaseMods>
+      </WeaponModifier>
+    </WeaponModifiers>  
   </Gear>
   <Gear>
     <Key>BELTPOUCHMIL</Key>
@@ -8350,9 +8382,12 @@
     <Name>Condenser Unit</Name>
     <Description>
       [H3]Condenser Unit[h3]
-      Please see page 54 of the Forged in Battle Sourcebook for details.
+      Please see page 54 of the Forged in Battle Sourcebook, or page 50 of the Knights of Fate Sourcebook, for details.
     </Description>
-    <Source Page="54">Forged in Battle</Source>
+    <Sources>
+      <Source Page="54">Forged in Battle</Source>
+      <Source Page="50">Knights of Fate</Source>
+    </Sources>
     <Type>Survival</Type>
     <Categories />
     <Price>300</Price>
@@ -10565,6 +10600,97 @@ Please see page 50 of the Disciples of Harmony Sourcebook for details.</Descript
         <MiscDesc>For next 24 hours after 1 hour medication, may suffer 2 strain to add [FP] to next Alter or Battle Medication Force power check.</MiscDesc>
       </Mod>
     </BaseMods>
+  </Gear>
+
+<!-- Knights of Fate-->
+
+  <Gear>
+    <Key>RLR331AMMO</Key>
+    <Name>RLR-331 Rocket</Name>
+    <Description>[H3]RLR-331 Rocket[h3]
+Please see page 41 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="41">Knights of Fate</Source>
+    <Type>Reloads/Ammo</Type>
+    <Categories />
+    <Price>100</Price>
+    <Rarity>5</Rarity>
+  </Gear>
+  <Gear>
+    <Key>TRAINWEIGHT</Key>
+    <Name>Training Weights</Name>
+    <Description>[H3]Training Weights[h3]
+Please see page 50 of the Knights of Fate Sourcebook for details.</Description>
+    <Source Page="50">Knights of Fate</Source>
+    <Type>Survival</Type>
+    <Categories />
+    <Encumbrance>3</Encumbrance>
+    <Price>100</Price>
+    <Rarity>3</Rarity>
+    <BaseMods>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>Add [SE] to all Brawn- and Agility-based skill checks and to all combat checks</MiscDesc>
+        <DieModifiers>
+          <DieModifier>
+            <SkillChar>BR</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+          <DieModifier>
+            <SkillChar>AG</SkillChar>
+            <AddSetbackCount>1</AddSetbackCount>
+          </DieModifier>
+        </DieModifiers>
+      </Mod>
+      <Mod>
+        <Count>1</Count>
+        <MiscDesc>If weights are worn through a game session, increase amount of XP by 1</MiscDesc>
+      </Mod>
+    </BaseMods>
+  </Gear>
+  <Gear>
+    <Key>DROIDASP19</Key>
+    <Name>ASP-19 Battle Droid</Name>
+    <Description>
+      [H3]ASP-19 Battle Droid[h3]
+      Please see page 51 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="51">Knights of Fate</Source>
+    <Price>80000</Price>
+    <Restricted>true</Restricted>
+    <Encumbrance>0</Encumbrance>
+    <Rarity>9</Rarity>
+    <Type>Droids</Type>
+    <AdvImportPath>Knights of Fate\Droids\ASP-19 Battle Droid - Nemesis.xml</AdvImportPath>
+  </Gear>
+  <Gear>
+    <Key>DROIDSRSERIES</Key>
+    <Name>SR-Series Scout/Observation Droid</Name>
+    <Description>
+      [H3]SR-Series Scout/Observation Droid[h3]
+      Please see page 52 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="52">Knights of Fate</Source>
+    <Price>13000</Price>
+    <Restricted>true</Restricted>
+    <Encumbrance>0</Encumbrance>
+    <Rarity>6</Rarity>
+    <Type>Droids</Type>
+    <AdvImportPath>Knights of Fate\Droids\SR-Series Scout_Observation Droid - Rival.xml</AdvImportPath>
+  </Gear>
+  <Gear>
+    <Key>DROIDWSWMKIII</Key>
+    <Name>WSW Mk III "Harrier" Combat Remote</Name>
+    <Description>
+      [H3]WSW Mk III "Harrier" Combat Remote[h3]
+      Please see page 52 of the Knights of Fate Sourcebook for details.
+    </Description>
+    <Source Page="52">Knights of Fate</Source>
+    <Price>6000</Price>
+    <Restricted>true</Restricted>
+    <Encumbrance>0</Encumbrance>
+    <Rarity>6</Rarity>
+    <Type>Droids</Type>
+    <AdvImportPath>Knights of Fate\Droids\WSW Mk III _Harrier_ Combat Remote - Minion.xml</AdvImportPath>
   </Gear>
 
 </Gears>
