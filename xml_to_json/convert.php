@@ -21,6 +21,8 @@ foreach ($validFileNames as $typeKey => $fileName) {
     foreach ($xmlFiles as $xmlFile) {
         /** @var SimpleXMLElement $data */
         $data = simplexml_load_string(file_get_contents($xmlFile));
+        // remove comment nodes
+        unset($data->comment);
         $data = json_decode(json_encode($data, JSON_NUMERIC_CHECK));
         $values = reset($data);
         foreach ($values as &$row) {
